@@ -65,6 +65,7 @@
 						<p>Бесплатная доставка</p>
 					</div>
 				</div>
+				<!-- personal info -->
 				<div class="down">
 					<div class="personal_area">
 							<a class="user" href="#">
@@ -82,6 +83,7 @@
 					</div>
 				</div>
 			</div>
+			
 		</div>
 	</header>
 	The standard Lorem Ipsum passage, used since the 1500s
