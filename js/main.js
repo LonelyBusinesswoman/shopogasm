@@ -3,7 +3,7 @@ jQuery(document).ready(function($) {
   var height = $( 'header' ).height();
   $( '.headerMargin' ).height(height);
   // Search
-  if(window.innerWidth = 560){
+  if(window.innerWidth <= 560){
     var searchBlock = $('.search input');
     $(document).on('click', '.fa', function () {
       searchBlock.slideToggle();
@@ -73,9 +73,9 @@ jQuery(document).ready(function($) {
             $(modal).parents(".overlay").removeClass("open");
         }, 350);
     });
-    // video popup
-    $('.test').magnificPopup({
-      type:'iframe'
-    });
+  // video popup
+  $('.open_video').magnificPopup({
+   type: 'iframe',
+  });
 
 });
