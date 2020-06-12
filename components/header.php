@@ -99,5 +99,13 @@
 			<div class="close_mob_menu">
 				<i class="fa fa-times" aria-hidden="true"></i>
 			</div>
+			<div class="links">
+				<a href="#">Новинки</a>
+				<a href="#">Рекомендации</a>
+				<a href="#">Дизайнеры</a>
+				<a href="#">Одежда</a>
+				<a href="#">Аксессуары</a>
+				<a href="#">Распродажа</a>
+			</div>
 		</div>
 	</div>

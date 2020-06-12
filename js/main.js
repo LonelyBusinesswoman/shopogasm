@@ -2,7 +2,14 @@ jQuery(document).ready(function($) {
   // header height
   var height = $( 'header' ).height();
   $( '.headerMargin' ).height(height);
-
+  // Search
+  if(window.innerWidth = 560){
+    var searchBlock = $('.search input');
+    $(document).on('click', '.fa', function () {
+      searchBlock.slideToggle();
+      return false;
+    });
+  }
 	// mobile menu
   $('.mobile_menu').click(function(){
 	$('.mobile').addClass('active');
@@ -23,11 +30,11 @@ jQuery(document).ready(function($) {
 	    	$('.mobile').removeClass('active');
     	}
     });
+
     // modal popup
     $(".modal").each( function(){
         $(this).wrap('<div class="overlay"></div>')
     });
-
     $(".open-modal").on('click', function(e){
         e.preventDefault();
         e.stopImmediatePropagation;

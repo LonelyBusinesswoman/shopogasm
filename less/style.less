@@ -23,7 +23,6 @@ body{
 .blur{
     filter: blur(4px);
 }
-
 // mobile menu
 .mobile{
   display: block;
@@ -45,7 +44,7 @@ body{
   .wrap{
     box-sizing: border-box;
     padding-top: 50px;
-    width: 280px;
+    width: 250px;
     height: 100%;
     position: relative;
     background-color: #fff;
@@ -55,6 +54,18 @@ body{
     padding-left: 20px;
     justify-content: flex-start;
     float: left;
+  }
+  .links{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    a{
+      line-height: 7px;
+      color: #000000;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
   }
 }
 .active{
@@ -72,6 +83,9 @@ body{
       background-color: #000;
       margin-bottom: 4px;
       box-sizing: border-box;
+    }
+    .burg:last-child{
+      margin-bottom: 0;
     }
 }
 // HEADER
@@ -287,6 +301,7 @@ footer{
     }
   }
   .photo {
+    width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 15px;
