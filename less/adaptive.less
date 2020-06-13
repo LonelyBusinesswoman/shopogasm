@@ -18,6 +18,7 @@
   }
 }
 //SETTINGS
+// product
 .product{
   @media   (max-width: 550px){
     justify-content: center;
@@ -36,7 +37,36 @@
     }
   }
 }
-
+// news
+.news{
+  @media   (max-width: 800px){
+    p{
+      font-size: 12px;
+    }
+  }
+}
+// help container
+.question{
+  @media   (max-width: 850px){
+    form{
+      width: 60%;
+    }
+  }
+  @media   (max-width: 550px){
+    background-image: url(../img/content/question-background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    form{
+      flex-direction: column;
+      width: 70%;
+      input, button{
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  }
+}
 
 // MAIN STYLES
 // header
@@ -244,10 +274,74 @@
 }
 // ЧЕТВËРТЫ БЛОК - НОВОСТИ
 .fourth{
-  @media (max-width: 800px){
-    .new_products{
-      grid-template-columns: repeat(3, 30%);
-      grid-row-gap:30px;
+  @media (max-width: 650px){
+    .container{
+      .trends{
+        grid-template-columns: repeat(2, 48%);
+        grid-row-gap:30px;
+      }
+    }
+  }
+  @media (max-width: 450px){
+    background-image: url(../img/content/news-background.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: repeat-y;
+    .container{
+      .trends{
+        grid-template-columns: 80%;
+        justify-content: center;
+        align-items: center;
+        grid-row-gap:30px;
+      }
+    }
+  }
+}
+// ШЕСТОЙ - БАННЕРЫ
+.six{
+  @media (max-width: 950px){
+    a{
+      p{
+        font-size: 18px;
+      }
+    }
+  }
+  @media (max-width: 750px){
+    width: 60%;
+    display: grid;
+    grid-template-areas: "up up up"
+                         "down down down"
+                         "big_banner big_banner big_banner";
+    grid-template-columns: repeat(3, 32%, 30%, 30%);
+    grid-template-rows: repeat(3, 1fr);
+    .big_banner{
+      .block_down{
+        top: 73%;
+        right: 37%;
+      }
+      .text_down{
+        top: 71%;
+        right: 40%;
+      }
+    }
+  }
+  @media (max-width: 600px){
+    width: 94%;
+    display: grid;
+    grid-template-areas: "up up up"
+                         "down down down"
+                         "big_banner big_banner big_banner";
+    grid-template-columns: repeat(3, 32%, 30%, 30%);
+    grid-template-rows: repeat(3, 1fr);
+    .big_banner{
+      .block_down{
+        top: 75%;
+        right: 37%;
+      }
+      .text_down{
+        top: 73%;
+        right: 40%;
+      }
     }
   }
 }
