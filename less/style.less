@@ -26,15 +26,7 @@ a, a:hover, a:focus{
 .container{
   width: 80%;
 }
-// title style
-.title{
-  text-align: center;
-  margin-bottom: 40px;
-  p{
-    font-size: 22px;
-    font-weight: bold;
-  }
-}
+// button
 .action_button{
   min-width: 200px;
   background-color: #000000;
@@ -46,6 +38,15 @@ a, a:hover, a:focus{
     text-transform: uppercase;
   }
 }
+// title style
+.title{
+  text-align: center;
+  margin: 40px 0;
+  p{
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
 // product style
 .product{
   display: -webkit-flex;
@@ -53,7 +54,7 @@ a, a:hover, a:focus{
   display: flex;
   position: relative;
   flex-direction: column;
-  sursor: pointer;
+  cursor: pointer;
   .fa{
     cursor: pointer;
     font-size: 24px;
@@ -90,6 +91,26 @@ a, a:hover, a:focus{
   .price{
     font-size: 20px;
     font-weight: bold;
+  }
+}
+// news style - main screen
+.news{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F3F5;
+  cursor: pointer;
+  img{
+    width: 100%;
+    object-fit: cover;
+    max-height: 250px;
+  }
+  p{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
   }
 }
 // Burger
@@ -353,7 +374,7 @@ footer{
     display: flex;
     flex-direction: column;
   }
-  .title{
+  .subtitle{
     font-weight: 500;
     margin-bottom:20px;
   }
@@ -488,7 +509,8 @@ footer{
   }
 }
 // ТРЕТИЙ БЛОК - НОВЫЕ ТОВАРЫ
-.third{
+// ПЯТЫЙ БЛОК - ВЫБОР Shopogasm
+.third, .fifth{
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -510,16 +532,134 @@ footer{
 }
 // ЧЕТВËРТЫ БЛОК - БАННЕРЫ
 .fourth{
+  width: 100%;
+  background-image: url(/img/content/news-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  margin-bottom: 80px;
-  .mini_banners{
-
+  justify-content: center;
+  padding-bottom: 80px;
+  .container{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    .title{
+      margin-top: 70px;
+    }
+    .trends{
+      display: grid;
+      justify-content: space-between;
+      align-items: stretch;
+      grid-template-columns: repeat(3, 32%);
+      grid-row-gap:30px;
+    }
   }
+}
+// ШЕСТОЙ - БАННЕРЫ
+.six{
+  display: grid;
+  grid-template-areas: "up big_banner big_banner"
+                       "down big_banner big_banner";
+  grid-template-columns: repeat(3, 32%, 30%, 30%);
+  grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 80px;
+  grid-row-gap: 10px;
+  grid-column-gap:10px;
+  a{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    position: relative;
+    img{
+      width: 100%;
+      object-fit: contain;
+      }
+    p{
+      font-size: 24px;
+      font-weight: 800;
+      font-style: italic;
+      padding: 10px;
+      }
+  }
+  .text{
+    position: absolute;
+    z-index: 4;
+  }
+  //text inside imag
+  .up_banner, .down_banner{
+    // up text
+    .block_up{
+      width: 100px;
+      height: 30px;
+      background-color: #fff;
+      top: 32%;
+      right: 12%;
+    }
+    .text_up{
+      top: 30%;
+      right: 9%;
+    }
+    // down text
+    .block_down{
+      width: 100px;
+      height: 30px;
+      background-color: #DEF9FF;
+      top: 44%;
+      right: 14%;
+    }
+    .text_down{
+      top: 42%;
+      right: 11%;
+    }
+  }
+
+
+  // up banner settings
+  .up_banner{
+    grid-area: up;
+  }
+  // down banner settings
+  .down_banner{
+    grid-area: down;
+    .block_down{
+      background-color: #FFE8E8;
+    }
+    .text_down{
+      top: 42%;
+      right: 14%;
+    }
+  }
+
+  // big banner settings
   .big_banner{
-    width: 60%;
+    grid-area: big_banner;
+    // up text
+    .block_up{
+      width: 150px;
+      height: 30px;
+      background-color: #fff;
+      top: 64%;
+      right: 16%;
+    }
+    .text_up{
+      top: 63%;
+      right: 16%;
+    }
+    // down text
+    .block_down{
+      width:80px;
+      height: 30px;
+      background-color: #FFEFE7;
+      top: 70%;
+      right: 29%;
+    }
+    .text_down{
+      top: 69%;
+      right: 29%;
+    }
   }
 }

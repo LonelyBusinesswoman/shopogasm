@@ -76,6 +76,5 @@ jQuery(document).ready(function($) {
   // video popup
   $('.open_video').magnificPopup({
    type: 'iframe',
-  });
-
+ });
 });

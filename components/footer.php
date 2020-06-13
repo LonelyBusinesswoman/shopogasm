@@ -7,7 +7,7 @@
 			<!-- all links -->
 			<div class="inf">
 				<div class="about text">
-					<p class="title">О Shopogasm</p>
+					<p class="subtitle">О Shopogasm</p>
 					<ul>
 						<li> <a href="#">Обратная связь</a>	</li>
 						<li> <a href="#">О нас </a>	</li>
@@ -17,7 +17,7 @@
 					</ul>
 				</div>
 				<div class="clients text">
-					<p class="title">Клиентам</p>
+					<p class="subtitle">Клиентам</p>
 					<ul>
 						<li> <a href="#"> Помощь и контакты</a>	</li>
 						<li> <a href="#">Возврат товара </a>	</li>
@@ -28,7 +28,7 @@
 					</ul>
 				</div>
 				<div class="partners text">
-					<p class="title">Партнёрам</p>
+					<p class="subtitle">Партнёрам</p>
 					<ul>
 						<li> <a href="#"> Как начать продавать</a>	</li>
 						<li> <a href="#">Партнёрская программа </a>	</li>
@@ -39,14 +39,14 @@
 					</div>
 				</div>
 				<div class="instagram text">
-					<p class="title">Instagram Shopogasm</p>
+					<p class="subtitle">Instagram Shopogasm</p>
 					<div class="photo">
-						<img src="img/content/test_insta.png" alt="test">
-						<img src="img/content/test_insta.png" alt="test">
-						<img src="img/content/test_insta.png" alt="test">
-						<img src="img/content/test_insta.png" alt="test">
-						<img src="img/content/test_insta.png" alt="test">
-						<img src="img/content/test_insta.png" alt="test">
+						<img src="img/content/test-insta.png" alt="test">
+						<img src="img/content/test-insta.png" alt="test">
+						<img src="img/content/test-insta.png" alt="test">
+						<img src="img/content/test-insta.png" alt="test">
+						<img src="img/content/test-insta.png" alt="test">
+						<img src="img/content/test-insta.png" alt="test">
 					</div>
 				</div>
 			</div>

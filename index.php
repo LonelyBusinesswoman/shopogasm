@@ -44,15 +44,75 @@
       </button>
     </div>
     <!-- fourth -->
-    <div class="container fourth">
-      <div class="mini_banners">
-
+    <div class="fourth">
+      <div class="container">
+        <div class="title">
+          <p>Новости fashion-брендов</p>
+        </div>
+        <div class="trends">
+          <?php for($i = 0; $i < 3; $i++): ?>
+  			         <?php include 'components/news.php' ?>
+  		    <?php endfor; ?>
+        </div>
       </div>
-      <div class="big_banner">
-        <a href="#">
-          <img src="" alt="">
+    </div>
+    <!-- fifth -->
+    <div class="container fifth">
+      <div class="title">
+        <p>Выбор Shopogasm</p>
+      </div>
+      <div class="new_products">
+        <?php for($i = 0; $i < 4; $i++): ?>
+			         <?php include 'components/product.php' ?>
+		    <?php endfor; ?>
+      </div>
+      <button class="action_button">
+        <p>показать больше</p>
+      </button>
+    </div>
+    <!-- Six -->
+    <div class="container six">
+        <a class="up_banner" href="#">
+          <img src="/img/content/mini-banner-1.png" alt="banner">
+          <!-- text1 -->
+          <div class="text block_up"></div>
+          <p class="text text_up">Верхняя</p>
+          <!-- text2 -->
+          <div class="text block_down"></div>
+          <p class="text text_down">одежда</p>
         </a>
+        <a class="down_banner" href="#">
+          <img src="/img/content/mini-banner-2.png" alt="banner">
+          <!-- text1 -->
+          <div class="text block_up"></div>
+          <p class="text text_up">Нижнее</p>
+          <!-- text2 -->
+          <div class="text block_down"></div>
+          <p class="text text_down">бельё</p>
+        </a>
+        <a  class="big_banner" href="#">
+          <img src="/img/content/big_banner.png" alt="banner">
+          <!-- text1 -->
+          <div class="text block_up"></div>
+          <p class="text text_up">На каждый</p>
+          <!-- text2 -->
+          <div class="text block_down"></div>
+          <p class="text text_down">день</p>
+        </a>
+    </div>
+    <!-- seven -->
+    <div class="container fifth">
+      <div class="title">
+        <p>Популярные товары</p>
       </div>
+      <div class="new_products">
+        <?php for($i = 0; $i < 4; $i++): ?>
+               <?php include 'components/product.php' ?>
+        <?php endfor; ?>
+      </div>
+      <button class="action_button">
+        <p>показать больше</p>
+      </button>
     </div>
 </main>
  <!-- footer -->
