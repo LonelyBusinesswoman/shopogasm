@@ -30,12 +30,72 @@ a, a:hover, a:focus{
 .action_button{
   min-width: 200px;
   background-color: #000000;
-  padding: 10px 0;
+  padding: 12px 0;
   p{
     font-size: 14px;
     color: #ffffff;
     font-weight: 500;
     text-transform: uppercase;
+  }
+}
+// help container
+.question{
+  width: 100%;
+  background-image: url(/img/content/question-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .help{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+  }
+  .title{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    p{
+      text-transform: uppercase;
+    }
+  }
+  .connection{
+    text-align: center;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  span{
+    color: red;
+  }
+  form{
+    align-self: center;
+    width: 40%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    input{
+      width: 70%;
+      height: 40px;
+      background-color: #ffffff;
+      border: 1px solid #e6e6e6;
+      padding: 5px 10px;
+    }
+    input::placeholder {
+      font-size: 12px;
+    }
+    button{
+      height: 40px;
+      padding: 0;
+      width: 30%;
+      min-width: inherit;
+    }
   }
 }
 // title style

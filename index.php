@@ -106,7 +106,7 @@
         <p>Популярные товары</p>
       </div>
       <div class="new_products">
-        <?php for($i = 0; $i < 4; $i++): ?>
+        <?php for($i = 0; $i < 6; $i++): ?>
                <?php include 'components/product.php' ?>
         <?php endfor; ?>
       </div>
@@ -114,6 +114,8 @@
         <p>показать больше</p>
       </button>
     </div>
+    <!-- question container -->
+    <?php include 'components/help_block.php'; ?>
 </main>
  <!-- footer -->
 <?php include 'components/footer.php'; ?>
