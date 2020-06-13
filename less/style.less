@@ -41,7 +41,7 @@ a, a:hover, a:focus{
 // help container
 .question{
   width: 100%;
-  background-image: url(/img/content/question-background.png);
+  background-image: url(../img/content/question-background.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -105,6 +105,7 @@ a, a:hover, a:focus{
   p{
     font-size: 22px;
     font-weight: bold;
+    text-transform: uppercase;
   }
 }
 // product style
@@ -491,6 +492,27 @@ footer{
 }
 
 // ГЛАВНАЯ
+// ПЕРВЫЙ БЛОК - СЛАЙДЕР
+.slider{
+  display: block;
+  width: 100%;
+  .slide{
+    position: relative;
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
 // ВТОРОЙ БЛОК - ИНФОРМАЦИЯ
 .second{
   margin-top: 100px;
@@ -507,6 +529,7 @@ footer{
     display: -ms-flex;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
   }
   p{
     width: 100%;
@@ -520,6 +543,9 @@ footer{
   .video{
     width: 50%;
     position: relative;
+    .shop_info_mob{
+      display: none;
+    }
   }
   .macbook{
     z-index: 4;
@@ -568,9 +594,10 @@ footer{
     font-size: 25px;
   }
 }
-// ТРЕТИЙ БЛОК - НОВЫЕ ТОВАРЫ
+// ТРЕТИЙ БЛОК - НОВИНКИ
 // ПЯТЫЙ БЛОК - ВЫБОР Shopogasm
-.third, .fifth{
+// CЕДЬМОЙ БЛОК - ПОПУЛЯРНЫЕ ТОВАРЫ
+.third, .fifth, .seventh{
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -590,10 +617,10 @@ footer{
     margin-top: 40px;
   }
 }
-// ЧЕТВËРТЫ БЛОК - БАННЕРЫ
+// ЧЕТВËРТЫ БЛОК - НОВОСТИ
 .fourth{
   width: 100%;
-  background-image: url(/img/content/news-background.png);
+  background-image: url(../img/content/news-background.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

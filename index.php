@@ -1,5 +1,20 @@
 <?php include 'components/header.php'; ?>
 <main>
+  <!-- first slider -->
+  <!-- <div class="slider">
+    <div class="slide">
+      <img src="img/content/slider-test-1.png" alt="slide">
+      <div class="container slide_info">
+        <p class="slide_number"></p>
+        <p class="name">Российские fashion бренды</p>
+        <span span="from">From Russia With Love</span>
+
+        <div class="video">
+
+        </div>
+      </div>
+    </div>
+  </div> -->
   <!-- second -->
   <div class="container second">
     <!-- text -->
@@ -17,13 +32,15 @@
       </div>
     <!-- video  -->
     <div class="video">
+      <!-- text -->
+      <p class="shop_info_mob">Shopogasm - это</p>
       <!-- mac -->
-      <img class="macbook" src="/img/content/macbook-second-screen.png" alt="macbook">
+      <img class="macbook" src="img/content/macbook-second-screen.png" alt="macbook">
       <!-- arrows -->
-      <img class="arrow_1" src="/img/content/arrow-second-screen.png" alt="arrow">
-      <img class="arrow_2" src="/img/content/arrow-second-screen.png" alt="arrow">
+      <img class="arrow_1" src="img/content/arrow-second-screen.png" alt="arrow">
+      <img class="arrow_2" src="img/content/arrow-second-screen.png" alt="arrow">
       <!-- logo -->
-      <img class="logo" src="/img/content/logo-second-screen.png" alt="logo">
+      <img class="logo" src="img/content/logo-second-screen.png" alt="logo">
       <a href="https://www.youtube.com/watch?v=X6wHmr4b8Sk" rel="nofollow" class="open_video">
         <i class="fa fa-play" aria-hidden="true"></i>
       </a>
@@ -73,7 +90,7 @@
     <!-- Six -->
     <div class="container six">
         <a class="up_banner" href="#">
-          <img src="/img/content/mini-banner-1.png" alt="banner">
+          <img src="img/content/mini-banner-1.png" alt="banner">
           <!-- text1 -->
           <div class="text block_up"></div>
           <p class="text text_up">Верхняя</p>
@@ -82,7 +99,7 @@
           <p class="text text_down">одежда</p>
         </a>
         <a class="down_banner" href="#">
-          <img src="/img/content/mini-banner-2.png" alt="banner">
+          <img src="img/content/mini-banner-2.png" alt="banner">
           <!-- text1 -->
           <div class="text block_up"></div>
           <p class="text text_up">Нижнее</p>
@@ -91,7 +108,7 @@
           <p class="text text_down">бельё</p>
         </a>
         <a  class="big_banner" href="#">
-          <img src="/img/content/big_banner.png" alt="banner">
+          <img src="img/content/big_banner.png" alt="banner">
           <!-- text1 -->
           <div class="text block_up"></div>
           <p class="text text_up">На каждый</p>
@@ -101,7 +118,7 @@
         </a>
     </div>
     <!-- seven -->
-    <div class="container fifth">
+    <div class="container seventh">
       <div class="title">
         <p>Популярные товары</p>
       </div>

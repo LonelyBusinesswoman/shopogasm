@@ -17,6 +17,28 @@
     padding-right: 10px;
   }
 }
+//SETTINGS
+.product{
+  @media   (max-width: 550px){
+    justify-content: center;
+    align-items: center;
+    .name{
+      font-size: 14px;
+    }
+    .brand{
+      font-size: 10px;
+    }
+    .description{
+      font-size: 10px;
+    }
+    .price{
+      font-size: 16px;
+    }
+  }
+}
+
+
+// MAIN STYLES
 // header
 .header{
   // left elements
@@ -127,6 +149,105 @@
   @media (max-width: 400px){
     p,a{
       font-size: 9px;
+    }
+  }
+}
+
+// MAIN
+// ВТОРОЙ БЛОК
+.second{
+  @media (max-width: 1000px){
+    .shop_info{
+      margin-top: 20px;
+    }
+    .arrow_1, .arrow_2{
+      width: 100px;
+    }
+  }
+  @media (max-width: 800px){
+    .video{
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo{
+      top: 5%;
+    }
+    a{
+      z-index: 4;
+    }
+  }
+  @media (max-width: 650px){
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .shop_info{
+      width: 90%;
+      order:2;
+      p{
+        display: none;
+      }
+    }
+    .video{
+      width: 100%;
+      order:1;
+      flex-direction: column;
+      .shop_info_mob{
+        text-align: center;
+        display: block;
+        margin-bottom: 40px;
+      }
+      .logo{
+        left: inherit;
+        top: 12%;
+      }
+      a{
+        top: 45%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .arrow_1{
+        top: -25%;
+        left: 0%;
+        width: 70px;
+      }
+      .arrow_2{
+        top: -24%;
+        left: inherit;
+        width: 70px;
+        right: 0;
+        transform: rotate(176deg);
+      }
+    }
+  }
+}
+// ТРЕТИЙ БЛОК - НОВИНКИ
+// ПЯТЫЙ БЛОК - ВЫБОР Shopogasm
+// CЕДЬМОЙ БЛОК - ПОПУЛЯРНЫЕ ТОВАРЫ
+.third, .fifth, .seventh{
+  @media (max-width: 730px){
+    .new_products{
+      grid-template-columns: repeat(3, 30%);
+      grid-row-gap:30px;
+    }
+  }
+  @media (max-width: 550px){
+    .new_products{
+      grid-template-columns: repeat(2, 48%);
+      grid-row-gap:30px;
+    }
+  }
+}
+// ЧЕТВËРТЫ БЛОК - НОВОСТИ
+.fourth{
+  @media (max-width: 800px){
+    .new_products{
+      grid-template-columns: repeat(3, 30%);
+      grid-row-gap:30px;
     }
   }
 }
