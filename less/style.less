@@ -148,6 +148,13 @@ a, a:hover, a:focus{
   position: relative;
   flex-direction: column;
   cursor: pointer;
+  .go_to_product{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
   .fa{
     cursor: pointer;
     font-size: 24px;
@@ -209,7 +216,7 @@ a, a:hover, a:focus{
 // Burger
 .mobile_menu{
   cursor: pointer;
-  width: 32px;
+  width: 25px;
   display: none;
   flex-direction: column;
   .burg{
@@ -344,8 +351,11 @@ header{
       display: -webkit-flex;
       display: -ms-flex;
       display: flex;
+      align-items: center;
     }
     input{
+      -webkit-appearance: none;
+      border-radius: 0px;
       width: 100%;
       height: 30px;
       background-color: #ffffff;
@@ -360,7 +370,6 @@ header{
       background-color: inherit;
       position: absolute;
       right: 7px;
-      top: 6px;
     }
     .action_button{
       display: none;
@@ -370,14 +379,17 @@ header{
         font-size: 10px;
       }
     }
+  }
+  // search icon mobile
+  .search_btn{
     .fa-search:before{
       color: #606262;
     }
   }
-  // search icon mobile
   .search_mobile{
     display: none;
   }
+  // links
   .links{
     margin-top: 25px;
     width: 100%;
@@ -571,6 +583,9 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    .img_slide{
+      width: 100%;
+    }
     img{
       width: 100%;
       object-fit: contain;
@@ -586,6 +601,17 @@ footer{
       display: -ms-flex;
       display: flex;
       flex-direction: column;
+      position: relative;
+    }
+    .slide_number{
+      z-index: -1;
+      position: absolute;
+      top: -20%;
+      left: -25%;
+      font-size: 127px;
+      color: #ffffff;
+      font-family: "Montserrat";
+      font-weight: 500;
     }
     .name{
       font-size: 38px;

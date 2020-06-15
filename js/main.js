@@ -76,11 +76,12 @@ jQuery(document).ready(function($) {
     });
 
   // MAIN slider
-  $('.slider').slick({
+$('.slider').slick({
+  arrows: false,
   dots: true,
   fade: true,
   cssEase: 'linear'
-}); 
+});
   // video popup
   $('.open_video').magnificPopup({
    type: 'iframe',

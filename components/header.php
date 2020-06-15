@@ -11,8 +11,8 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
 	<!-- CSS style -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css?v=1">
-	<link rel="stylesheet" type="text/css" href="css/adaptive.css?v=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=3">
+	<link rel="stylesheet" type="text/css" href="css/adaptive.css?v=3">
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<!-- Jquery -->
