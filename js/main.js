@@ -2,10 +2,11 @@ jQuery(document).ready(function($) {
   // header height
   var height = $( 'header' ).height();
   $( '.headerMargin' ).height(height);
-  // Search
+
+  // Search mobile
   if(window.innerWidth <= 560){
-    var searchBlock = $('.search input');
-    $(document).on('click', '.fa', function () {
+    var searchBlock = $('.search');
+    $(document).on('click', '.search_mobile', function () {
       searchBlock.slideToggle();
       return false;
     });

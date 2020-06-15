@@ -45,10 +45,19 @@
 							<p class="for_her">Для неё</p>
 							<p class="for_him">Для него</p>
 					</div>
+					<!-- for mobile search (icon)-->
+					<button class="search_mobile search_btn" type="button" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
 					<!-- Search -->
 					<div class="search">
-						<input type="text" name="search" placeholder="Поиск">
-						<i class="fa fa-search" aria-hidden="true"></i>
+						<form class="search_form" action="" method="">
+							<input type="text" name="search" placeholder="Поиск">
+							<!-- for desktop search (icon)-->
+							<button class="desktop_btn search_btn" type="button" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+							<!-- for mobile search (button)-->
+							<button class="action_button">
+				        <p>найти</p>
+				      </button>
+						</form>
 					</div>
 				</div>
 				<!-- links -->
