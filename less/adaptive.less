@@ -202,14 +202,112 @@
 // ПЕРВЫЙ БЛОК СЛАЙДЕР
 .slider{
   @media (max-width: 1250px){
-    .img_slide{
-      min-height: 500px;
+    .slide .img_slide{
+      display: flex;
+      align-items: center;
+      justify-content: center;
       img{
         object-fit: fill;
-        position: absolute;
-        left: -35%;
         width: auto;
       }
+    }
+    .slide .slide_info .info_wrap{
+      width: 35%;
+      .slide_number{
+        left: -10%;
+      }
+    }
+    .slick-dots{
+      right: 10%;
+    }
+  }
+  //mobile slider
+  @media (max-width: 768px){
+    background-color: #EBEEF0;
+    .slide .img_slide{
+      display: none;
+    }
+    // static position
+    .slide .slide_info {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      position: static;
+      padding: 80px 0 100px 0;
+      // all information
+      .info_wrap{
+        width: 45%;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // for number
+        .slide_number{
+           top: -15%;
+           left: 0;
+           right: 0;
+           margin-left: auto;
+           margin-right: auto;
+           text-align: center;
+         }
+      }
+      // brand name
+      .name{
+        text-align: center;
+        font-size: 30px;
+      }
+      // video of brand
+      .video{
+        flex-direction: column;
+        width: 65%;
+        .video_img{
+          width: 100%;
+        }
+        a{
+          left: inherit;
+        }
+        .video_text{
+          width: 100%;
+        }
+        p{
+          padding: 10px 5px;
+          text-align: center;
+          width: 100%;
+        }
+      }
+      // buttons
+      .actions{
+        flex-direction: column;
+        button{
+          width: 100%;
+          margin-top: 15px;
+        }
+      }
+    }
+    //arrows
+    .fa-angle-right, .fa-angle-left{
+      position: absolute;
+      bottom: 30px;
+      font-size: 35px;
+      z-index: 10;
+    }
+    .fa-angle-right{
+      right: 35%;
+    }
+    .fa-angle-left{
+      left: 35%;
+    }
+  }
+  @media (max-width: 600px){
+      .slide .slide_info .info_wrap{
+      width: 60%;
+    }
+  }
+  @media (max-width: 450px){
+      .slide .slide_info .info_wrap{
+      width: 85%;
     }
   }
 }

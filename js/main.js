@@ -80,7 +80,36 @@ $('.slider').slick({
   arrows: false,
   dots: true,
   fade: true,
-  cssEase: 'linear'
+  cssEase: 'linear',
+  slidesToShow: 1,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+        nextArrow: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+        prevArrow: '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+        dots: false
+      }
+    }
+  ]
+});
+// slide_number
+// for arrows
+$(".slider .fa-angle-right").on('click',  function(event) {
+	var number = $(".slick-active").attr('data-sec');
+  console.log(number);
+	$('.slide_number').text(number);
+});
+$(".slider .fa-angle-left").on('click',  function(event) {
+	var number = $(".slick-active").attr('data-sec');
+	$('.slide_number').text(number);
+});
+// for dots
+$(".slider .slick-dots li").on('click',  function(event) {
+	var number = $(".slick-active").attr('data-sec');
+  console.log(number);
+	$('.slide_number').text(number);
 });
   // video popup
   $('.open_video').magnificPopup({
