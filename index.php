@@ -1,20 +1,116 @@
 <?php include 'components/header.php'; ?>
 <main>
   <!-- first slider -->
-  <!-- <div class="slider">
+  <div class="slider">
+
     <div class="slide">
+      <!-- img -->
       <img src="img/content/slider-test-1.png" alt="slide">
+      <!-- slide info -->
       <div class="container slide_info">
-        <p class="slide_number"></p>
-        <p class="name">Российские fashion бренды</p>
-        <span span="from">From Russia With Love</span>
-
-        <div class="video">
-
+        <div class="info_wrap">
+          <!-- slide number -->
+          <p class="slide_number"></p>
+          <!-- title -->
+          <p class="name">Российские fashion бренды</p>
+          <span span="from">From Russia With Love</span>
+          <!-- video-info -->
+          <div class="video">
+            <!-- button for video-->
+            <a href="https://www.youtube.com/watch?v=X6wHmr4b8Sk" rel="nofollow" class="open_video">
+              <i class="fa fa-play" aria-hidden="true"></i>
+            </a>
+            <div class="video_img">
+              <img src="img/content/adv_brand.png" alt="adv">
+            </div>
+            <div class="video_text">
+              <p>Рекламируемый бренд</p>
+            </div>
+          </div>
+          <div class="actions">
+            <button class="action_button inherit_button">
+              <p>смотреть</p>
+            </button>
+            <button class="action_button">
+              <p>каталог</p>
+            </button>
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
+
+  <div class="slide">
+    <!-- img -->
+    <img src="img/content/slider-test-1.png" alt="slide">
+    <!-- slide info -->
+    <div class="container slide_info">
+      <div class="info_wrap">
+        <!-- slide number -->
+        <p class="slide_number"></p>
+        <!-- title -->
+        <p class="name">Российские fashion бренды</p>
+        <span span="from">From Russia With Love</span>
+        <!-- video-info -->
+        <div class="video">
+          <!-- button for video-->
+          <a href="https://www.youtube.com/watch?v=X6wHmr4b8Sk" rel="nofollow" class="open_video">
+            <i class="fa fa-play" aria-hidden="true"></i>
+          </a>
+          <div class="video_img">
+            <img src="img/content/adv_brand.png" alt="adv">
+          </div>
+          <div class="video_text">
+            <p>Рекламируемый бренд</p>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="action_button inherit_button">
+            <p>смотреть</p>
+          </button>
+          <button class="action_button">
+            <p>каталог</p>
+          </button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="slide">
+  <!-- img -->
+  <img src="img/content/slider-test-1.png" alt="slide">
+  <!-- slide info -->
+  <div class="container slide_info">
+    <div class="info_wrap">
+      <!-- slide number -->
+      <p class="slide_number"></p>
+      <!-- title -->
+      <p class="name">Российские fashion бренды</p>
+      <span span="from">From Russia With Love</span>
+      <!-- video-info -->
+      <div class="video">
+        <!-- button for video-->
+        <a href="https://www.youtube.com/watch?v=X6wHmr4b8Sk" rel="nofollow" class="open_video">
+          <i class="fa fa-play" aria-hidden="true"></i>
+        </a>
+        <div class="video_img">
+          <img src="img/content/adv_brand.png" alt="adv">
+        </div>
+        <div class="video_text">
+          <p>Рекламируемый бренд</p>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="action_button inherit_button">
+          <p>смотреть</p>
+        </button>
+        <button class="action_button">
+          <p>каталог</p>
+        </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- second -->
   <div class="container second">
     <!-- text -->
@@ -131,8 +227,6 @@
         <p>показать больше</p>
       </button>
     </div>
-    <!-- question container -->
-    <?php include 'components/help_block.php'; ?>
 </main>
  <!-- footer -->
 <?php include 'components/footer.php'; ?>

@@ -31,6 +31,7 @@ a, a:hover, a:focus{
   min-width: 200px;
   background-color: #000000;
   padding: 12px 0;
+  box-sizing: border-box;
   p{
     font-size: 14px;
     color: #ffffff;
@@ -38,6 +39,35 @@ a, a:hover, a:focus{
     text-transform: uppercase;
   }
 }
+// button without bachkground
+.inherit_button{
+  background-color: inherit;
+  outline: 2px solid #000;
+  p{
+    color: #000;
+  }
+}
+// button for videoplayer
+.open_video{
+  cursor: pointer;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 14.5px rgba(0,0,0,0.1));
+  background-color: #ffffff;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transition: 0.3s ease;
+  .fa{
+    color: @blue;
+  }
+}
+.open_video:hover{
+  transform: scale(1.1);
+}
+
 // help container
 .question{
   width: 100%;
@@ -55,6 +85,7 @@ a, a:hover, a:focus{
     display: -ms-flex;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .title{
     margin-top: 60px;
@@ -64,6 +95,7 @@ a, a:hover, a:focus{
     }
   }
   .connection{
+    width: 44%;
     text-align: center;
     font-size: 16px;
     text-align: center;
@@ -244,8 +276,6 @@ a, a:hover, a:focus{
 .blur{
     filter: blur(4px);
 }
-
-
 // HEADER
 header, footer{
   z-index: 5;
@@ -257,6 +287,9 @@ header, footer{
   top: 0;
   left: 0;
   background-color: #fff;
+}
+header{
+  z-index: 6;
 }
 .header{
   display: flex;
@@ -433,6 +466,7 @@ footer{
   z-index: 5;
   position: static;
   background-color: #f2f3f5;
+  flex-direction: column;
 }
 .footer{
   margin-top: 50px;
@@ -516,6 +550,19 @@ footer{
 .slider{
   display: block;
   width: 100%;
+  // main SETTINGS
+  .slick-dots{
+    transform: rotate(90deg);
+    width: auto;
+    right: 20%;
+    bottom: 50%;
+  }
+  .slick-dots li button:before{
+    font-size: 8px;
+  }
+  .slick-dots .slick-active button:before{
+    font-size: 10px;
+  }
   .slide{
     position: relative;
     width: 100%;
@@ -523,13 +570,84 @@ footer{
     display: -ms-flex;
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     img{
-      position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
       object-fit: contain;
+      z-index: 2;
+    }
+    .slide_info{
+      position: absolute;
+      z-index: 3;
+    }
+    .info_wrap{
+      width: 25%;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: column;
+    }
+    .name{
+      font-size: 38px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .from{
+      font-size: 16px;
+    }
+    .video{
+      margin: 30px 0;
+      width: 100%;
+      position: relative;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      background-color: #fff;
+      align-items: center;
+      justify-content: flex-start;
+      a{
+        filter: drop-shadow(0 0 4px rgba(0,0,0,0.21));
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        height: 30px;
+        width: 30px;
+        .fa{
+          font-size: 10px;
+        }
+      }
+      .video_img{
+        display: block;
+        img{
+          display: block;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+      .video_text{
+        width: 60%;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        align-items: center;
+        p{
+          width: 50%;
+          font-size: 14px;
+          font-weight: bold;
+          padding-left: 30px;
+        }
+      }
+    }
+    .actions{
+      width: 100%;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    button{
+      min-width: 45%;
     }
   }
 }
@@ -590,28 +708,13 @@ footer{
     left: -25%;
   }
   .open_video{
-    cursor: pointer;
     height: 80px;
     width: 80px;
-    border-radius: 50%;
-    filter: drop-shadow(0 0 14.5px rgba(0,0,0,0.1));
-    background-color: #ffffff;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
     left: 0;
     top: 35%;
-    transition: 0.3s ease;
-  }
-  .open_video:hover{
-    transform: scale(1.1);
   }
   .fa{
-    color: @blue;
-    font-size: 25px;
+    font-size: 24px;
   }
 }
 // ТРЕТИЙ БЛОК - НОВИНКИ
@@ -723,7 +826,6 @@ footer{
       right: 11%;
     }
   }
-
 
   // up banner settings
   .up_banner{

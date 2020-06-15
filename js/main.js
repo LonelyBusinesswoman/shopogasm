@@ -74,6 +74,13 @@ jQuery(document).ready(function($) {
             $(modal).parents(".overlay").removeClass("open");
         }, 350);
     });
+
+  // MAIN slider
+  $('.slider').slick({
+  dots: true,
+  fade: true,
+  cssEase: 'linear'
+}); 
   // video popup
   $('.open_video').magnificPopup({
    type: 'iframe',
