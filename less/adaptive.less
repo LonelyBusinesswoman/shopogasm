@@ -39,6 +39,21 @@
     }
   }
 }
+// динейка товаров - гриды
+// ТРЕТИЙ БЛОК - НОВИНКИ
+// ПЯТЫЙ БЛОК - ВЫБОР Shopogasm
+// CЕДЬМОЙ БЛОК - ПОПУЛЯРНЫЕ ТОВАРЫ
+// СТРАНИЦА КАТЕГОРИИ - РЕКОМЕНДАЦИИ
+.products{
+  @media (max-width: 730px){
+    grid-template-columns: repeat(3, 30%);
+    grid-row-gap:30px;
+  }
+  @media (max-width: 550px){
+      grid-template-columns: repeat(2, 48%);
+      grid-row-gap:30px;
+  }
+}
 // news
 .news{
   @media   (max-width: 800px){
@@ -379,23 +394,6 @@
         right: 0;
         transform: rotate(176deg);
       }
-    }
-  }
-}
-// ТРЕТИЙ БЛОК - НОВИНКИ
-// ПЯТЫЙ БЛОК - ВЫБОР Shopogasm
-// CЕДЬМОЙ БЛОК - ПОПУЛЯРНЫЕ ТОВАРЫ
-.third, .fifth, .seventh{
-  @media (max-width: 730px){
-    .new_products{
-      grid-template-columns: repeat(3, 30%);
-      grid-row-gap:30px;
-    }
-  }
-  @media (max-width: 550px){
-    .new_products{
-      grid-template-columns: repeat(2, 48%);
-      grid-row-gap:30px;
     }
   }
 }

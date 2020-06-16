@@ -2,6 +2,8 @@
 // MAIN STYLES OF WEBSITE
 *{
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 // colors
 @grey: #878787;
@@ -35,6 +37,7 @@ input{
   min-width: 200px;
   background-color: #000000;
   padding: 12px 0;
+  display: inline-block;
   box-sizing: border-box;
   p{
     font-size: 14px;
@@ -46,9 +49,25 @@ input{
 // button without bachkground
 .inherit_button{
   background-color: inherit;
-  outline: 2px solid #000;
+  border: 2px solid #000;
   p{
     color: #000;
+  }
+}
+// active button - active (grey)
+.active_button{
+  background-color: #F2F3F5;
+  p{
+    font-weight: bold;
+    color: #000;
+  }
+}
+// nonactive button - inherit
+.nonactive_button{
+  background-color: inherit;
+  p{
+    font-weight: bold;
+    color: #999999;
   }
 }
 // button for videoplayer
@@ -71,7 +90,36 @@ input{
 .open_video:hover{
   transform: scale(1.1);
 }
-
+//grey line and navigation
+.navigation{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  .grey_line{
+    width: 100%;
+    height: 2px;
+    background-color: #E6E6E6;
+    margin: 25px 0;
+  }
+  .nav{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    a{
+      color: #BCBCBC;
+    }
+  }
+}
+// grid products
+.products{
+  width: 100%;
+  display: grid;
+  justify-content: space-between;
+  align-items: stretch;
+  grid-template-columns: repeat(4, 24%);
+  grid-row-gap:30px;
+}
 // help container
 .question{
   width: 100%;
@@ -672,7 +720,6 @@ footer{
       display: -ms-flex;
       display: flex;
       justify-content: space-between;
-      align-items: center;
     }
     button{
       min-width: 45%;
@@ -748,6 +795,7 @@ footer{
 // ТРЕТИЙ БЛОК - НОВИНКИ
 // ПЯТЫЙ БЛОК - ВЫБОР Shopogasm
 // CЕДЬМОЙ БЛОК - ПОПУЛЯРНЫЕ ТОВАРЫ
+// СТРАНИЦА КАТЕГОРИЙ - РЕКОМЕНДАЦИИ
 .third, .fifth, .seventh{
   display: -webkit-flex;
   display: -ms-flex;
@@ -756,14 +804,6 @@ footer{
   justify-content: center;
   flex-direction: column;
   margin-bottom: 80px;
-  .new_products{
-    width: 100%;
-    display: grid;
-    justify-content: space-between;
-    align-items: stretch;
-    grid-template-columns: repeat(4, 24%);
-    grid-row-gap:30px;
-  }
   .action_button{
     margin-top: 40px;
   }
@@ -898,5 +938,40 @@ footer{
       top: 69%;
       right: 29%;
     }
+  }
+}
+
+// КАТАЛОГ
+.name_and_filter{
+
+}
+.catalog{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+}
+.recomendations_and_viewed{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .actions{
+    width: 40%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .action_button{
+    min-width: auto;
+    padding: 12px 15px;
+  }
+  .products{
+    margin-bottom: 80px;
   }
 }

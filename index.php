@@ -35,10 +35,10 @@
             </button>
             <button class="action_button">
               <p>каталог</p>
-            </button>
+              </button>
+          </div>
         </div>
       </div>
-    </div>
     </div>
     <div class="slide" data-sec="02">
     <!-- img -->
@@ -114,7 +114,7 @@
       <div class="title">
         <p>Новинки</p>
       </div>
-      <div class="new_products">
+      <div class="products">
         <?php for($i = 0; $i < 4; $i++): ?>
 			         <?php include 'components/product.php' ?>
 		    <?php endfor; ?>
@@ -141,7 +141,7 @@
       <div class="title">
         <p>Выбор Shopogasm</p>
       </div>
-      <div class="new_products">
+      <div class="products">
         <?php for($i = 0; $i < 4; $i++): ?>
 			         <?php include 'components/product.php' ?>
 		    <?php endfor; ?>
@@ -185,7 +185,7 @@
       <div class="title">
         <p>Популярные товары</p>
       </div>
-      <div class="new_products">
+      <div class="products">
         <?php for($i = 0; $i < 6; $i++): ?>
                <?php include 'components/product.php' ?>
         <?php endfor; ?>
