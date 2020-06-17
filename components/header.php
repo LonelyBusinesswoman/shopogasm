@@ -13,10 +13,16 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css?v=5">
 	<link rel="stylesheet" type="text/css" href="css/adaptive.css?v=5">
+	<!-- For Checkbox -->
+	<link rel="stylesheet" type="text/css" href="css/checkbox.css">
+	<!-- Jquery UI -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<!-- Jquery -->
 	<script src="js/jquery.js"></script>
+	<!-- Jquery UI -->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<!-- Font awesome -->
 	<script src="https://use.fontawesome.com/6bff4864c1.js"></script>
 </head>
@@ -48,7 +54,7 @@
 					<!-- for mobile search (icon)-->
 					<button class="search_mobile search_btn" type="button" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
 					<!-- Search -->
-					<div class="search">
+					<div class="search search_all">
 						<form class="search_form" action="" method="">
 							<input type="text" name="search" placeholder="Поиск">
 							<!-- for desktop search (icon)-->
