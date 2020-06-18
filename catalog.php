@@ -175,8 +175,8 @@
           <span class="high">600$</span>
 
           <div class="polzunok-5 ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
-            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 28.66%;"><input type="text" class="polzunok-input-5-left" disabled/></span>
-            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 57.3%;">  <input type="text" class="polzunok-input-5-right " disabled/></span>
+            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 28.66%;"><input type="text" class="polzunok-input-5-left" /></span>
+            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 57.3%;">  <input type="text" class="polzunok-input-5-right "/></span>
           </div>
         </div>
       </div>

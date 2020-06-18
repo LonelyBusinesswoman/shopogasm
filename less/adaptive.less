@@ -13,13 +13,7 @@
       width: 92%;
   }
 }
-//Burger
-.mobile_menu{
-  @media (max-width: 560px){
-    display: flex;
-  }
-}
-//SETTINGS
+// Медиазапросы отдельных блоков
 // product
 .product{
   @media   (max-width: 550px){
@@ -39,22 +33,6 @@
     }
   }
 }
-// линейка товаров - гриды
-
-// ТРЕТИЙ БЛОК - НОВИНКИ
-// ПЯТЫЙ БЛОК - ВЫБОР Shopogasm
-// CЕДЬМОЙ БЛОК - ПОПУЛЯРНЫЕ ТОВАРЫ
-// СТРАНИЦА КАТЕГОРИИ - РЕКОМЕНДАЦИИ
-.products{
-  @media (max-width: 768px){
-    grid-template-columns: repeat(3, 30%);
-    grid-row-gap:30px;
-  }
-  @media (max-width: 550px){
-      grid-template-columns: repeat(2, 48%);
-      grid-row-gap:30px;
-  }
-}
 // news
 .news{
   @media   (max-width: 800px){
@@ -63,7 +41,7 @@
     }
   }
 }
-// help container
+// question container
 .question{
   @media (max-width: 850px){
     form{
@@ -88,9 +66,54 @@
     }
   }
 }
+// registration form
+.registration{
+  @media (max-width: 1200px){
+    .form{
+      width: 40%;
+    }
+  }
+  @media (max-width: 768px){
+    .form{
+      width: 60%;
+    }
+  }
+  @media (max-width: 550px){
+    .form{
+      width: 80%;
+    }
+    span{
+      font-size: 30px;
+    }
+    .action_button{
+      width: 100%;
+    }
+  }
+}
+// линейка товаров - гриды
 
+// ТРЕТИЙ БЛОК - НОВИНКИ
+// ПЯТЫЙ БЛОК - ВЫБОР Shopogasm
+// CЕДЬМОЙ БЛОК - ПОПУЛЯРНЫЕ ТОВАРЫ
+// СТРАНИЦА КАТЕГОРИИ - РЕКОМЕНДАЦИИ
+.products{
+  @media (max-width: 768px){
+    grid-template-columns: repeat(3, 30%);
+    grid-row-gap:30px;
+  }
+  @media (max-width: 550px){
+      grid-template-columns: repeat(2, 48%);
+      grid-row-gap:30px;
+  }
+}
 // MAIN STYLES
 // header
+//Burger
+.mobile_menu{
+  @media (max-width: 560px){
+    display: flex;
+  }
+}
 .header{
   // left elements
   .left{
