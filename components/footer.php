@@ -78,11 +78,15 @@
 				<a href="#">Пользовательское соглашение</a>
 		</div>
 	</div>
+	<!-- for range slider mob -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js">
+</script>
+<script>$('.polzunok-container').draggable();</script>
 <!-- slick -->
 <script src="libs/slick/slick.min.js"></script>
 <!-- popup -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
 <!-- main -->
-<script src="js/main.js?v=6"></script>
+<script src="js/main.js?v=7"></script>
 </body>
 </html>

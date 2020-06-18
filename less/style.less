@@ -1243,13 +1243,54 @@ footer{
   display: -ms-flex;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 35%;
   margin: 100px 0;
   span{
     font-size: 35px;
     font-weight: bold;
     margin-bottom: 30px;
   }
+  // enter through soc
+  .socials{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    p{
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .go_through_soc{
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+    }
+    a{
+      margin-right: 20px;
+    }
+    .fa{
+      font-size: 35px;
+    }
+  }
+  // with help
+  .create_acc, .forgot{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    p{
+      font-size:14px;
+    }
+    a{
+      font-size:12px;
+      color:#06B1EB;
+    }
+  }
+  // form
   .reg_form{
     width: 100%;
     display: -webkit-flex;
@@ -1257,9 +1298,11 @@ footer{
     display: flex;
     flex-direction: column;
   }
+  // label, input, button style
   label{
     font-size:14px;
     margin-bottom: 10px;
+    color: #8C8C8C;
   }
   input{
     margin-bottom: 10px;
