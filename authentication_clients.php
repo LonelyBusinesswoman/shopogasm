@@ -15,7 +15,7 @@
       <!-- create acc -->
       <div class="create_acc">
         <p>С помощью аккаунта Shopogasm</p>
-        <a href="registration_clients.php">Создать аккаунт</a>
+        <a href="registration_partners.php">Создать аккаунт</a>
       </div>
       <!-- form -->
       <form class="reg_form" action="" method="">
