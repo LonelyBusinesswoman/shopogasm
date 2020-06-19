@@ -188,4 +188,16 @@ $(document).focusout(function() {
       return false;
     });
   }
+  // recomendations and viewed
+  // tabs
+  $('.recomendations_and_viewed .action_button').click(function() {
+     var id = $(this).attr('data-tab'),
+         content = $('.recomendations_and_viewed .products[data-tab="'+ id +'"]');
+
+     $('.recomendations_and_viewed .action_button').removeClass('active_button');
+     $(this).addClass('active_button');
+
+     $('.recomendations_and_viewed .products').removeClass('item_active');
+     content.addClass('item_active');
+  });
 });

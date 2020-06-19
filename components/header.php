@@ -11,8 +11,8 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
 	<!-- CSS style -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css?v=7">
-	<link rel="stylesheet" type="text/css" href="css/adaptive.css?v=7">
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=10">
+	<link rel="stylesheet" type="text/css" href="css/adaptive.css?v=10">
 	<!-- For Checkbox -->
 	<link rel="stylesheet" type="text/css" href="css/checkbox.css">
 	<!-- Jquery UI -->
@@ -43,9 +43,9 @@
 						<div class="burg"></div>
 					</div>
 					<!-- logo -->
-					<div class="logo">
+					<a href="index.php" class="logo">
 						<img src="img/content/logo.svg" alt="logo">
-					</div>
+					</a>
 					<!-- Choice -->
 					<div class="choice">
 							<p class="for_her">Для неё</p>

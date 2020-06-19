@@ -200,15 +200,21 @@
   <!-- recomendations block-->
   <div class="recomendations_and_viewed">
     <div class="actions">
-      <button class="action_button active_button">
+      <button class="action_button nonactive_button active_button" data-tab="1">
         <p>рекомендации</p>
       </button>
-      <button class="action_button nonactive_button">
+      <button class="action_button nonactive_button" data-tab="2">
         <p>недавно просмотренное</p>
       </button>
     </div>
-    <!-- products -->
-    <div class="products">
+    <!-- products rec-->
+    <div class="products rec item_active" data-tab="1">
+      <?php for($i = 0; $i < 4; $i++): ?>
+             <?php include 'components/product.php' ?>
+      <?php endfor; ?>
+    </div>
+    <!-- products viewed-->
+    <div class="products viewed" data-tab="2">
       <?php for($i = 0; $i < 4; $i++): ?>
              <?php include 'components/product.php' ?>
       <?php endfor; ?>

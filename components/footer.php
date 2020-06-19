@@ -8,7 +8,7 @@
 		    <p class="connection" >
 		      Вы можете связаться с клиентской службой «Shopogasm» через телефон
 		+ 7 800 600 10 12 (горячая линия открыта с 10:00 утра до 21:00 вечера) или Email.
-		Возможно, ваш вопрос найдется  в разделе <span>«Ответы и вопросы»</span></p>
+		Возможно, ваш вопрос найдется  в разделе <a href="#">«Ответы и вопросы»</a></p>
 		  <form class="send" action="" method="post">
 		    <input class="default_input" type="email" name="send" placeholder="E-mail">
 		    <button class="action_button">
@@ -87,6 +87,6 @@
 <!-- popup -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
 <!-- main -->
-<script src="js/main.js?v=7"></script>
+<script src="js/main.js?v=10"></script>
 </body>
 </html>
