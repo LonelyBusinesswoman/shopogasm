@@ -11,7 +11,7 @@
   </div>
   <!-- name of category and filter -->
   <div class="name_and_filter">
-    <div class="name">
+    <div class="name_of_web">
       <p>Название категории</p>
     </div>
     <!-- filter -->

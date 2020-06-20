@@ -200,4 +200,56 @@ $(document).focusout(function() {
      $('.recomendations_and_viewed .products').removeClass('item_active');
      content.addClass('item_active');
   });
+
+  //  shopping_basket amount of purchases
+
+  // $(".operation").on("click", function() {
+  // var button = $(this);
+  // var oldValue = $('.quantity_block input').val();
+  //
+  // if (button.text() == "+") {
+	//   var newVal = parseInt(oldValue) + 1;
+  //
+	// } else {
+  //  // Don't allow decrementing below zero
+  //   if (oldValue > 0) {
+  //     var newVal = parseInt(oldValue) - 1;
+  //   } else {
+  //     newVal = 0;
+  //   }
+  // }
+  // console.log(newVal);
+  // $('.quantity_block input').val(newVal);
+  //
+  // });
+
+  $(".plus").on("click", function() {
+    var button = $(this);
+    var input = button.closest('.all_information').find('input');
+    var price = button.closest('.all_information').find('.price_block p').text();
+    var summ = button.closest('.all_information').find('.summ_block p');
+    var oldValue = input.val();
+    // operations
+    var newVal = parseInt(oldValue) + 1;
+    input.val(newVal);
+    var newSumm = parseInt(newVal*parseInt(price));
+    summ.text(newSumm);
+  })
+
+  $(".minus").on("click", function() {
+    var button = $(this);
+    var input = button.closest('.all_information').find('input');
+    var price = button.closest('.all_information').find('.price_block p').text();
+    var summ = button.closest('.all_information').find('.summ_block p');
+    var oldValue = input.val();
+    if(oldValue > 0){
+      var newVal = parseInt(oldValue) - 1;
+      input.val(newVal);
+      var newSumm = parseInt(newVal*parseInt(price));
+      summ.text(newSumm);
+    } else{
+      newVal = 0;
+      summ.text(newSumm);
+    }
+  });
 });

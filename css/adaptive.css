@@ -19,6 +19,11 @@
   }
 }
 @media (max-width: 550px) {
+  .name_of_web {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
   .product {
     justify-content: center;
     align-items: center;
@@ -39,6 +44,38 @@
 @media (max-width: 800px) {
   .news p {
     font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .purchase .price_block {
+    display: none;
+  }
+  .purchase .quantity_block {
+    margin-top: 20px;
+    position: static;
+  }
+  .purchase .summ_block {
+    margin-top: 20px;
+    position: static;
+  }
+  .purchase .delete {
+    top: 10px;
+  }
+  .purchase .main_desc {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .purchase .main_desc img {
+    width: 80px;
+    margin-right: 10px;
+  }
+  .purchase .delete {
+    top: 0;
+    left: 95%;
+  }
+  .purchase .delete img {
+    width: 10px;
   }
 }
 @media (max-width: 850px) {
@@ -492,9 +529,6 @@
   }
 }
 @media (max-width: 550px) {
-  .catalog_page .name_and_filter .name {
-    width: 100%;
-  }
   .catalog_page .name_and_filter .dropdown {
     display: none;
   }
@@ -562,5 +596,58 @@
   .catalog_page .recomendations_and_viewed .actions {
     flex-direction: column;
     width: 80%;
+  }
+}
+@media (max-width: 1000px) {
+  .shopping_basket .total {
+    width: 70%;
+    align-self: center;
+    margin-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .shopping_basket .all_information {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .shopping_basket .navigation {
+    display: none;
+  }
+  .shopping_basket .description {
+    display: none;
+  }
+  .shopping_basket .name_of_web {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .shopping_basket .mob_line_none {
+    display: none;
+  }
+  .shopping_basket .total {
+    width: 100%;
+    align-self: center;
+    margin-right: 0;
+  }
+}
+@media (max-width: 550px) {
+  .shopping_basket .actions {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .shopping_basket .actions button {
+    margin-top: 20px;
+  }
+  .shopping_basket .actions .favorites {
+    width: 80%;
+  }
+  .shopping_basket .actions .order {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .shopping_basket_rec {
+    display: none;
   }
 }

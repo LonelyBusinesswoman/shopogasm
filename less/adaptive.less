@@ -13,6 +13,12 @@
       width: 92%;
   }
 }
+// name of web page
+.name_of_web{
+  @media (max-width: 550px){
+    width: 100%;
+  }
+}
 // Медиазапросы отдельных блоков
 // product
 .product{
@@ -38,6 +44,42 @@
   @media   (max-width: 800px){
     p{
       font-size: 12px;
+    }
+  }
+}
+.purchase{
+  @media  (max-width: 768px){
+    .price_block{
+      display: none;
+    }
+    .quantity_block{
+      margin-top: 20px;
+      position: static;
+    }
+    .summ_block{
+      margin-top: 20px;
+      position: static;
+    }
+    .delete{
+      top: 10px;
+    }
+    .main_desc{
+      width: 100%;
+    }
+  }
+  @media  (max-width: 550px){
+    .main_desc{
+      img{
+        width: 80px;
+        margin-right: 10px;
+      }
+    }
+    .delete{
+      top: 0;
+      left: 95%;
+      img{
+        width: 10px;
+      }
     }
   }
 }
@@ -533,9 +575,6 @@
   }
   @media (max-width: 550px){
     .name_and_filter{
-      .name{
-        width: 100%;
-      }
       .dropdown{
         display: none;
       }
@@ -611,4 +650,61 @@
       }
     }
   }
+}
+// КОРЗИНА
+.shopping_basket{
+  @media (max-width: 1000px){
+    .total{
+      width: 70%;
+      align-self: center;
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 768px){
+    .all_information{
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .navigation{
+      display: none;
+    }
+    .description{
+      display: none;
+    }
+    .name_of_web{
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .mob_line_none{
+      display: none;
+    }
+    .total{
+      width: 100%;
+      align-self: center;
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 550px){
+    .actions{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      button{
+        margin-top: 20px;
+      }
+      .favorites{
+        width: 80%;
+      }
+      .order{
+        width: 80%;
+      }
+    }
+  }
+}
+// shopping_basket page recomendations block
+.shopping_basket_rec{
+    @media (max-width: 768px){
+      display: none;
+    }
 }

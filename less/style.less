@@ -60,7 +60,6 @@ input {
   }
 }
 // button without bachkground
-
 .inherit_button {
   background-color: inherit;
   border: 2px solid #000;
@@ -99,9 +98,17 @@ input {
     color: @blue;
   }
 }
-
 .open_video:hover {
   transform: scale(1.1);
+}
+// name of web page
+.name_of_web {
+  width: 50%;
+  p {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 }
 //search form
 .search {
@@ -138,7 +145,6 @@ input {
   }
 }
 // dropdown STYLE
-
 .custom-select-wrapper {
   position: relative;
   user-select: none;
@@ -215,7 +221,6 @@ input {
   background-color: #F2F3F5;
 }
 // dropdown arrow
-
 .arrow {
   position: relative;
   height: 10px;
@@ -234,27 +239,26 @@ input {
 
 .arrow::before {
   left: -3px;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
   background-color: #000;
 }
 
 .arrow::after {
   left: 3px;
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
   background-color: #000;
 }
 
 .open .arrow::before {
   left: -3px;
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
 }
 
 .open .arrow::after {
   left: 3px;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
 }
 // range slider
-
 .polzunok-container {
   position: relative;
 
@@ -265,11 +269,9 @@ input {
     font-size: 12px;
     font-weight: 500;
   }
-
   .low {
     left: 0;
   }
-
   .high {
     right: 0;
   }
@@ -327,13 +329,11 @@ input {
   margin-top: 10px;
 }
 // input text
-
 .ui-widget input {
   font-size: 12px !important;
   font-family: "Jost" !important;
 }
 // grey line
-
 .grey_line {
   width: 100%;
   height: 2px;
@@ -341,7 +341,6 @@ input {
   margin: 25px 0;
 }
 //navigation
-
 .navigation {
   display: flex;
   flex-direction: column;
@@ -354,7 +353,6 @@ input {
   }
 }
 // grid products
-
 .products {
   width: 100%;
   display: grid;
@@ -422,6 +420,44 @@ input {
     text-transform: uppercase;
   }
 }
+// news style - main screen
+.news {
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F3F5;
+  cursor: pointer;
+  img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 250px;
+  }
+  p {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+  }
+}
+// all about shopping block
+// the general text
+.name_of_product{
+  font-size: 16px;
+  font-family: "PT Sans";
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.brand_of_product{
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #999999;
+  font-family: "PT Sans";
+  font-weight: 700;
+}
+.price_of_product{
+  font-size: 20px;
+  font-weight: bold;
+}
 // product style
 .product {
   display: flex;
@@ -446,47 +482,98 @@ input {
     object-fit: cover;
     max-height: 300px;
   }
-  .name {
-    font-size: 16px;
-    font-family: "PT Sans";
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-top: 10px;
-  }
   span {
     margin-top: 5px;
-  }
-  .brand {
-    text-transform: uppercase;
-    font-size: 12px;
-    color: #999999;
-    font-family: "PT Sans";
-    font-weight: 700;
   }
   .description {
     font-size: 12px;
   }
-  .price {
-    font-size: 20px;
-    font-weight: bold;
-  }
 }
-// news style - main screen
-.news {
+// purchase STYLE
+.purchase{
   display: flex;
+  width: 100%;
   flex-direction: column;
-  background-color: #F2F3F5;
-  cursor: pointer;
-  img {
+  .all_information{
+    display: flex;
     width: 100%;
-    object-fit: cover;
-    max-height: 250px;
+    position: relative;
+    align-items: center;
   }
-  p {
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 12px 20px;
+  // desc with photo
+  .main_desc{
+    align-items: center;
+    display: flex;
+    img{
+      width: 100px;
+      object-fit: cover;
+      margin-right: 40px;
+    }
+    .information_block{
+      display: flex;
+      flex-direction: column;
+    }
+    .name_of_product{
+      margin: 5px 0 10px 0;
+    }
+    .size_of_product, .delivery{
+      font-size: 12px;
+    }
+  }
+  // price
+  .price_block{
+    position: absolute;
+    left: 50%;
+  }
+  //quantity_block
+  .quantity_block{
+    display: flex;
+    position: absolute;
+    left: 70%;
+    input{
+      width: 50px;
+      height: 50px;
+      padding: 0;
+      text-align: center;
+    }
+    .operations{
+      display: flex;
+      flex-direction: column;
+      height: 50px;
+      width: 25px;
+    }
+    .operation{
+      height: 25px;
+      width: 100%;
+      border: 1px solid #e6e6e6;
+      border-left: none;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      display: flex;
+      font-size: 16px;
+    }
+    .plus{
+      border-bottom: none;
+    }
+  }
+  // summ block_u
+  .summ_block{
+    position: absolute;
+    left: 90%;
+    display: flex;
+    span{
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  .delete{
+    position: absolute;
+    left: 98%;
+    .fa{
+      font-size: 25px;
+    }
   }
 }
 // filter STYLE
@@ -966,9 +1053,7 @@ footer {
 // CЕДЬМОЙ БЛОК - ПОПУЛЯРНЫЕ ТОВАРЫ
 // СТРАНИЦА КАТЕГОРИЙ - РЕКОМЕНДАЦИИ
 
-.fifth,
-.seventh,
-.third {
+.prod_general_style {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1112,14 +1197,6 @@ footer {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 25px;
-  .name {
-    width: 50%;
-    p {
-      font-size: 20px;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-  }
   .dropdown {
     width: 20%;
   }
@@ -1262,6 +1339,78 @@ footer {
     p {
       font-size: 14px;
       text-transform: capitalize;
+    }
+  }
+}
+// КОРЗИНА
+.shopping_basket{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .all_shoppings{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  // up block
+  .description{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    position: relative;
+    p{
+      color: #BCBCBC;
+      position: absolute;
+    }
+    .price{
+      left: 50%;
+    }
+    .quantity{
+      left: 70%;
+    }
+    .amount{
+      left: 90%;
+    }
+  }
+  // purchases
+  .purchases{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  // total amount
+  .total{
+    margin-right: 5%;
+    align-self: flex-end;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    .row{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    p{
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .actions{
+      display: flex;
+      justify-content: space-between;
+    }
+    button{
+      p{
+        font-size: 14px;
+        font-weight: normal;
+      }
+    }
+    .favorites{
+      width: 50%;
+    }
+    .order{
+      width: 40%;
     }
   }
 }

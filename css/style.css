@@ -87,6 +87,14 @@ input {
 .open_video:hover {
   transform: scale(1.1);
 }
+.name_of_web {
+  width: 50%;
+}
+.name_of_web p {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 .search {
   width: 40%;
   position: relative;
@@ -204,21 +212,21 @@ input {
 }
 .arrow::before {
   left: -3px;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
   background-color: #000;
 }
 .arrow::after {
   left: 3px;
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
   background-color: #000;
 }
 .open .arrow::before {
   left: -3px;
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
 }
 .open .arrow::after {
   left: 3px;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
 }
 .polzunok-container {
   position: relative;
@@ -363,6 +371,41 @@ input {
   font-weight: bold;
   text-transform: uppercase;
 }
+.news {
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F3F5;
+  cursor: pointer;
+}
+.news img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 250px;
+}
+.news p {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+}
+.name_of_product {
+  font-size: 16px;
+  font-family: "PT Sans";
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.brand_of_product {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #999999;
+  font-family: "PT Sans";
+  font-weight: 700;
+}
+.price_of_product {
+  font-size: 20px;
+  font-weight: bold;
+}
 .product {
   display: flex;
   position: relative;
@@ -387,46 +430,94 @@ input {
   object-fit: cover;
   max-height: 300px;
 }
-.product .name {
-  font-size: 16px;
-  font-family: "PT Sans";
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 10px;
-}
 .product span {
   margin-top: 5px;
-}
-.product .brand {
-  text-transform: uppercase;
-  font-size: 12px;
-  color: #999999;
-  font-family: "PT Sans";
-  font-weight: 700;
 }
 .product .description {
   font-size: 12px;
 }
-.product .price {
+.purchase {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.purchase .all_information {
+  display: flex;
+  width: 100%;
+  position: relative;
+  align-items: center;
+}
+.purchase .main_desc {
+  align-items: center;
+  display: flex;
+}
+.purchase .main_desc img {
+  width: 100px;
+  object-fit: cover;
+  margin-right: 40px;
+}
+.purchase .main_desc .information_block {
+  display: flex;
+  flex-direction: column;
+}
+.purchase .main_desc .name_of_product {
+  margin: 5px 0 10px 0;
+}
+.purchase .main_desc .size_of_product,
+.purchase .main_desc .delivery {
+  font-size: 12px;
+}
+.purchase .price_block {
+  position: absolute;
+  left: 50%;
+}
+.purchase .quantity_block {
+  display: flex;
+  position: absolute;
+  left: 70%;
+}
+.purchase .quantity_block input {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  text-align: center;
+}
+.purchase .quantity_block .operations {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 25px;
+}
+.purchase .quantity_block .operation {
+  height: 25px;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  border-left: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+}
+.purchase .quantity_block .plus {
+  border-bottom: none;
+}
+.purchase .summ_block {
+  position: absolute;
+  left: 90%;
+  display: flex;
+}
+.purchase .summ_block span {
   font-size: 20px;
   font-weight: bold;
 }
-.news {
-  display: flex;
-  flex-direction: column;
-  background-color: #F2F3F5;
-  cursor: pointer;
+.purchase .delete {
+  position: absolute;
+  left: 98%;
 }
-.news img {
-  width: 100%;
-  object-fit: cover;
-  max-height: 250px;
-}
-.news p {
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 12px 20px;
+.purchase .delete .fa {
+  font-size: 25px;
 }
 .filter {
   display: flex;
@@ -875,18 +966,14 @@ footer {
 .second .fa {
   font-size: 24px;
 }
-.fifth,
-.seventh,
-.third {
+.prod_general_style {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-bottom: 80px;
 }
-.fifth .action_button,
-.seventh .action_button,
-.third .action_button {
+.prod_general_style .action_button {
   margin-top: 40px;
 }
 .fourth {
@@ -1013,14 +1100,6 @@ footer {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 25px;
-}
-.name_and_filter .name {
-  width: 50%;
-}
-.name_and_filter .name p {
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 .name_and_filter .dropdown {
   width: 20%;
@@ -1157,4 +1236,70 @@ footer {
 .form .action_button p {
   font-size: 14px;
   text-transform: capitalize;
+}
+.shopping_basket {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.shopping_basket .all_shoppings {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.shopping_basket .description {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.shopping_basket .description p {
+  color: #BCBCBC;
+  position: absolute;
+}
+.shopping_basket .description .price {
+  left: 50%;
+}
+.shopping_basket .description .quantity {
+  left: 70%;
+}
+.shopping_basket .description .amount {
+  left: 90%;
+}
+.shopping_basket .purchases {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.shopping_basket .total {
+  margin-right: 5%;
+  align-self: flex-end;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.shopping_basket .total .row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.shopping_basket .total p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.shopping_basket .total .actions {
+  display: flex;
+  justify-content: space-between;
+}
+.shopping_basket .total button p {
+  font-size: 14px;
+  font-weight: normal;
+}
+.shopping_basket .total .favorites {
+  width: 50%;
+}
+.shopping_basket .total .order {
+  width: 40%;
 }

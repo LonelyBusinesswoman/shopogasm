@@ -110,7 +110,7 @@
     </div>
   </div>
   <!-- third -->
-    <div class="container third">
+    <div class="container third prod_general_style">
       <div class="title">
         <p>Новинки</p>
       </div>
@@ -137,7 +137,7 @@
       </div>
     </div>
     <!-- fifth -->
-    <div class="container fifth">
+    <div class="container fifth prod_general_style">
       <div class="title">
         <p>Выбор Shopogasm</p>
       </div>
@@ -181,7 +181,7 @@
         </a>
     </div>
     <!-- seven -->
-    <div class="container seventh">
+    <div class="container seventh prod_general_style">
       <div class="title">
         <p>Популярные товары</p>
       </div>
