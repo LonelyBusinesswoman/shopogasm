@@ -19,6 +19,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 7;
 }
 
 .container {
@@ -355,6 +356,13 @@ input {
   }
   a{
     border-bottom: 1px solid #000;
+  }
+}
+// like icon
+.add_to_fav{
+  .fa{
+    font-size: 30px;
+    color: @blue;
   }
 }
 // slider range
@@ -1643,5 +1651,176 @@ footer {
   }
   .form_subtitle{
     margin: 20px 0;
+  }
+}
+// СТРАНИУА ТОВАРА
+.goods{
+  .main_info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .sliders{
+    width: 50%;
+    display: flex;
+  }
+  .goods_slider{
+    width: 80%;
+    .goods_img{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
+    // arrows
+    .fa-angle-right, .fa-angle-left{
+      position: absolute;
+      font-size: 35px;
+      z-index: 10;
+      top: 45%;
+    }
+    .fa-angle-right{
+      right: 2%;
+    }
+    .fa-angle-left{
+      left: 2%;
+    }
+  }
+  .mini_slider{
+    margin-bottom: -15px;
+    .goods_img{
+      width: 100px;
+      margin-right: 10px;
+      padding-bottom: 15px;
+    }
+    img{
+      width: 82px;
+      height: 82px;
+      object-fit: cover;
+    }
+  }
+  // information
+  .information{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    p, span{
+      margin-bottom: 15px;
+    }
+    .name_of_product{
+      font-size: 24px;
+    }
+    .brand_of_product{
+      font-size: 16px;
+    }
+    .price_and_fav{
+      width: 50%;
+      margin-bottom: 20px;
+      a{
+        display: none;
+      }
+    }
+    .dropdown{
+      width: 50%;
+      span{
+        margin-bottom: 0;
+      }
+    }
+    .size_table{
+      margin-top: 20px;
+      a{
+        color: #00b1ea;
+        border-bottom: 1px solid #00b1ea;
+      }
+    }
+    .to_basket{
+      margin-top: 20px;
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .action_button{
+      p{
+        margin: 0;
+      }
+    }
+  }
+  .mob_inf{
+    display: none;
+  }
+}
+.goods_presentation{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-image: url("../img/content/goods_back.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .video_pres{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 60px;
+  }
+  .video_player{
+    width: 50%;
+    position: relative;
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
+    .open_video{
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+      height: 70px;
+      width: 70px;
+      top: 35%;
+      .fa{
+        font-size: 24px;
+      }
+    }
+  }
+}
+.goods_description{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px 0;
+  .descr_text{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    .name_of_product{
+      font-size: 24px;
+    }
+    .subtitle{
+      font-size: 16px;
+      font-weight: bold;
+    }
+    p{
+      margin-bottom: 20px;
+    }
+    span{
+      margin-bottom: 35px;
+    }
+  }
+  .descr_img{
+    width: 45%;
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
   }
 }

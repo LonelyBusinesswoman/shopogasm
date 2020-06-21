@@ -873,3 +873,155 @@
     }
   }
 }
+// СТРАНИЦА ТОВАРА
+.goods{
+  @media (max-width: 1400px){
+    .information .to_basket{
+      width: 70%;
+    }
+  }
+  @media (max-width: 950px){
+    .main_info{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .mob_inf{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+      }
+    }
+    .sliders{
+      flex-direction: column;
+      .goods_slider{
+        order:1;
+        width: 100%;
+        .fa-angle-right{
+          right: -8%;
+        }
+        .fa-angle-left{
+          left: -8%;
+        }
+      }
+      .mini_slider{
+        width: 100%;
+        order:2;
+        margin-top: 20px;
+        .goods_img{
+          margin-right: 0;
+          img{
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    .inf_desk{
+      width: 50%;
+      margin-top: 30px;
+      .name_of_product{
+        display: none;
+      }
+      .brand_of_product{
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 768px){
+    .sliders{
+      width: 80%;
+    }
+    .information{
+      width: 70%;
+    }
+    .information .price_and_fav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span{
+        margin-bottom: 0;
+      }
+      a{
+        display: block;
+      }
+    }
+    .information .to_basket{
+      a{
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 550px){
+    .sliders{
+      .mini_slider{
+        .goods_img{
+          img{
+            width: 70px;
+            height: 70px;
+          }
+        }
+      }
+    }
+    .information{
+      width: 80%;
+      .price_and_fav{
+        width: 100%;
+      }
+      .dropdown{
+        width: 100%;
+      }
+      .to_basket{
+        width: 100%;
+        button{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+// video goods_presentation
+.goods_presentation{
+  @media (max-width: 768px){
+    .video_player{
+      width: 70%;
+      .open_video{
+        width: 50px;
+        height: 50px;
+        .fa{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  @media (max-width: 550px){
+    background-size: 185%;
+    background-position: 45% 0%;
+    background-repeat: repeat;
+    .video_pres{
+      .title{
+        p{
+          font-size: 20px;
+        }
+      }
+    }
+    .video_player{
+      width: 100%;
+    }
+  }
+}
+
+
+// goods descr
+.goods_description{
+  @media (max-width: 768px){
+    .descr_img{
+      display: none;
+    }
+    .descr_text{
+      width: 100%;
+    }
+  }
+}

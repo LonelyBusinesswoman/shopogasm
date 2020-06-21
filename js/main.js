@@ -256,4 +256,34 @@ zone.focusout(function() {
       summ.text(newSumm);
     }
   });
+
+  $('.goods_slider').slick({
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: true,
+   nextArrow: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+   prevArrow: '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+   dots: false,
+   fade: true,
+   asNavFor: '.mini_slider'
+  });
+  $('.mini_slider').slick({
+   slidesToShow: 3,
+   vertical: true,
+   verticalSwiping: true,
+   slidesToScroll: 1,
+   asNavFor: '.goods_slider',
+   dots: false,
+   arrows: false,
+   focusOnSelect: true,
+   responsive: [
+     {
+       breakpoint: 950,
+       settings: {
+        vertical: false,
+        verticalSwiping: false
+       }
+     }
+   ]
+  });
 });
