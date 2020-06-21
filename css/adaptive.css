@@ -728,7 +728,7 @@
   .checkout .right_reg .orders .purchase .main_desc img {
     width: 65px;
   }
-  .checkout .quantity_and_summ {
+  .checkout .right_reg .orders .purchase .quantity_and_summ {
     left: 86%;
     top: 20px;
   }
@@ -753,5 +753,50 @@
   .payment .cards .card {
     width: 80%;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .confirmation .right_reg {
+    order: 1;
+    margin-top: 0;
+  }
+  .confirmation .right_reg .number_of_order {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .confirmation .right_reg .actions {
+    display: none;
+  }
+  .confirmation .right_reg .offer {
+    display: none;
+  }
+  .confirmation .left_reg {
+    order: 2;
+  }
+  .confirmation .left_reg .steps {
+    display: none;
+  }
+  .confirmation .left_reg .number_of_order {
+    display: none;
+  }
+  .confirmation .left_reg .name_desk {
+    display: none;
+  }
+  .confirmation .act_mob {
+    display: flex;
+    order: 3;
+  }
+  .confirmation .offer_mob {
+    display: block;
+    margin-top: 20px;
+    order: 4;
+  }
+  .confirmation .name_mob {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .confirmation .steps_mob {
+    display: flex;
   }
 }

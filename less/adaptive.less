@@ -791,7 +791,7 @@
         width: 65px;
       }
     }
-    .quantity_and_summ{
+    .right_reg .orders .purchase .quantity_and_summ{
       left: 86%;
       top: 20px;
     }
@@ -819,6 +819,57 @@
         width: 80%;
         margin-bottom: 20px;
       }
+    }
+  }
+}
+// checkout confirmition
+.confirmation{
+  @media (max-width: 550px){
+    // right - up block
+    .right_reg{
+      order:1;
+      margin-top: 0;
+      .number_of_order{
+        margin: 20px 0;
+        text-align: center;
+      }
+      .actions{
+        display: none;
+      }
+      .offer{
+        display: none;
+      }
+    }
+    // left - down block
+    .left_reg{
+      order:2;
+      .steps{
+        display: none;
+      }
+      .number_of_order{
+        display: none;
+      }
+      .name_desk{
+        display: none;
+      }
+    }
+    // actions
+    .act_mob{
+      display: flex;
+      order:3;
+    }
+    .offer_mob{
+      display: block;
+      margin-top: 20px;
+      order:4;
+    }
+    .name_mob{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .steps_mob{
+      display: flex;
     }
   }
 }

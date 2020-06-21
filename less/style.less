@@ -347,6 +347,16 @@ input {
     width: 20px;
   }
 }
+// offer
+.offer{
+  width: 50%;
+  p{
+    font-size: 12px;
+  }
+  a{
+    border-bottom: 1px solid #000;
+  }
+}
 // slider range
 .polzunok-container:after {
   content: "";
@@ -1451,6 +1461,36 @@ footer {
   align-items: baseline;
   margin-bottom: 50px;
 }
+// steps
+.step{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+  flex-basis: 0;
+  flex-grow: 1;
+  margin-bottom: 30px;
+  .grey_line{
+    margin-bottom: 10px;
+    height: 4px;
+    position: relative
+  }
+  .round{
+    z-index: 3;
+    left: 95%;
+    top: -5px;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background-color: #e6e6e6;
+  }
+  p{
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
 // left container of reg
 .left_reg{
   width: 50%;
@@ -1460,33 +1500,8 @@ footer {
     display: flex;
     width: 100%;
   }
-  .step{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 1;
-    flex-basis: 0;
-    flex-grow: 1;
-    margin-bottom: 30px;
-    .grey_line{
-      margin-bottom: 10px;
-      height: 4px;
-      position: relative
-    }
-    .round{
-      left: 95%;
-      top: -5px;
-      position: absolute;
-      width: 14px;
-      height: 14px;
-      border-radius: 7px;
-      background-color: #e6e6e6;
-    }
-    p{
-      font-size: 14px;
-      font-weight: bold;
-    }
+  .steps_mob{
+    display: none;
   }
   .delivery_step{
     .grey_line{
@@ -1576,15 +1591,6 @@ footer {
     position: static;
     margin-right: 0;
   }
-  .offer{
-    width: 50%;
-    p{
-      font-size: 12px;
-    }
-    a{
-      border-bottom: 1px solid #000;
-    }
-  }
 }
 // checkout -> payment
 .payment{
@@ -1600,5 +1606,42 @@ footer {
     .card{
       width: 49%;
     }
+  }
+}
+// checkout -> confirmation
+.confirmation{
+  // steps
+  .step{
+    .grey_line{
+      background-color: #05B1EA;
+    }
+  }
+  // steps
+  .steps_mob{
+    display: none;
+  }
+  // name
+  .name_mob{
+    display: none;
+  }
+  .num_mob{
+    display: none;
+  }
+  .offer_mob{
+    display: none;
+  }
+  .act_mob{
+    display: none;
+  }
+  // order
+  .number_of_order{
+    width: 100%;
+    margin-bottom: 10px;
+    p{
+      font-size: 18px;
+    }
+  }
+  .form_subtitle{
+    margin: 20px 0;
   }
 }

@@ -308,6 +308,15 @@ input {
 .yandex img {
   width: 20px;
 }
+.offer {
+  width: 50%;
+}
+.offer p {
+  font-size: 12px;
+}
+.offer a {
+  border-bottom: 1px solid #000;
+}
 .polzunok-container:after {
   content: "";
   clear: both;
@@ -1339,16 +1348,7 @@ footer {
   align-items: baseline;
   margin-bottom: 50px;
 }
-.left_reg {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
-.left_reg .steps {
-  display: flex;
-  width: 100%;
-}
-.left_reg .step {
+.step {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1358,12 +1358,13 @@ footer {
   flex-grow: 1;
   margin-bottom: 30px;
 }
-.left_reg .step .grey_line {
+.step .grey_line {
   margin-bottom: 10px;
   height: 4px;
   position: relative;
 }
-.left_reg .step .round {
+.step .round {
+  z-index: 3;
   left: 95%;
   top: -5px;
   position: absolute;
@@ -1372,9 +1373,21 @@ footer {
   border-radius: 7px;
   background-color: #e6e6e6;
 }
-.left_reg .step p {
+.step p {
   font-size: 14px;
   font-weight: bold;
+}
+.left_reg {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.left_reg .steps {
+  display: flex;
+  width: 100%;
+}
+.left_reg .steps_mob {
+  display: none;
 }
 .left_reg .delivery_step .grey_line {
   background-color: #05B1EA;
@@ -1457,15 +1470,6 @@ footer {
   position: static;
   margin-right: 0;
 }
-.right_reg .offer {
-  width: 50%;
-}
-.right_reg .offer p {
-  font-size: 12px;
-}
-.right_reg .offer a {
-  border-bottom: 1px solid #000;
-}
 .payment .payment_step .grey_line {
   background-color: #05B1EA;
 }
@@ -1476,4 +1480,32 @@ footer {
 }
 .payment .cards .card {
   width: 49%;
+}
+.confirmation .step .grey_line {
+  background-color: #05B1EA;
+}
+.confirmation .steps_mob {
+  display: none;
+}
+.confirmation .name_mob {
+  display: none;
+}
+.confirmation .num_mob {
+  display: none;
+}
+.confirmation .offer_mob {
+  display: none;
+}
+.confirmation .act_mob {
+  display: none;
+}
+.confirmation .number_of_order {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.confirmation .number_of_order p {
+  font-size: 18px;
+}
+.confirmation .form_subtitle {
+  margin: 20px 0;
 }

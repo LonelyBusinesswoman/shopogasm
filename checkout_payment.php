@@ -86,7 +86,7 @@
           </div>
           <div class="actions">
             <button class="action_button order">
-              <p>перейти к оплате</p>
+              <p> оплатить заказ</p>
               </button>
           </div>
         </div>
