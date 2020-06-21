@@ -1,6 +1,6 @@
 <?php include 'components/header.php'; ?>
 <main>
-  <div class="checkout container">
+  <div class="checkout payment container">
     <!-- navigation block-->
     <div class="navigation">
       <div class="grey_line"></div>
@@ -42,28 +42,15 @@
             <p>Подтверждение</p>
           </div>
         </div>
-        <!-- checkout_form -->
-        <form class="checkout_form" action="" method="">
-          <div class="form_block">
-            <input class="default_input half" type="text" name="name" placeholder="Имя">
-            <input class="default_input half" type="text" name="Surname" placeholder="Фамилия">
-            <input class="default_input" type="text" name="email" placeholder="E-mail">
-          </div>
-
-          <div class="form_block">
-            <input class="default_input" type="text" name="address" placeholder="Адрес">
-            <input class="default_input half" type="text" name="Сity" placeholder="Город">
-            <input class="default_input half" type="text" name="dir" placeholder="Область">
-            <input class="default_input half" type="text" name="index" placeholder="Почтовый индекс">
-            <input class="default_input half" type="text" name="tel" placeholder="Телефон">
-          </div>
-
-          <!-- Save password -->
-          <div class="pretty p-default p-fill">
-              <input type="checkbox"/>
-              <div class="state">
-                <label>Использовать в качестве платежного адреса</label>
-            </div>
+        <div class="cards">
+          <a class="card bank" href="#">
+            <img src="img/icons/credit-card.png" alt="card">
+            <p>Дебетовая карта</p>
+          </a>
+          <a class="card yandex" href="#">
+            <img src="img/icons/yandex.png" alt="card">
+            <p>Яндекс.Деньги</p>
+          </a>
         </div>
         </form>
       </div>

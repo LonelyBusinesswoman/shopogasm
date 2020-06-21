@@ -331,6 +331,23 @@ input {
     width: 40%;
   }
 }
+// card
+.card{
+  height: 44px;
+  border: 1px solid #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    margin-right: 15px;
+  }
+}
+.yandex{
+  img{
+    width: 20px;
+  }
+}
+// slider range
 .polzunok-container:after {
   content: "";
   clear: both;
@@ -1546,6 +1563,9 @@ footer {
           font-weight: bold;
         }
       }
+      .quantity_and_summ{
+        display: none;
+      }
       .summ_block{
         left: 86%;
       }
@@ -1563,6 +1583,22 @@ footer {
     }
     a{
       border-bottom: 1px solid #000;
+    }
+  }
+}
+// checkout -> payment
+.payment{
+  .payment_step{
+    .grey_line{
+      background-color: #05B1EA;
+    }
+  }
+  .cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .card{
+      width: 49%;
     }
   }
 }

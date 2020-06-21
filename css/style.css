@@ -295,6 +295,19 @@ input {
 .total .order {
   width: 40%;
 }
+.card {
+  height: 44px;
+  border: 1px solid #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  margin-right: 15px;
+}
+.yandex img {
+  width: 20px;
+}
 .polzunok-container:after {
   content: "";
   clear: both;
@@ -1433,6 +1446,9 @@ footer {
 .right_reg .orders .purchase .quantity_final p {
   font-weight: bold;
 }
+.right_reg .orders .purchase .quantity_and_summ {
+  display: none;
+}
 .right_reg .orders .purchase .summ_block {
   left: 86%;
 }
@@ -1449,4 +1465,15 @@ footer {
 }
 .right_reg .offer a {
   border-bottom: 1px solid #000;
+}
+.payment .payment_step .grey_line {
+  background-color: #05B1EA;
+}
+.payment .cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.payment .cards .card {
+  width: 49%;
 }

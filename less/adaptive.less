@@ -28,19 +28,24 @@
 // Медиазапросы отдельных блоков
 // product
 .product{
-  @media   (max-width: 550px){
-    justify-content: center;
-    align-items: center;
-    .name{
+  @media (max-width: 550px){
+    .go_to_product{
+      justify-content: center;
+      align-items: center;
+    }
+    p, span{
+      text-align: center;
+    }
+    .name_of_product{
       font-size: 14px;
     }
-    .brand{
+    .brand_of_product{
       font-size: 10px;
     }
     .description{
       font-size: 10px;
     }
-    .price{
+    .price_of_product{
       font-size: 16px;
     }
   }
@@ -743,7 +748,7 @@
     .right_reg .orders .purchase .main_desc{
       width: 75%;
     }
-    .quantity_and_summ{
+    .right_reg .orders .purchase .quantity_and_summ{
       display: flex;
       position: absolute;
       left: 89%;
@@ -800,6 +805,20 @@
       margin: 0 auto;
       width: 90%;
       text-align: center;
+    }
+  }
+}
+// checkout payment
+.payment{
+  @media (max-width: 550px){
+    .cards{
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      .card{
+        width: 80%;
+        margin-bottom: 20px;
+      }
     }
   }
 }

@@ -29,20 +29,24 @@
   }
 }
 @media (max-width: 550px) {
-  .product {
+  .product .go_to_product {
     justify-content: center;
     align-items: center;
   }
-  .product .name {
+  .product p,
+  .product span {
+    text-align: center;
+  }
+  .product .name_of_product {
     font-size: 14px;
   }
-  .product .brand {
+  .product .brand_of_product {
     font-size: 10px;
   }
   .product .description {
     font-size: 10px;
   }
-  .product .price {
+  .product .price_of_product {
     font-size: 16px;
   }
 }
@@ -681,13 +685,13 @@
   .checkout .right_reg .orders .purchase .main_desc {
     width: 75%;
   }
-  .checkout .quantity_and_summ {
+  .checkout .right_reg .orders .purchase .quantity_and_summ {
     display: flex;
     position: absolute;
     left: 89%;
   }
-  .checkout .quantity_and_summ p,
-  .checkout .quantity_and_summ span {
+  .checkout .right_reg .orders .purchase .quantity_and_summ p,
+  .checkout .right_reg .orders .purchase .quantity_and_summ span {
     font-size: 12px;
     font-weight: bold;
   }
@@ -738,5 +742,16 @@
     margin: 0 auto;
     width: 90%;
     text-align: center;
+  }
+}
+@media (max-width: 550px) {
+  .payment .cards {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .payment .cards .card {
+    width: 80%;
+    margin-bottom: 20px;
   }
 }
