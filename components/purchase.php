@@ -27,10 +27,21 @@
           </div>
         </div>
       </div>
+      <!-- quantity for checkout -->
+      <div class="quantity_final">
+        <p>1</p>
+      </div>
       <!-- summ -->
       <div class="summ_block">
           <p class="price_of_product"> 450</p> <span>$</span>
       </div>
+      <!-- quantity and summ for checkout -->
+      <div class="quantity_and_summ">
+        <p>1</p>
+        <span>x</span>
+        <p> 450</p> <span>$</span>
+      </div>
+      <!-- delete item -->
       <div class="delete">
         <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
         <img src="img/icons/close.png" alt="close">

@@ -16,7 +16,7 @@
     <!--  -->
     <div class="all_shoppings">
       <!-- up block -->
-      <div class="description">
+      <div class="order_description">
         <p class="goods">Товар</p>
         <p class="price">Цена</p>
         <p class="quantity">Количество</p>

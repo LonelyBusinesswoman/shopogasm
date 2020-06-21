@@ -145,13 +145,17 @@ for (const dropdown of document.querySelectorAll(".custom-select-wrapper")) {
     range: true,
     animate: "fast",
     slide : function(event, ui) {
+
         $(".polzunok-input-5-left").val(ui.values[ 0 ] + "$");
         $(".polzunok-input-5-right").val(ui.values[ 1 ] + "$");
     }
+
 });
+
 $(".polzunok-input-5-left").val($(".polzunok-5").slider("values", 0) + "$");
 $(".polzunok-input-5-right").val($(".polzunok-5").slider("values", 1) + "$");
-$(document).focusout(function() {
+var zone = $('.all_filters');
+zone.focusout(function() {
     var input_left = $(".polzunok-input-5-left").val().replace(/[^0-9]/g, ''),
     opt_left = $(".polzunok-5").slider("option", "min"),
     where_right = $(".polzunok-5").slider("values", 1),

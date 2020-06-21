@@ -244,6 +244,57 @@ input {
 .polzunok-container .high {
   right: 0;
 }
+.order_description {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.order_description p {
+  color: #BCBCBC;
+  position: absolute;
+}
+.order_description .price {
+  left: 50%;
+}
+.order_description .quantity {
+  left: 70%;
+}
+.order_description .amount {
+  left: 90%;
+}
+.total {
+  margin-right: 5%;
+  align-self: flex-end;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.total .row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.total p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.total .actions {
+  display: flex;
+  justify-content: space-between;
+}
+.total button p {
+  font-size: 14px;
+  font-weight: normal;
+}
+.total .favorites {
+  width: 50%;
+}
+.total .order {
+  width: 40%;
+}
 .polzunok-container:after {
   content: "";
   clear: both;
@@ -459,6 +510,12 @@ input {
 .purchase .main_desc .information_block {
   display: flex;
   flex-direction: column;
+}
+.purchase .main_desc .quantity_final {
+  display: none;
+}
+.purchase .main_desc .quantity_and_summ {
+  display: none;
 }
 .purchase .main_desc .name_of_product {
   margin: 5px 0 10px 0;
@@ -1247,59 +1304,149 @@ footer {
   display: flex;
   flex-direction: column;
 }
-.shopping_basket .description {
-  margin-top: 30px;
-  display: flex;
-  width: 100%;
-  position: relative;
-}
-.shopping_basket .description p {
-  color: #BCBCBC;
-  position: absolute;
-}
-.shopping_basket .description .price {
-  left: 50%;
-}
-.shopping_basket .description .quantity {
-  left: 70%;
-}
-.shopping_basket .description .amount {
-  left: 90%;
-}
 .shopping_basket .purchases {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.shopping_basket .total {
-  margin-right: 5%;
-  align-self: flex-end;
-  width: 45%;
+.shopping_basket .purchases .quantity_final {
+  display: none;
+}
+.shopping_basket .purchases .quantity_and_summ {
+  display: none;
+}
+.checkout {
   display: flex;
   flex-direction: column;
+}
+.order_registration {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   margin-bottom: 50px;
 }
-.shopping_basket .total .row {
+.left_reg {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.left_reg .steps {
   display: flex;
   width: 100%;
+}
+.left_reg .step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+  flex-basis: 0;
+  flex-grow: 1;
+  margin-bottom: 30px;
+}
+.left_reg .step .grey_line {
+  margin-bottom: 10px;
+  height: 4px;
+  position: relative;
+}
+.left_reg .step .round {
+  left: 95%;
+  top: -5px;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: #e6e6e6;
+}
+.left_reg .step p {
+  font-size: 14px;
+  font-weight: bold;
+}
+.left_reg .delivery_step .grey_line {
+  background-color: #05B1EA;
+}
+.left_reg .checkout_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.left_reg .form_block {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.shopping_basket .total p {
-  font-size: 18px;
+.left_reg .form_block input {
+  margin-bottom: 10px;
+}
+.left_reg .form_block .half {
+  width: 49%;
+}
+.right_reg {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  border: 1px solid #e6e6e6;
+}
+.right_reg .order_description .quantity {
+  left: 65%;
+}
+.right_reg .order_description .price {
+  left: 90%;
+}
+.right_reg .orders {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.right_reg .orders .purchase .main_desc {
+  width: 65%;
+}
+.right_reg .orders .purchase .main_desc img {
+  width: 80px;
+  margin-right: 10px;
+}
+.right_reg .orders .purchase .main_desc .information_block {
+  width: 80%;
+}
+.right_reg .orders .purchase .main_desc .information_block p {
+  width: 100%;
+  display: inline-block;
+}
+.right_reg .orders .purchase .price_block {
+  display: none;
+}
+.right_reg .orders .purchase .delete {
+  display: none;
+}
+.right_reg .orders .purchase .quantity_block {
+  display: none;
+}
+.right_reg .orders .purchase .quantity_final {
+  display: block;
+  position: absolute;
+  left: 70%;
+}
+.right_reg .orders .purchase .quantity_final p {
   font-weight: bold;
 }
-.shopping_basket .total .actions {
-  display: flex;
-  justify-content: space-between;
+.right_reg .orders .purchase .summ_block {
+  left: 86%;
 }
-.shopping_basket .total button p {
-  font-size: 14px;
-  font-weight: normal;
+.right_reg .total {
+  width: 100%;
+  position: static;
+  margin-right: 0;
 }
-.shopping_basket .total .favorites {
+.right_reg .offer {
   width: 50%;
 }
-.shopping_basket .total .order {
-  width: 40%;
+.right_reg .offer p {
+  font-size: 12px;
+}
+.right_reg .offer a {
+  border-bottom: 1px solid #000;
 }

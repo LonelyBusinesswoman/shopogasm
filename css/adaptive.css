@@ -23,6 +23,11 @@
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+}
 @media (max-width: 550px) {
   .product {
     justify-content: center;
@@ -610,10 +615,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .shopping_basket .navigation {
-    display: none;
-  }
-  .shopping_basket .description {
+  .shopping_basket .order_description {
     display: none;
   }
   .shopping_basket .name_of_web {
@@ -649,5 +651,92 @@
 @media (max-width: 768px) {
   .shopping_basket_rec {
     display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .checkout .order_registration {
+    flex-direction: column;
+    align-items: center;
+  }
+  .checkout .left_reg,
+  .checkout .right_reg {
+    width: 70%;
+  }
+  .checkout .right_reg {
+    margin-top: 50px;
+  }
+  .checkout .name_of_web {
+    width: 100%;
+    text-align: center;
+  }
+  .checkout .right_reg .order_description .quantity {
+    display: none;
+  }
+  .checkout .summ_block {
+    display: none;
+  }
+  .checkout .right_reg .orders .purchase .quantity_final {
+    display: none;
+  }
+  .checkout .right_reg .orders .purchase .main_desc {
+    width: 75%;
+  }
+  .checkout .quantity_and_summ {
+    display: flex;
+    position: absolute;
+    left: 89%;
+  }
+  .checkout .quantity_and_summ p,
+  .checkout .quantity_and_summ span {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+@media (max-width: 550px) {
+  .checkout .left_reg,
+  .checkout .right_reg {
+    width: 100%;
+  }
+  .checkout .left_reg .steps {
+    width: 97%;
+  }
+  .checkout .step p {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .checkout .left_reg .form_block {
+    align-items: center;
+    justify-content: center;
+  }
+  .checkout .left_reg .form_block .half {
+    width: 90%;
+  }
+  .checkout .left_reg .form_block input {
+    width: 90%;
+  }
+  .checkout .right_reg {
+    border: none;
+    padding: 0;
+  }
+  .checkout .right_reg .orders .purchase .main_desc {
+    width: 84%;
+  }
+  .checkout .right_reg .orders .purchase .main_desc img {
+    width: 65px;
+  }
+  .checkout .quantity_and_summ {
+    left: 86%;
+    top: 20px;
+  }
+  .checkout .total {
+    margin-bottom: 20px;
+  }
+  .checkout .total .actions {
+    justify-content: center;
+  }
+  .checkout .offer {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
   }
 }

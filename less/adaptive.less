@@ -19,6 +19,12 @@
     width: 100%;
   }
 }
+// navigation block
+.navigation{
+  @media (max-width: 768px){
+    display: none;
+  }
+}
 // Медиазапросы отдельных блоков
 // product
 .product{
@@ -665,10 +671,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
-    .navigation{
-      display: none;
-    }
-    .description{
+    .order_description{
       display: none;
     }
     .name_of_web{
@@ -707,4 +710,96 @@
     @media (max-width: 768px){
       display: none;
     }
+}
+// ОФОРМЛЕНИЕ ЗАКАЗА
+.checkout{
+  @media (max-width: 1000px){
+    .order_registration{
+      flex-direction: column;
+      align-items: center;
+    }
+    .left_reg, .right_reg{
+      width: 70%;
+    }
+    .right_reg{
+      margin-top: 50px;
+    }
+    .name_of_web{
+      width: 100%;
+      text-align: center;
+    }
+    // order
+    // up block
+    .right_reg .order_description .quantity{
+      display: none;
+    }
+    // options display none
+    .summ_block{
+      display: none;
+    }
+    .right_reg .orders .purchase .quantity_final{
+      display: none;
+    }
+    .right_reg .orders .purchase .main_desc{
+      width: 75%;
+    }
+    .quantity_and_summ{
+      display: flex;
+      position: absolute;
+      left: 89%;
+      p, span{
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+  }
+  @media (max-width: 550px){
+    .left_reg, .right_reg{
+      width: 100%;
+    }
+    // steps
+    .left_reg .steps {
+      width: 97%;
+    }
+    .step p {
+      font-size: 10px;
+      font-weight: bold;
+    }
+    .left_reg .form_block{
+      align-items: center;
+      justify-content: center;
+      .half{
+        width: 90%;
+      }
+      input{
+        width: 90%;
+      }
+    }
+    // order
+    .right_reg{
+      border: none;
+      padding: 0;
+    }
+    .right_reg .orders .purchase .main_desc{
+      width: 84%;
+      img{
+        width: 65px;
+      }
+    }
+    .quantity_and_summ{
+      left: 86%;
+      top: 20px;
+    }
+    .total{
+      margin-bottom: 20px;
+    }
+    .total .actions{
+      justify-content: center;
+    }
+    .offer{
+      margin: 0 auto;
+      width: 90%;
+      text-align: center;
+    }
+  }
 }

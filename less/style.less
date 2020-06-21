@@ -276,7 +276,61 @@ input {
     right: 0;
   }
 }
-
+// up block order
+.order_description{
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  position: relative;
+  p{
+    color: #BCBCBC;
+    position: absolute;
+  }
+  .price{
+    left: 50%;
+  }
+  .quantity{
+    left: 70%;
+  }
+  .amount{
+    left: 90%;
+  }
+}
+// total amount
+.total{
+  margin-right: 5%;
+  align-self: flex-end;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  .row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .actions{
+    display: flex;
+    justify-content: space-between;
+  }
+  button{
+    p{
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+  .favorites{
+    width: 50%;
+  }
+  .order{
+    width: 40%;
+  }
+}
 .polzunok-container:after {
   content: "";
   clear: both;
@@ -287,7 +341,6 @@ input {
   border: none !important;
 }
 // range - разница
-
 .polzunok-container .ui-slider .ui-slider-range {
   position: absolute;
   z-index: 1;
@@ -296,14 +349,12 @@ input {
   background-color: #05B1EA;
 }
 // полоска ползунка
-
 .polzunok-container .ui-slider {
   position: relative;
   background: #E6E6E6;
   height: 2px;
 }
 // inputs
-
 .polzunok-container .ui-slider .ui-slider-handle {
   position: absolute;
   width: 10px;
@@ -512,6 +563,12 @@ input {
     .information_block{
       display: flex;
       flex-direction: column;
+    }
+    .quantity_final{
+      display: none;
+    }
+    .quantity_and_summ{
+      display: none;
     }
     .name_of_product{
       margin: 5px 0 10px 0;
@@ -1352,65 +1409,160 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  // up block
-  .description{
-    margin-top: 30px;
-    display: flex;
-    width: 100%;
-    position: relative;
-    p{
-      color: #BCBCBC;
-      position: absolute;
-    }
-    .price{
-      left: 50%;
-    }
-    .quantity{
-      left: 70%;
-    }
-    .amount{
-      left: 90%;
-    }
-  }
   // purchases
   .purchases{
     width: 100%;
     display: flex;
     flex-direction: column;
+    .quantity_final{
+      display: none;
+    }
+    .quantity_and_summ{
+      display: none;
+    }
   }
-  // total amount
-  .total{
-    margin-right: 5%;
-    align-self: flex-end;
-    width: 45%;
+}
+// Оформление заказа
+.checkout{
+  display: flex;
+  flex-direction: column;
+}
+.order_registration{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 50px;
+}
+// left container of reg
+.left_reg{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  .steps{
+    display: flex;
+    width: 100%;
+  }
+  .step{
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
-    .row{
-      display: flex;
-      width: 100%;
-      justify-content: space-between;
-      margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-bottom: 30px;
+    .grey_line{
+      margin-bottom: 10px;
+      height: 4px;
+      position: relative
+    }
+    .round{
+      left: 95%;
+      top: -5px;
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-radius: 7px;
+      background-color: #e6e6e6;
     }
     p{
-      font-size: 18px;
+      font-size: 14px;
       font-weight: bold;
     }
-    .actions{
-      display: flex;
-      justify-content: space-between;
+  }
+  .delivery_step{
+    .grey_line{
+      background-color: #05B1EA;
     }
-    button{
-      p{
-        font-size: 14px;
-        font-weight: normal;
+  }
+  .checkout_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .form_block{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    input{
+      margin-bottom: 10px;
+    }
+    .half{
+      width: 49%;
+    }
+  }
+}
+// right container of reg
+.right_reg{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  border: 1px solid #e6e6e6;
+  .order_description{
+    .quantity{
+      left: 65%;
+    }
+    .price{
+      left: 90%;
+    }
+  }
+  .orders{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .purchase{
+      .main_desc{
+        width: 65%;
+        img{
+          width: 80px;
+          margin-right: 10px;
+        }
+        .information_block{
+          width: 80%;
+          p{
+            width: 100%;
+            display: inline-block;
+          }
+        }
+      }
+      .price_block{
+        display: none;
+      }
+      .delete{
+        display: none;
+      }
+      .quantity_block{
+        display: none;
+      }
+      .quantity_final{
+        display: block;
+        position: absolute;
+        left: 70%;
+        p{
+          font-weight: bold;
+        }
+      }
+      .summ_block{
+        left: 86%;
       }
     }
-    .favorites{
-      width: 50%;
+  }
+  .total{
+    width: 100%;
+    position: static;
+    margin-right: 0;
+  }
+  .offer{
+    width: 50%;
+    p{
+      font-size: 12px;
     }
-    .order{
-      width: 40%;
+    a{
+      border-bottom: 1px solid #000;
     }
   }
 }
