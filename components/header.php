@@ -11,8 +11,8 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
 	<!-- CSS style -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css?v=5">
-	<link rel="stylesheet" type="text/css" href="css/adaptive.css?v=5">
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=11">
+	<link rel="stylesheet" type="text/css" href="css/adaptive.css?v=11">
 	<!-- For Checkbox -->
 	<link rel="stylesheet" type="text/css" href="css/checkbox.css">
 	<!-- Jquery UI -->
@@ -23,6 +23,9 @@
 	<script src="js/jquery.js"></script>
 	<!-- Jquery UI -->
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- Calendar -->
+	<link href="css/calendar.css" rel="stylesheet" type="text/css">
+	<script src="js/calendar.js"></script>
 	<!-- Font awesome -->
 	<script src="https://use.fontawesome.com/6bff4864c1.js"></script>
 </head>

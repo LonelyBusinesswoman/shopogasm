@@ -3,15 +3,15 @@
   <div class="registration container">
     <div class="form">
       <span>Регистрация</span>
-      <form class="reg_form" action="" method="">
+      <form class="reg_form default_form" action="" method="">
         <!-- Name -->
-        <label for="">Ваше имя</label>
+        <label>Ваше имя</label>
         <input class="default_input" type="text" name="name" placeholder="Имя">
         <!-- Email -->
-        <label for="">Email</label>
+        <label>Email</label>
         <input class="default_input" type="text" name="email" placeholder="Email">
         <!-- Password -->
-        <label for="">Пароль</label>
+        <label>Пароль</label>
         <input class="default_input" type="text" name="password" placeholder="Пароль">
         <!-- Save password -->
         <div class="pretty p-default p-fill">

@@ -18,12 +18,12 @@
         <a href="registration_partners.php">Создать аккаунт</a>
       </div>
       <!-- form -->
-      <form class="reg_form" action="" method="">
+      <form class="reg_form default_form" action="" method="">
         <!-- Email -->
-        <label for="">Email</label>
+        <label>Email</label>
         <input class="default_input" type="text" name="email" placeholder="Email">
         <!-- Password -->
-        <label for="">Пароль</label>
+        <label>Пароль</label>
         <input class="default_input" type="text" name="password" placeholder="Пароль">
         <!-- Save password -->
         <!-- forgot password? -->

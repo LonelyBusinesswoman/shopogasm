@@ -37,6 +37,46 @@ input {
 .default_input::placeholder {
   font-size: 12px;
 }
+.reg_form,
+.default_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.reg_form .input_block,
+.default_form .input_block {
+  flex-direction: column;
+  display: flex;
+}
+.reg_form label,
+.default_form label {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #8C8C8C;
+}
+.reg_form input,
+.default_form input {
+  margin-bottom: 10px;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.socials p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.socials .go_through_soc {
+  display: flex;
+}
+.socials a {
+  margin-right: 20px;
+}
+.socials .fa {
+  font-size: 35px;
+}
 .action_button {
   min-width: 200px;
   background-color: #000000;
@@ -1264,25 +1304,6 @@ footer {
   font-weight: bold;
   margin-bottom: 30px;
 }
-.form .socials {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-.form .socials p {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-.form .socials .go_through_soc {
-  display: flex;
-}
-.form .socials a {
-  margin-right: 20px;
-}
-.form .socials .fa {
-  font-size: 35px;
-}
 .form .create_acc,
 .form .forgot {
   display: flex;
@@ -1298,19 +1319,6 @@ footer {
 .form .forgot a {
   font-size: 12px;
   color: #06B1EB;
-}
-.form .reg_form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.form label {
-  font-size: 14px;
-  margin-bottom: 10px;
-  color: #8C8C8C;
-}
-.form input {
-  margin-bottom: 10px;
 }
 .form .action_button {
   margin-top: 20px;
@@ -1679,4 +1687,103 @@ footer {
 .goods_description .descr_img img {
   width: 100%;
   object-fit: cover;
+}
+.profile {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+.profile .sidebar_nav {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.profile .sidebar_nav .title {
+  margin-bottom: 30px;
+  text-align: left;
+}
+.profile .profile_navigation li {
+  margin-bottom: 10px;
+}
+.profile .profile_navigation a {
+  position: relative;
+  font-size: 20px;
+}
+.profile .profile_content {
+  width: 50%;
+  margin-top: 50px;
+  flex-direction: column;
+  display: flex;
+}
+.profile .profile_content .title {
+  text-align: left;
+}
+.profile .profile_content .title p {
+  text-transform: none;
+  font-size: 26px;
+}
+.profile .currentLink {
+  border-bottom: 1px solid #000;
+}
+.profile .number_of_questions {
+  position: absolute;
+  top: 2px;
+  right: -15px;
+  width: 15px;
+  height: 15px;
+  background-color: #CDF89C;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile .number_of_questions p {
+  font-size: 12px;
+}
+.profile .profile_form {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+}
+.profile .input_block {
+  width: 47%;
+}
+.profile .socials .title {
+  margin-bottom: 10px;
+}
+.profile .additional_inf {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  margin-top: 20px;
+}
+.profile .additional_inf_block {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.profile .additional_inf_block span {
+  font-size: 20px;
+}
+.profile .additional_inf_block .sex {
+  padding: 6px 10px;
+  width: 100%;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.profile .additional_inf_block .active {
+  border-bottom: 1px solid #000;
+}
+.profile .additional_inf_block .change_password .action_button {
+  min-width: 100%;
+}
+.profile .save_changes {
+  max-width: 150px;
+  min-width: 150px;
 }
