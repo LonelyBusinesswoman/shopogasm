@@ -660,6 +660,91 @@ input {
   margin-top: 20px;
   margin-left: 20px;
 }
+.overlay {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+.overlay.open {
+  opacity: 1;
+  pointer-events: inherit;
+  z-index: 300;
+}
+.overlay .modal {
+  background: white;
+  text-align: center;
+  box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+.overlay .modal.open {
+  opacity: 1;
+  pointer-events: inherit;
+  overflow-y: scroll;
+}
+.overlay .modal.open .content {
+  transform: translate(0, 0px);
+  opacity: 1;
+}
+.overlay .modal .content {
+  transform: translate(0, -10px);
+  opacity: 0;
+  transition: 0.35s ease-in-out;
+}
+.modal {
+  width: 70%;
+  padding: 20px 30px;
+}
+.modal .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.modal .content .close-modal {
+  font-size: 25px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal .orders_information {
+  overflow-y: scroll;
+  width: 100%;
+}
+.modal .purchase {
+  margin-bottom: 20px;
+}
+.modal .quantity_and_summ {
+  position: absolute;
+  left: 70%;
+  display: flex;
+}
+.modal .purchase .main_desc .information_block {
+  align-items: flex-start;
+}
 .mobile_menu {
   cursor: pointer;
   width: 25px;
@@ -1786,6 +1871,35 @@ footer {
 .profile .save_changes {
   max-width: 150px;
   min-width: 150px;
+}
+.profile .profile_orders {
+  width: 70%;
+}
+.profile .orders_table {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.profile .orders_table .order_description {
+  text-align: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.profile .orders_table .order_description p {
+  position: static;
+}
+.profile .orders_table .prof_order {
+  padding: 15px 0;
+  background-color: #F2F2F2;
+  text-align: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 10px;
+}
+.profile .orders_table .order_number {
+  color: #05B1E9;
 }
 .profile .profile_sub .action_button {
   margin-top: 50px;
