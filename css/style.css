@@ -1787,3 +1787,21 @@ footer {
   max-width: 150px;
   min-width: 150px;
 }
+.profile .profile_sub .action_button {
+  margin-top: 50px;
+}
+.profile .subscriptions {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.profile .sub {
+  flex-direction: column;
+  display: flex;
+  width: 47%;
+}
+.profile .sub span {
+  margin-top: 10px;
+  color: #878787;
+}

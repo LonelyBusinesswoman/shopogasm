@@ -959,4 +959,11 @@
   .profile .additional_inf_block span {
     margin-bottom: 10px;
   }
+  .profile .subscriptions {
+    flex-direction: column;
+  }
+  .profile .sub {
+    width: 75%;
+    margin-bottom: 30px;
+  }
 }
