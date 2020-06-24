@@ -51,7 +51,7 @@
   }
 }
 // news
-.news{
+.fashion_news{
   @media   (max-width: 800px){
     p{
       font-size: 12px;
@@ -1118,6 +1118,19 @@
     }
     .price_of_product{
       font-size: 10px;
+    }
+  }
+}
+// СТРАНИЦА
+.news{
+  @media (max-width: 900px){
+    .news_grid{
+      grid-template-columns: repeat(2, 48%);
+    }
+  }
+  @media (max-width: 550px){
+    .news_grid{
+      grid-template-columns: 1fr;
     }
   }
 }

@@ -489,18 +489,18 @@ input {
   font-weight: bold;
   text-transform: uppercase;
 }
-.news {
+.fashion_news {
   display: flex;
   flex-direction: column;
   background-color: #F2F3F5;
   cursor: pointer;
 }
-.news img {
+.fashion_news img {
   width: 100%;
   object-fit: cover;
   max-height: 250px;
 }
-.news p {
+.fashion_news p {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
@@ -719,6 +719,7 @@ input {
   position: relative;
 }
 .modal .content .close-modal {
+  cursor: pointer;
   font-size: 25px;
   position: absolute;
   top: -10px;
@@ -1918,4 +1919,59 @@ footer {
 .profile .sub span {
   margin-top: 10px;
   color: #878787;
+}
+.news_grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  align-items: stretch;
+  justify-content: space-between;
+  grid-row-gap: 30px;
+  margin-bottom: 80px;
+}
+.news_grid .news_item {
+  background-color: #F2F3F5;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.news_grid .news_item .news_img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.news_grid .news_item .news_img img {
+  max-height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+.news_grid .news_item .short_info {
+  flex-direction: column;
+  display: flex;
+  padding: 0 25px 15px 25px;
+}
+.news_grid .news_item p {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.news_grid .news_item span {
+  margin-bottom: 15px;
+}
+.news_grid .news_item .news_title {
+  font-size: 16px;
+  font-family: "PT Sans";
+  font-weight: 700;
+}
+.news_grid .news_item .news_brand {
+  font-size: 12px;
+  color: #999999;
+  font-family: "PT Sans";
+  font-weight: 700;
+}
+.news_grid .news_item .action_button {
+  width: 110px;
+  min-width: 110px;
+  margin-top: 10px;
+}
+.news_grid .news_item .action_button p {
+  margin-bottom: 0;
 }

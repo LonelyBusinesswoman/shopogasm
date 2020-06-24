@@ -131,7 +131,7 @@
         </div>
         <div class="trends">
           <?php for($i = 0; $i < 3; $i++): ?>
-  			         <?php include 'components/news.php' ?>
+  			         <?php include 'components/fashion_news.php' ?>
   		    <?php endfor; ?>
         </div>
       </div>

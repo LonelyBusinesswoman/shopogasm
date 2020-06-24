@@ -51,7 +51,7 @@
   }
 }
 @media (max-width: 800px) {
-  .news p {
+  .fashion_news p {
     font-size: 12px;
   }
 }
@@ -1016,5 +1016,15 @@
   }
   .modal .price_of_product {
     font-size: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .news .news_grid {
+    grid-template-columns: repeat(2, 48%);
+  }
+}
+@media (max-width: 550px) {
+  .news .news_grid {
+    grid-template-columns: 1fr;
   }
 }
