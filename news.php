@@ -9,6 +9,10 @@
         <a href="news.php"> &nbsp;  Новости</a>
       </div>
     </div>
+    <!-- title -->
+    <div class="title">
+      <p>Новости</p>
+    </div>
       <!-- news -->
     <div class="news_grid">
       <?php for($i = 0; $i < 4; $i++): ?>

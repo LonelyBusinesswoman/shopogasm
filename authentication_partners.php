@@ -6,7 +6,7 @@
       <!-- create acc -->
       <div class="create_acc">
         <p>С помощью аккаунта Shopogasm</p>
-        <a href="registration_clients.php">Создать партнёрский аккаунт</a>
+        <a href="registration_partners.php">Создать партнёрский аккаунт</a>
       </div>
       <!-- form -->
       <form class="reg_form default_form" action="" method="">

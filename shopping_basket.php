@@ -6,7 +6,7 @@
       <div class="grey_line"></div>
       <div class="nav">
         <a href="index.php">Главная /</a>
-        <a href="catalog.php"> &nbsp;  Корзина</a>
+        <a href="shopping_basket.php"> &nbsp;  Корзина</a>
       </div>
     </div>
     <!-- name of the page -->

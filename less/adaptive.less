@@ -1121,16 +1121,53 @@
     }
   }
 }
-// СТРАНИЦА
+// СТРАНИЦА С НОВОСТЯМИ
 .news{
   @media (max-width: 900px){
     .news_grid{
       grid-template-columns: repeat(2, 48%);
     }
   }
+  @media (max-width: 768px){
+    .title{
+      justify-content: center;
+      display: flex;
+    }
+  }
   @media (max-width: 550px){
     .news_grid{
       grid-template-columns: 1fr;
+    }
+  }
+}
+// СТРАНИЦА НОВОСТИ
+.article_page{
+  @media (max-width: 800px){
+    .img_and_title{
+      .main_title{
+        display: none;
+      }
+    }
+    .title_mob{
+      margin-top: 20px;
+      padding: 0;
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      position: static;
+    }
+  }
+  @media (max-width: 550px){
+    .article{
+      width: 100%;
+    }
+    .title_mob{
+      .news_title{
+        font-size: 16px;
+      }
+      .news_brand{
+        font-size: 12px;
+      }
     }
   }
 }

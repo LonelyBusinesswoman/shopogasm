@@ -7,7 +7,7 @@
       <div class="nav">
         <a href="index.php">Главная /</a>
         <a href="shopping_basket.php"> &nbsp; Корзина /</a>
-        <a href="catalog.php"> &nbsp; Оформление заказа</a>
+        <a href="checkout.php"> &nbsp; Оформление заказа</a>
       </div>
     </div>
     <!-- order_registration -->
