@@ -7,7 +7,7 @@
       <div class="grey_line"></div>
       <div class="nav">
         <a href="index.php">Главная /</a>
-        <a href="news.php"> &nbsp;Дизайнеры</a>
+        <a href="brands.php"> &nbsp;Дизайнеры</a>
       </div>
     </div>
     <!-- title -->

@@ -1221,3 +1221,64 @@
     }
   }
 }
+// ОБРАТНАЯ СВЯЗЬ
+.feedback_page{
+  @media (max-width: 850px){
+    .feedback_wrap{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .right, .left{
+        width: 80%;
+      }
+      .left{
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        .name_of_web{
+          margin-bottom: 20px;
+          p{
+            font-size: 24px
+          }
+        }
+        p, span{
+          text-align: center;
+        }
+        .contact{
+          align-items: baseline;
+          display: flex;
+          justify-content: center;
+          img{
+            margin-right: 5px;
+          }
+        }
+      }
+      .right{
+        .default_button{
+          width: 35%;
+        }
+      }
+    }
+  }
+  @media (max-width: 550px){
+    .feedback_wrap{
+      .right{
+        width: 95%;
+        padding: 15px;
+        p{
+          text-align: center;
+        }
+        .form_block{
+          flex-direction: column;
+          .default_input{
+            width: 100%;
+            margin-top: 15px;
+          }
+        }
+        .default_button{
+          width: 50%;
+        }
+      }
+    }
+  }
+}
