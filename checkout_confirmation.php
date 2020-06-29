@@ -1,6 +1,6 @@
 <?php include 'components/header.php'; ?>
 <main>
-  <div class="checkout confirmation container">
+  <div class="checkout_page confirmation container">
     <!-- navigation block-->
     <div class="navigation">
       <div class="grey_line"></div>
@@ -152,7 +152,7 @@
           </div>
           <!-- actions -->
           <div class="actions">
-            <button class="action_button order">
+            <button class="default_button black_button order">
               <p>подтвердить</p>
               </button>
           </div>
@@ -164,7 +164,7 @@
       </div>
       <!-- actions mob -->
       <div class="actions act_mob">
-        <button class="action_button order">
+        <button class="default_button black_button order">
           <p>подтвердить</p>
         </button>
       </div>
@@ -175,7 +175,7 @@
     </div>
   </div>
   <!-- recomendations -->
-  <div class="container prod_general_style">
+  <div class="container grid_general_style">
     <div class="title">
       <p>Рекомендации</p>
     </div>

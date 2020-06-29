@@ -1,6 +1,6 @@
 <?php include 'components/header.php'; ?>
 <main>
-  <div class="shopping_basket container">
+  <div class="shopping_basket_page container">
     <!-- navigation block-->
     <div class="navigation">
       <div class="grey_line"></div>
@@ -46,10 +46,10 @@
         <p class="total_price">450$</p>
       </div>
       <div class="actions">
-        <button class="action_button inherit_button favorites">
+        <button class="default_button inherit_button favorites">
           <p>переместить в избранное</p>
         </button>
-        <button class="action_button order">
+        <button class="default_button black_button order">
           <p>оформить заказ</p>
           </button>
       </div>
@@ -57,7 +57,7 @@
 
   </div>
   <!-- recomendations -->
-  <div class="container prod_general_style shopping_basket_rec">
+  <div class="container grid_general_style shopping_basket_rec">
     <div class="title">
       <p>Рекомендации</p>
     </div>

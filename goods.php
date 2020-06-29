@@ -1,6 +1,6 @@
 <?php include 'components/header.php'; ?>
 <main>
-  <div class="goods container">
+  <div class="goods_page container">
     <!-- navigation block-->
     <div class="navigation">
       <div class="grey_line"></div>
@@ -87,7 +87,7 @@
         </div>
         <!-- show_more button -->
         <div class="to_basket">
-          <button class="action_button">
+          <button class="default_button black_button">
             <p>добавить в корзину</p>
           </button>
           <!-- like -->
@@ -126,7 +126,7 @@
     </div>
   </div>
   <!-- recomendations -->
-  <div class="container prod_general_style">
+  <div class="container grid_general_style">
     <div class="title">
       <p>Рекомендации</p>
     </div>

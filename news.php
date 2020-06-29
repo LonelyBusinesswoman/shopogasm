@@ -1,6 +1,6 @@
 <?php include 'components/header.php'; ?>
 <main>
-  <div class="news container">
+  <div class="news_page container">
     <!-- navigation block-->
     <div class="navigation">
       <div class="grey_line"></div>

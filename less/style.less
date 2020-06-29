@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 // colors
-@grey: #878787;
+@dark_grey: #878787;
+@light_grey: #F2F3F5;
 @blue: #05B1E9;
 
 body,
@@ -19,9 +20,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 7;
+  z-index: 5;
 }
-
 .container {
   width: 80%;
 }
@@ -30,12 +30,11 @@ a:focus,
 a:hover {
   outline: none;
 }
-
+// inputs styles
 input {
   -webkit-appearance: none;
   border-radius: 0;
 }
-// input
 .default_input {
   width: 100%;
   height: 40px;
@@ -46,7 +45,7 @@ input {
 .default_input::placeholder {
   font-size: 12px;
 }
-// form
+// forms styles
 .reg_form, .default_form {
   width: 100%;
   display: flex;
@@ -65,7 +64,7 @@ input {
     margin-bottom: 10px;
   }
 }
-// enter through soc
+// Enter through social websites block
 .socials {
   display: flex;
   flex-direction: column;
@@ -81,23 +80,41 @@ input {
   a {
     margin-right: 20px;
   }
+  a:hover{
+    .fa{
+      color: @blue;
+    }
+  }
   .fa {
     font-size: 35px;
+    transition: all ease 0.3s;
   }
 }
-// buttons
-.action_button {
+// Buttons style
+.default_button{
   min-width: 200px;
-  background-color: #000000;
+  background-color: inherit;
   padding: 12px 0;
   display: inline-block;
   box-sizing: border-box;
-  p {
+  transition: 0.3s ease all;
+  p, a {
     font-size: 14px;
     color: #ffffff;
     font-weight: 500;
     text-transform: uppercase;
   }
+}
+.default_button:hover{
+  transform: scale(1.05);
+}
+// black button
+.black_button {
+  background-color: #000000;
+
+}
+.black_button:hover{
+  background-color: @blue;
 }
 // button without bachkground
 .inherit_button {
@@ -105,6 +122,12 @@ input {
   border: 2px solid #000;
   p {
     color: #000;
+  }
+}
+.inherit_button:hover{
+  background-color: #000;
+  p {
+    color: #fff;
   }
 }
 // nonactive button - inherit
@@ -117,7 +140,8 @@ input {
 }
 // active button - active (grey)
 .active_button {
-  background-color: #F2F3F5;
+  background-color: @light_grey;
+  padding: 12px 10px;
   p {
     font-weight: bold;
     color: #000;
@@ -175,7 +199,7 @@ input {
     position: absolute;
     right: 7px;
   }
-  .action_button {
+  .default_button {
     display: none;
     min-width: 30%;
     height: 30px;
@@ -189,6 +213,7 @@ input {
   position: relative;
   user-select: none;
   width: 100%;
+  z-index: 10;
 }
 
 .custom-select {
@@ -253,12 +278,12 @@ input {
 
 .custom-option:hover {
   cursor: pointer;
-  background-color: #F2F3F5;
+  background-color: @light_grey;
 }
 
 .custom-option.selected {
   color: #000;
-  background-color: #F2F3F5;
+  background-color: @light_grey;
 }
 // dropdown arrow
 .arrow {
@@ -378,9 +403,13 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.1s ease all;
   img{
     margin-right: 15px;
   }
+}
+.card:hover{
+  transform:scale(1.05);
 }
 .yandex{
   img{
@@ -549,7 +578,8 @@ input {
 .fashion_news {
   display: flex;
   flex-direction: column;
-  background-color: #F2F3F5;
+  background-color: @light_grey;
+  transition: 0.2s all ease;
   cursor: pointer;
   img {
     width: 100%;
@@ -562,6 +592,9 @@ input {
     font-weight: bold;
     padding: 12px 20px;
   }
+}
+.fashion_news:hover{
+  transform: scale(1.04);
 }
 // all about shopping block
 // the general text
@@ -589,12 +622,14 @@ input {
   position: relative;
   flex-direction: column;
   cursor: pointer;
+  transition: all ease 0.2s;
   .go_to_product {
     display: flex;
     flex-direction: column;
     cursor: pointer;
   }
   .fa {
+    z-index: 5;
     cursor: pointer;
     font-size: 24px;
     position: absolute;
@@ -603,15 +638,78 @@ input {
     color: @blue;
   }
   img {
+    transition: all ease 0.2s;
     width: 100%;
     object-fit: cover;
     max-height: 300px;
+  }
+  .hide_picture{
+    transition: all ease 0.2s;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   span {
     margin-top: 5px;
   }
   .description {
     font-size: 12px;
+  }
+}
+.product:hover{
+  img{
+    transform: scale(1.04);
+  }
+  .hide_picture{
+    transform: scale(1.04);
+    opacity: 1;
+  }
+}
+.brand{
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  display: flex;
+  border: 2px solid @light_grey;
+  .brand_logo{
+    margin: 20px 0;
+    align-self: center;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100px;
+  }
+  img{
+    width: 100%;
+  }
+  .brand_name{
+    font-size: 18px;
+    line-height: 54px;
+    color: #060606;
+    font-weight: 700;
+    font-family: "PT Sans";
+  }
+  .rating{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  span{
+    font-size: 12px;
+  }
+  .stars{
+    display: flex;
+  }
+  .fa-star{
+    font-style: 15px;
+    color: @light_grey;
+  }
+  .active_star{
+    color: @blue;
   }
 }
 // purchase STYLE
@@ -934,12 +1032,29 @@ header {
     width: 25%;
     display: flex;
     justify-content: space-between;
-    p {
+    p{
       cursor: pointer;
       text-transform: uppercase;
       line-height: 10px;
       color: #000000;
       font-weight: bold;
+      transition: all ease 0.5s;
+      position: relative;
+    }
+    p:after {
+    	display: block;
+    	position: absolute;
+    	left: 0;
+      bottom: -6px;
+      width: 0;
+    	height: 2px;
+    	background-color: #000;
+    	content: "";
+    	transition: width 0.3s ease-out;
+    }
+    p:hover:after,
+    p:focus:after{
+      width: 100%;
     }
   }
   // search icon mobile
@@ -964,6 +1079,69 @@ header {
       font-size: 16px;
     }
   }
+  .menu_category{
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 40px 0;
+    .columns{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 20% 20% 20% 35%;
+      justify-content: space-between;
+    }
+    .column{
+      display: flex;
+      flex-direction: column;
+    }
+    .col_category{
+      height: 20px;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    li{
+      margin-bottom: 10px;
+    }
+    .category_link{
+      color:@dark_grey;
+      position: relative;
+    }
+    .category_link:after {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 0;
+      height: 1px;
+      background-color: @dark_grey;
+      content: "";
+      transition: width 0.3s ease-out;
+    }
+    .category_link:hover:after,
+    .category_link:focus:after{
+      width: 100%;
+    }
+    img{
+      width: 100%;
+      object-fit: contain;
+    }
+    .short_desc{
+      font-size: 12px;
+    }
+    .new_dress{
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: "PT Sans";
+      margin: 10px 0;
+    }
+  }
   // RIGHT
   .right {
     width: 30%;
@@ -982,10 +1160,27 @@ header {
       display: flex;
       justify-content: space-between;
       p {
+        cursor: default;
+        position: relative;
         font-size: 12px;
         line-height: 7px;
         color: #878787;
         font-weight: 500;
+      }
+      p:after {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 0;
+        height: 1px;
+        background-color: #878787;
+        content: "";
+        transition: width 0.3s ease-out;
+      }
+      p:hover:after,
+      p:focus:after{
+        width: 100%;
       }
     }
     .down {
@@ -996,6 +1191,14 @@ header {
       display: flex;
       width: 28%;
       justify-content: space-between;
+    }
+    .fa{
+      color: #606262;
+      font-size: 20px;
+      transition: all 0.2s ease;
+    }
+    .fa:hover{
+      color: @blue;
     }
     .basket {
       position: relative;
@@ -1019,6 +1222,11 @@ header {
         font-weight: 500;
       }
     }
+    .basket:hover{
+      .counter{
+        background-color: #000;
+      }
+    }
   }
 }
 .headerMargin {
@@ -1029,7 +1237,7 @@ header {
 footer {
   z-index: 5;
   position: static;
-  background-color: #f2f3f5;
+  background-color: @light_grey;
   flex-direction: column;
 }
 
@@ -1059,6 +1267,26 @@ footer {
       font-size: 12px;
       line-height: 24px;
       color: #545454;
+      position: relative;
+      transition: all 0.1s ease;
+    }
+    a:after {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 1px;
+      background-color: #545454;
+      content: "";
+      transition: width 0.3s ease-out;
+    }
+    a:hover{
+      font-weight: bold;
+    }
+    a:hover:after,
+    a:focus:after{
+      width: 100%;
     }
   }
   .links {
@@ -1103,7 +1331,7 @@ footer {
 // ГЛАВНАЯ
 // ПЕРВЫЙ БЛОК - СЛАЙДЕР
 
-.slider {
+.main_slider {
   display: block;
   width: 100%;
   // main SETTINGS
@@ -1118,6 +1346,19 @@ footer {
   }
   .slick-dots .slick-active button:before {
     font-size: 10px;
+  }
+  .desktop_arrow{
+    cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    z-index: 10;
+  }
+  .arrow_next{
+    right: 22%;
+  }
+  .arrow_prev{
+    right: 27%;
   }
   .slide {
     position: relative;
@@ -1277,13 +1518,13 @@ footer {
 // CЕДЬМОЙ БЛОК - ПОПУЛЯРНЫЕ ТОВАРЫ
 // СТРАНИЦА КАТЕГОРИЙ - РЕКОМЕНДАЦИИ
 
-.prod_general_style {
+.grid_general_style {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-bottom: 80px;
-  .action_button {
+  .default_button {
     margin-top: 40px;
   }
 }
@@ -1324,15 +1565,32 @@ footer {
   a {
     display: flex;
     position: relative;
+    transition: all ease 0.3s;
     img {
+      transition: all ease 0.4s;
       width: 100%;
       object-fit: cover;
+    }
+    .hidden{
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      height: -webkit-fill-available;
+      height: fill-available;
     }
     p {
       font-size: 24px;
       font-weight: 800;
       font-style: italic;
       padding: 10px;
+    }
+  }
+  a:hover{
+    transform: scale(1.02);
+    .hidden{
+      opacity: 1;
     }
   }
   .text {
@@ -1349,10 +1607,12 @@ footer {
       background-color: #fff;
       top: 32%;
       right: 12%;
+      z-index: 4;
     }
     .text_up {
       top: 30%;
       right: 9%;
+      z-index: 5;
     }
     // down text
     .block_down {
@@ -1361,10 +1621,12 @@ footer {
       background-color: #DEF9FF;
       top: 44%;
       right: 14%;
+      z-index: 4;
     }
     .text_down {
       top: 42%;
       right: 11%;
+      z-index: 5;
     }
   }
   // up banner settings
@@ -1435,7 +1697,7 @@ footer {
     display: flex;
     flex-direction: column;
     position: relative;
-    z-index: 5;
+    z-index: 10;
     width: 100%;
     // margin first filter
     .category {
@@ -1478,20 +1740,19 @@ footer {
     align-items: center;
     margin-bottom: 40px;
   }
-  .action_button {
+  .default_button {
     min-width: auto;
-    padding: 12px 15px;
   }
   .products {
     margin-bottom: 80px;
     display: none;
   }
   .item_active{
-    display: flex;
+    display: grid;
   }
 }
 // СТРАНИЦЫ РЕГИСТРАЦИЙ
-.registration {
+.registration_page {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1521,7 +1782,7 @@ footer {
       color: #06B1EB;
     }
   }
-  .action_button {
+  .default_button {
     margin-top: 20px;
     width: 50%;
     align-self: center;
@@ -1532,7 +1793,7 @@ footer {
   }
 }
 // КОРЗИНА
-.shopping_basket{
+.shopping_basket_page{
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1555,7 +1816,7 @@ footer {
   }
 }
 // Оформление заказа
-.checkout{
+.checkout_page{
   display: flex;
   flex-direction: column;
 }
@@ -1751,7 +2012,7 @@ footer {
   }
 }
 // СТРАНИУА ТОВАРА
-.goods{
+.goods_page{
   .main_info{
     width: 100%;
     display: flex;
@@ -1842,7 +2103,7 @@ footer {
       justify-content: space-between;
       align-items: center;
     }
-    .action_button{
+    .default_button{
       p{
         margin: 0;
       }
@@ -1923,7 +2184,7 @@ footer {
 }
 // ПРОФИЛЬ
 // data
-.profile{
+.profile_page{
   display: flex;
   align-items: flex-start;
   margin-bottom: 80px;
@@ -2024,7 +2285,7 @@ footer {
     }
     // change_password
     .change_password{
-      .action_button{
+      .default_button{
         min-width: 100%;
       }
     }
@@ -2066,7 +2327,7 @@ footer {
   }
   // subscriptions
   .profile_sub{
-    .action_button{
+    .default_button{
       margin-top: 50px;
     }
   }
@@ -2082,7 +2343,7 @@ footer {
     width: 47%;
     span{
       margin-top: 10px;
-      color: @grey;
+      color: @dark_grey;
     }
   }
 }
@@ -2117,7 +2378,7 @@ footer {
     text-transform: uppercase;
   }
 }
-.news{
+.news_page{
   .title{
     display: none;
   }
@@ -2132,10 +2393,11 @@ footer {
   grid-row-gap: 30px;
   margin-bottom: 80px;
   .news_item{
-    background-color: #F2F3F5;
+    background-color: @light_grey;
     width: 100%;
     display: flex;
     flex-direction: column;
+    transition: 0.2s ease all;
     .news_img{
       width: 100%;
       margin-bottom: 20px;
@@ -2157,7 +2419,7 @@ footer {
     span{
       margin-bottom: 15px;
     }
-    .action_button{
+    .default_button{
       width: 110px;
       min-width: 110px;
       margin-top: 10px;
@@ -2166,8 +2428,12 @@ footer {
       }
     }
   }
+  .news_item:hover{
+    transform: scale(1.05);
+  }
 }
 // СТРАНИЦА НОВОСТИ
+
 .article_page{
   flex-direction: column;
   display: flex;
@@ -2179,15 +2445,15 @@ footer {
     align-items: center;
     justify-content: center;
   }
+  .title_mob{
+    display: none;
+  }
   .img_and_title{
     width: 100%;
     position: relative;
     img{
       width: 100%;
       object-fit: cover;
-    }
-    .title_mob{
-      display: none;
     }
   }
   .article_text{
@@ -2199,5 +2465,46 @@ footer {
       padding-bottom: 20px;
       font-size: 16px;
     }
+  }
+}
+// СТРАНИЦА ДИЗАЙНЕРОВ
+.brands_page{
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 80px;
+  .brands_search{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 20px 0;
+  }
+  .dropdown{
+    display: none;
+  }
+  .character{
+    background-color: @light_grey;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    a{
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+  .active{
+    background-color: #000;
+    a{
+      color: @light_grey;
+    }
+  }
+  .brands_grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    justify-content: space-between;
+    grid-row-gap: 3%;
   }
 }

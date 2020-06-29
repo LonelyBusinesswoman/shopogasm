@@ -120,7 +120,7 @@
   }
 }
 // registration form
-.registration{
+.registration_page{
   @media (max-width: 1200px){
     .form{
       width: 40%;
@@ -211,8 +211,10 @@
           input{
             width: 70%;
           }
-          .action_button{
-            display: block;
+          .default_button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
         }
         .fa{
@@ -298,7 +300,7 @@
 
 // MAIN
 // ПЕРВЫЙ БЛОК СЛАЙДЕР
-.slider{
+.main_slider{
   @media (max-width: 1250px){
     .slide .img_slide{
       display: flex;
@@ -306,7 +308,7 @@
       justify-content: center;
       img{
         object-fit: fill;
-        width: auto;
+        width: 100%;
       }
     }
     .slide .slide_info .info_wrap{
@@ -317,6 +319,13 @@
     }
     .slick-dots{
       right: 10%;
+    }
+  }
+  @media (max-width: 1150px){
+    .slide .img_slide{
+      img{
+        width: auto;
+      }
     }
   }
   //mobile slider
@@ -663,7 +672,7 @@
   }
 }
 // КОРЗИНА
-.shopping_basket{
+.shopping_basket_page{
   @media (max-width: 1000px){
     .total{
       width: 70%;
@@ -717,7 +726,7 @@
     }
 }
 // ОФОРМЛЕНИЕ ЗАКАЗА
-.checkout{
+.checkout_page{
   @media (max-width: 1000px){
     .order_registration{
       flex-direction: column;
@@ -874,7 +883,7 @@
   }
 }
 // СТРАНИЦА ТОВАРА
-.goods{
+.goods_page{
   @media (max-width: 1400px){
     .information .to_basket{
       width: 70%;
@@ -1032,7 +1041,7 @@
 }
 
 // profile
-.profile{
+.profile_page{
   @media (max-width: 768px){
     flex-direction: column;
     .sidebar_nav{
@@ -1122,7 +1131,7 @@
   }
 }
 // СТРАНИЦА С НОВОСТЯМИ
-.news{
+.news_page{
   @media (max-width: 900px){
     .news_grid{
       grid-template-columns: repeat(2, 48%);
@@ -1168,6 +1177,47 @@
       .news_brand{
         font-size: 12px;
       }
+    }
+  }
+}
+// СТРАНИЦА БРЕНДОВ
+.brands_page{
+  @media (max-width: 900px){
+    .brands_grid{
+      grid-template-columns: repeat(3, 32%);
+      grid-row-gap: 3%;
+    }
+  }
+  @media (max-width: 650px){
+    .name_of_web{
+      text-align: center;
+      margin-top: 10px;
+    }
+    .brands_grid{
+      grid-template-columns: repeat(2, 48%);
+      grid-row-gap: 3%;
+    }
+    .brands_search{
+      display: none;
+    }
+    .dropdown{
+      margin-top: 20px;
+      display: block;
+      width: 70px;
+      margin-bottom: 20px;
+    }
+    .custom-select__trigger{
+      background-color: #F2F3F5;
+    }
+  }
+  @media (max-width: 450px){
+    .brands_grid{
+      grid-template-columns: 84%;
+      justify-content: center;
+      grid-row-gap: 2%;
+    }
+    .dropdown{
+      margin-left: 8%;
     }
   }
 }

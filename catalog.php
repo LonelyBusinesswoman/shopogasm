@@ -192,7 +192,7 @@
 </div>
 <!-- show_more button -->
 <div class="show_more">
-  <button class="action_button">
+  <button class="default_button black_button">
     <p>показать больше</p>
   </button>
 </div>
@@ -200,10 +200,10 @@
   <!-- recomendations block-->
   <div class="recomendations_and_viewed">
     <div class="actions">
-      <button class="action_button nonactive_button active_button" data-tab="1">
+      <button class="default_button nonactive_button active_button" data-tab="1">
         <p>рекомендации</p>
       </button>
-      <button class="action_button nonactive_button" data-tab="2">
+      <button class="default_button nonactive_button" data-tab="2">
         <p>недавно просмотренное</p>
       </button>
     </div>

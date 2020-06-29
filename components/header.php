@@ -11,8 +11,8 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
 	<!-- CSS style -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css?v=11">
-	<link rel="stylesheet" type="text/css" href="css/adaptive.css?v=11">
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=12">
+	<link rel="stylesheet" type="text/css" href="css/adaptive.css?v=12">
 	<!-- For Checkbox -->
 	<link rel="stylesheet" type="text/css" href="css/checkbox.css">
 	<!-- Jquery UI -->
@@ -31,11 +31,9 @@
 </head>
 <body>
 	<!-- Header -->
-	<div class="headerMargin">
-	</div>
+	<div class="headerMargin"></div>
 	<header>
 		<div class="header container">
-			<!-- Burger -->
 			<!-- LEFT -->
 			<div class="left">
 				<div class="up">
@@ -63,7 +61,7 @@
 							<!-- for desktop search (icon)-->
 							<button class="desktop_btn search_btn" type="button" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
 							<!-- for mobile search (button)-->
-							<button class="action_button">
+							<button class="default_button black_button">
 				        <p>найти</p>
 				      </button>
 						</form>
@@ -77,6 +75,52 @@
 					<a href="#">Одежда</a>
 					<a href="#">Аксессуары</a>
 					<a href="#">Распродажа</a>
+				</div>
+			</div>
+
+			<div class="menu_category">
+				<div class="container">
+
+					<div class="columns">
+
+						<div class="column">
+							<a class="col_category" href="#">Одежда</a>
+							<ul>
+								<li><a class="category_link" href="#">Новинки</a></li>
+								<li><a class="category_link" href="#">Блузы и рубашки</a></li>
+								<li><a class="category_link" href="#">Брюки</a></li>
+								<li><a class="category_link" href="#">Верхняя одежда</a></li>
+								<li><a class="category_link" href="#">Джинсы</a></li>
+							</ul>
+						</div>
+						<div class="column">
+							<a class="col_category" href="#"></a>
+							<ul>
+								<li><a class="category_link" href="#">Новинки</a></li>
+								<li><a class="category_link" href="#">Блузы и рубашки</a></li>
+								<li><a class="category_link" href="#">Брюки</a></li>
+								<li><a class="category_link" href="#">Верхняя одежда</a></li>
+								<li><a class="category_link" href="#">Джинсы</a></li>
+							</ul>
+						</div>
+						<div class="column">
+							<a class="col_category" href="#"></a>
+							<ul>
+								<li><a class="category_link" href="#">Новинки</a></li>
+								<li><a class="category_link" href="#">Блузы и рубашки</a></li>
+								<li><a class="category_link" href="#">Брюки</a></li>
+								<li><a class="category_link" href="#">Верхняя одежда</a></li>
+								<li><a class="category_link" href="#">Джинсы</a></li>
+							</ul>
+						</div>
+
+						<div class="column">
+							<img src="img/content/new_dress.png" alt="dress">
+							<p class="new_dress">Новинки одежды</p>
+							<p class="short_desc">Коротокое описание продукта</p>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
@@ -94,13 +138,16 @@
 				<div class="down">
 					<div class="personal_area">
 							<a class="user" href="#">
-								<img src="img/content/user.png" alt="user">
+								<!-- <img src="img/content/user.png" alt="user"> -->
+								<i class="fa fa-user" aria-hidden="true"></i>
 							</a>
 							<a class="like" href="#">
-								<img src="img/content/like.png" alt="like">
+								<!-- <img src="img/content/like.png" alt="like"> -->
+								<i class="fa fa-heart" aria-hidden="true"></i>
 							</a>
 							<a class="basket" href="#">
-								<img src="img/content/shopping-basket.png" alt="basket">
+								<!-- <img src="img/content/shopping-basket.png" alt="basket"> -->
+								<i class="fa fa-shopping-basket" aria-hidden="true"></i>
 								<div class="counter">
 									<p class="number">0</p>
 								</div>
@@ -108,10 +155,9 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</header>
-
+<!-- sidebar mob -->
 	<div class="mobile">
 		<div class="wrap">
 			<div class="close_mob_menu">

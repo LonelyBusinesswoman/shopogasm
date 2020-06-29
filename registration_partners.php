@@ -1,6 +1,6 @@
 <?php include 'components/header.php'; ?>
 <main>
-  <div class="registration container">
+  <div class="registration_page container">
     <div class="form">
       <span>Регистрация <br>для партнёров</span>
       <form class="reg_form default_form" action="" method="">
@@ -21,7 +21,7 @@
           </div>
       </div>
           <!-- Reg button -->
-        <button class="action_button">
+        <button class="default_button black_button">
             <p>Зарегистрироваться</p>
         </button>
       </form>

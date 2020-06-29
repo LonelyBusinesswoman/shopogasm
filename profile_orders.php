@@ -1,6 +1,6 @@
 <?php include 'components/header.php'; ?>
 <main>
-  <div class="profile profile_data container">
+  <div class="profile_page profile_ord container">
     <!-- profile navigation -->
       <div class="sidebar_nav">
         <div class="title">
@@ -8,8 +8,8 @@
         </div>
         <!-- links -->
         <ul class="profile_navigation">
-          <li> <a class="currentLink" href="profile_data.php"> Мои данные </a> </li>
-          <li> <a href="profile_orders.php"> Мои заказы </a> </li>
+          <li> <a href="profile_data.php"> Мои данные </a> </li>
+          <li> <a class="currentLink" href="profile_orders.php"> Мои заказы </a> </li>
           <li> <a href="profile_subscriptions.php"> Подписки </a> </li>
           <li> <a href="profile_questions.php"> Вопросы
                 <div class="number_of_questions">

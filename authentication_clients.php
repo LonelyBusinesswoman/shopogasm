@@ -1,6 +1,6 @@
 <?php include 'components/header.php'; ?>
 <main>
-  <div class="registration container">
+  <div class="registration_page container">
     <div class="form">
       <span>Вход</span>
       <!-- through socials -->
@@ -39,7 +39,7 @@
           <a href="">Забыли пароль?</a>
         </div>
           <!-- Reg button -->
-        <button class="action_button">
+        <button class="default_button black_button">
             <p>Войти</p>
         </button>
       </form>

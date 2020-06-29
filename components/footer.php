@@ -1,5 +1,5 @@
 	<footer>
-		<!-- question -->
+		<!-- question block-->
 		<div class="question">
 		  <div class="container help">
 		    <div class="title">
@@ -11,19 +11,19 @@
 		Возможно, ваш вопрос найдется  в разделе <a href="#">«Ответы и вопросы»</a></p>
 		  <form class="send" action="" method="post">
 		    <input class="default_input" type="email" name="send" placeholder="E-mail">
-		    <button class="action_button">
+		    <button class="default_button black_button">
 		      <p>отправить</p>
 		    </button>
 		  </form>
 		  </div>
 		</div>
-		<!-- footer -->
+		<!-- footer block-->
 		<div class="footer container">
 			<!-- logo -->
 			<div class="logo">
 				<img src="img/content/logo.svg" alt="logo">
 			</div>
-			<!-- all links -->
+			<!-- links -->
 			<div class="inf">
 				<div class="about text">
 					<p class="subtitle">О Shopogasm</p>
@@ -57,6 +57,7 @@
 						<a class="vk_link" href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
 					</div>
 				</div>
+				<!-- instagram -->
 				<div class="instagram text">
 					<p class="subtitle">Instagram Shopogasm</p>
 					<div class="photo">
@@ -78,7 +79,7 @@
 				<a href="#">Пользовательское соглашение</a>
 		</div>
 	</div>
-	<!-- for range slider mob -->
+<!-- for range slider mob -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js">
 </script>
 <script>$('.polzunok-container').draggable();</script>
@@ -86,7 +87,7 @@
 <script src="libs/slick/slick.min.js"></script>
 <!-- popup -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
-<!-- main -->
-<script src="js/main.js?v=10"></script>
+<!-- main js -->
+<script src="js/main.js?v=12"></script>
 </body>
 </html>

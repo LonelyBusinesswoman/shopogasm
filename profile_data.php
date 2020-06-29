@@ -1,6 +1,6 @@
 <?php include 'components/header.php'; ?>
 <main>
-  <div class="profile profile_data container">
+  <div class="profile_page profile_data container">
     <!-- profile navigation -->
       <div class="sidebar_nav">
         <div class="title">
@@ -81,14 +81,14 @@
           <div class="additional_inf_block">
             <span>Пароль</span>
             <div class="change_password">
-              <button class="action_button">
+              <button class="default_button black_button">
                   <p>Изменить</p>
               </button>
             </div>
           </div>
         </div>
         <!-- save changes -->
-        <button class="action_button inherit_button save_changes">
+        <button class="default_button inherit_button save_changes">
             <p>Сохранить</p>
         </button>
       </div>

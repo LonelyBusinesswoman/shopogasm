@@ -1,6 +1,6 @@
 <?php include 'components/header.php'; ?>
 <main>
-  <div class="profile profile_subscriptions container">
+  <div class="profile_page profile_subscriptions container">
     <!-- profile navigation -->
       <div class="sidebar_nav">
         <div class="title">
@@ -8,9 +8,9 @@
         </div>
         <!-- links -->
         <ul class="profile_navigation">
-          <li> <a class="currentLink" href="profile_data.php"> Мои данные </a> </li>
+          <li> <a href="profile_data.php"> Мои данные </a> </li>
           <li> <a href="profile_orders.php"> Мои заказы </a> </li>
-          <li> <a href="profile_subscriptions.php"> Подписки </a> </li>
+          <li> <a class="currentLink" href="profile_subscriptions.php"> Подписки </a> </li>
           <li> <a href="profile_questions.php"> Вопросы
                 <div class="number_of_questions">
                     <p>1</p>
@@ -49,7 +49,7 @@
             <span>Следите за новостями о бесплатной доставке, закрытых распродажах и специальных предложениях.</span>
           </div>
         </div>
-        <button class="action_button inherit_button save_changes">
+        <button class="default_button inherit_button save_changes">
             <p>Сохранить</p>
         </button>
     </div>

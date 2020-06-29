@@ -1,6 +1,6 @@
 <?php include 'components/header.php'; ?>
 <main>
-  <div class="checkout payment container">
+  <div class="checkout_page payment container">
     <!-- navigation block-->
     <div class="navigation">
       <div class="grey_line"></div>
@@ -85,7 +85,7 @@
             <p class="total_price">450$</p>
           </div>
           <div class="actions">
-            <button class="action_button order">
+            <button class="default_button black_button order">
               <p> оплатить заказ</p>
               </button>
           </div>
@@ -98,7 +98,7 @@
     </div>
   </div>
   <!-- recomendations -->
-  <div class="container prod_general_style">
+  <div class="container grid_general_style">
     <div class="title">
       <p>Рекомендации</p>
     </div>
