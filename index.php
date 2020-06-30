@@ -15,7 +15,7 @@
           <p class="slide_number">01</p>
           <!-- slide title -->
           <p class="name">Российские fashion бренды</p>
-          <span span="from">From Russia With Love</span>
+          <span class="from">From Russia With Love</span>
           <!-- video-info -->
           <div class="video">
             <!-- button for video-->
@@ -53,7 +53,7 @@
           <p class="slide_number">01</p>
           <!-- slide title -->
           <p class="name">Российские fashion бренды</p>
-          <span span="from">From Russia With Love</span>
+          <span class="from">From Russia With Love</span>
           <!-- video-info -->
           <div class="video">
             <!-- button for video-->
@@ -90,7 +90,7 @@
         <p class="slide_number">01</p>
         <!-- slide title -->
         <p class="name">Российские fashion бренды</p>
-        <span span="from">From Russia With Love</span>
+        <span class="from">From Russia With Love</span>
         <!-- video-info -->
         <div class="video">
           <!-- button for video-->

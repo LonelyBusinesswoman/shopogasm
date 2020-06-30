@@ -88,6 +88,6 @@
 <!-- popup -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
 <!-- main js -->
-<script src="js/main.js?v=12"></script>
+<script src="js/main.js?v=15"></script>
 </body>
 </html>

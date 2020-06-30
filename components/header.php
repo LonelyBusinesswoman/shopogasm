@@ -11,8 +11,8 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
 	<!-- CSS style -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css?v=12">
-	<link rel="stylesheet" type="text/css" href="css/adaptive.css?v=12">
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=15">
+	<link rel="stylesheet" type="text/css" href="css/adaptive.css?v=15">
 	<!-- For Checkbox -->
 	<link rel="stylesheet" type="text/css" href="css/checkbox.css">
 	<!-- Jquery UI -->
