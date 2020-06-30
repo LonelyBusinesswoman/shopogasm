@@ -41,6 +41,10 @@
         <span>x</span>
         <p> 450</p> <span>$</span>
       </div>
+      <!-- views -->
+      <div class="views">
+        <p>150 просмотров</p>
+      </div>
       <!-- delete item -->
       <div class="delete">
         <!-- <i class="fa fa-times" aria-hidden="true"></i> -->

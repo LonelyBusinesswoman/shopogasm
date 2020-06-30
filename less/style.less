@@ -741,12 +741,6 @@ textarea::placeholder{
       display: flex;
       flex-direction: column;
     }
-    .quantity_final{
-      display: none;
-    }
-    .quantity_and_summ{
-      display: none;
-    }
     .name_of_product{
       margin: 5px 0 10px 0;
     }
@@ -758,6 +752,15 @@ textarea::placeholder{
   .price_block{
     position: absolute;
     left: 50%;
+  }
+  .quantity_final{
+    display: none;
+  }
+  .quantity_and_summ{
+    display: none;
+  }
+  .views{
+    display: none;
   }
   //quantity_block
   .quantity_block{
@@ -2590,5 +2593,146 @@ footer {
     width: 25%;
     min-width: 15%;
     margin-top: 20px;
+  }
+}
+// ДАШБОРД
+// sidebar
+.dashboard_sidebar{
+  flex-direction: column;
+  display: flex;
+  .name_of_web{
+    margin-bottom: 20px;
+  }
+  li{
+    margin-bottom: 15px;
+  }
+  a{
+    display: flex;
+    align-items: center;
+  }
+  span{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .active{
+    color: @blue;
+  }
+  img{
+    margin-right: 5px;
+    width: 25px;
+  }
+  // for tag icon
+  .tag{
+    width: 15px;
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+}
+.dashboard_page{
+  flex-direction: column;
+  display: flex;
+}
+.dashboard_main{
+  display: grid;
+  grid-template-columns: 15% 55% 25%;
+  justify-content: space-between;
+  .name_of_web{
+    margin: 20px 0;
+    width: 100%;
+  }
+  .main_information{
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+  }
+  .today_data{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 49% 49%;
+    justify-content: space-between;
+  }
+  .data_block{
+    height: 55px;
+    align-items: center;
+    display: flex;
+    margin-bottom: 6px;
+    p{
+      font-size: 16px;
+      font-weight: bold;
+      margin-left: 20px;
+    }
+  }
+  .blue{
+    background-color: #BDFFF3;
+  }
+  .green{
+    background-color: #B6FFBA;
+  }
+  .pink{
+    background-color: #FFDAD9;
+  }
+  .orange{
+    background-color: #FFE7DA;
+  }
+  .inf_block{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    span{
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .order_description{
+      justify-content: space-between;
+      display: flex;
+      p{
+        position: static;
+        font-weight: bold;
+      }
+    }
+    .purchase{
+      .all_information{
+        justify-content: space-between;
+      }
+      .main_desc{
+        width: 80%;
+      }
+      .information_block{
+        p{
+          display: none;
+        }
+        .name_of_product{
+          display: block;
+        }
+      }
+      .delete, .quantity_block, .price_of_product, .summ_block{
+        display: none;
+      }
+      .views{
+        text-align: right;
+        width: 20%;
+        display: block;
+      }
+    }
+  }
+  .general_summary{
+    width:70%;
+    flex-direction: column;
+    display: flex;
+  }
+  .calendar{
+    position: relative;
+    margin-bottom: 30px;
+    align-items: center;
+    display: flex;
+    img{
+      position: absolute;
+      right: 10px;
+    }
+  }
+  .general_info{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
   }
 }

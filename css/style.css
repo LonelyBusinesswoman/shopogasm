@@ -679,12 +679,6 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
 }
-.purchase .main_desc .quantity_final {
-  display: none;
-}
-.purchase .main_desc .quantity_and_summ {
-  display: none;
-}
 .purchase .main_desc .name_of_product {
   margin: 5px 0 10px 0;
 }
@@ -695,6 +689,15 @@ textarea::placeholder {
 .purchase .price_block {
   position: absolute;
   left: 50%;
+}
+.purchase .quantity_final {
+  display: none;
+}
+.purchase .quantity_and_summ {
+  display: none;
+}
+.purchase .views {
+  display: none;
 }
 .purchase .quantity_block {
   display: flex;
@@ -2411,4 +2414,141 @@ footer {
   width: 25%;
   min-width: 15%;
   margin-top: 20px;
+}
+.dashboard_sidebar {
+  flex-direction: column;
+  display: flex;
+}
+.dashboard_sidebar .name_of_web {
+  margin-bottom: 20px;
+}
+.dashboard_sidebar li {
+  margin-bottom: 15px;
+}
+.dashboard_sidebar a {
+  display: flex;
+  align-items: center;
+}
+.dashboard_sidebar span {
+  font-size: 16px;
+  font-weight: bold;
+}
+.dashboard_sidebar .active {
+  color: #05B1E9;
+}
+.dashboard_sidebar img {
+  margin-right: 5px;
+  width: 25px;
+}
+.dashboard_sidebar .tag {
+  width: 15px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.dashboard_page {
+  flex-direction: column;
+  display: flex;
+}
+.dashboard_main {
+  display: grid;
+  grid-template-columns: 15% 55% 25%;
+  justify-content: space-between;
+}
+.dashboard_main .name_of_web {
+  margin: 20px 0;
+  width: 100%;
+}
+.dashboard_main .main_information {
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+}
+.dashboard_main .today_data {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 49% 49%;
+  justify-content: space-between;
+}
+.dashboard_main .data_block {
+  height: 55px;
+  align-items: center;
+  display: flex;
+  margin-bottom: 6px;
+}
+.dashboard_main .data_block p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.dashboard_main .blue {
+  background-color: #BDFFF3;
+}
+.dashboard_main .green {
+  background-color: #B6FFBA;
+}
+.dashboard_main .pink {
+  background-color: #FFDAD9;
+}
+.dashboard_main .orange {
+  background-color: #FFE7DA;
+}
+.dashboard_main .inf_block {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+}
+.dashboard_main .inf_block span {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.dashboard_main .inf_block .order_description {
+  justify-content: space-between;
+  display: flex;
+}
+.dashboard_main .inf_block .order_description p {
+  position: static;
+  font-weight: bold;
+}
+.dashboard_main .inf_block .purchase .all_information {
+  justify-content: space-between;
+}
+.dashboard_main .inf_block .purchase .main_desc {
+  width: 80%;
+}
+.dashboard_main .inf_block .purchase .information_block p {
+  display: none;
+}
+.dashboard_main .inf_block .purchase .information_block .name_of_product {
+  display: block;
+}
+.dashboard_main .inf_block .purchase .delete,
+.dashboard_main .inf_block .purchase .quantity_block,
+.dashboard_main .inf_block .purchase .price_of_product,
+.dashboard_main .inf_block .purchase .summ_block {
+  display: none;
+}
+.dashboard_main .inf_block .purchase .views {
+  text-align: right;
+  width: 20%;
+  display: block;
+}
+.dashboard_main .general_summary {
+  width: 70%;
+  flex-direction: column;
+  display: flex;
+}
+.dashboard_main .calendar {
+  position: relative;
+  margin-bottom: 30px;
+  align-items: center;
+  display: flex;
+}
+.dashboard_main .calendar img {
+  position: absolute;
+  right: 10px;
+}
+.dashboard_main .general_info {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
 }

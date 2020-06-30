@@ -1159,3 +1159,38 @@
     width: 50%;
   }
 }
+@media (max-width: 900px) {
+  .dashboard_main {
+    grid-template-columns: 1fr;
+  }
+  .dashboard_main .dashboard_sidebar {
+    order: 1;
+  }
+  .dashboard_main .general_summary {
+    width: 40%;
+    order: 2;
+  }
+  .dashboard_main .main_information {
+    order: 3;
+  }
+}
+@media (max-width: 550px) {
+  .dashboard_main .general_summary {
+    width: 70%;
+  }
+  .dashboard_main .data_block p {
+    font-size: 12px;
+  }
+  .dashboard_main .main_information .purchase .main_desc {
+    width: 70%;
+  }
+  .dashboard_main .main_information .purchase .name_of_product {
+    font-size: 12px;
+  }
+  .dashboard_main .main_information .purchase .views {
+    width: 30%;
+  }
+  .dashboard_main .main_information .purchase .views p {
+    font-size: 10px;
+  }
+}

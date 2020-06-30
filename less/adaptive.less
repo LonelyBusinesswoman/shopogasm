@@ -1282,3 +1282,46 @@
     }
   }
 }
+// ДАШБОРД
+// ГЛАВНАЯ
+.dashboard_main{
+  @media (max-width: 900px){
+    grid-template-columns: 1fr;
+    .dashboard_sidebar{
+      order:1;
+    }
+    .general_summary{
+      width: 40%;
+      order:2;
+    }
+    .main_information{
+      order:3;
+    }
+  }
+  @media (max-width: 550px){
+    .general_summary{
+      width: 70%;
+    }
+    .data_block{
+      p{
+        font-size: 12px;
+      }
+    }
+    .main_information{
+      .purchase{
+        .main_desc{
+          width: 70%;
+        }
+        .name_of_product{
+          font-size: 12px;
+        }
+        .views{
+          width: 30%;
+          p{
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
