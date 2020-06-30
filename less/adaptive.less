@@ -1493,3 +1493,51 @@
     }
   }
 }
+// ДАШБОРД ЗАКАЗ
+.dashboard_order{
+  @media (max-width: 1000px){
+    grid-template-columns: 1fr;
+    .dashboard_sidebar{
+      order:1;
+    }
+    .client_information{
+      order:2;
+    }
+    .dashboard_order_block{
+      order:3;
+    }
+  }
+  @media (max-width: 768px){
+    .purchase{
+      .main_desc{
+        width: auto;
+      }
+    }
+  }
+  @media (max-width: 550px){
+    .dashboard_order_block{
+      .name_of_web{
+        flex-direction: column;
+        align-items: flex-start;
+        span{
+          margin: 10px 0;
+        }
+        .filter_status{
+          width: auto;
+          span{
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .dashboard_order_block .purchase{
+      .all_information{
+        flex-wrap: wrap;
+      }
+      .quantity_and_summ{
+        width: 70%;
+        margin-top: 20px;
+      }
+    }
+  }
+}

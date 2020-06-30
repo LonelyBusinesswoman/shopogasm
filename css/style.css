@@ -187,6 +187,14 @@ textarea::placeholder {
   font-weight: bold;
   text-transform: uppercase;
 }
+.quantity_and_summ {
+  display: flex;
+}
+.quantity_and_summ p,
+.quantity_and_summ span {
+  font-size: 12px;
+  font-weight: bold;
+}
 .search {
   width: 40%;
   position: relative;
@@ -536,6 +544,28 @@ textarea::placeholder {
   width: 30%;
   min-width: inherit;
 }
+.filter_status {
+  cursor: pointer;
+  width: auto;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #F2F3F5;
+  display: flex;
+}
+.filter_status span {
+  margin-right: 5px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.filter_status p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+}
 .title {
   text-align: center;
   margin: 40px 0;
@@ -727,6 +757,23 @@ textarea::placeholder {
 .purchase .main_desc {
   align-items: center;
   display: flex;
+  position: relative;
+}
+.purchase .main_desc .count {
+  position: absolute;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  top: -5px;
+  left: 31%;
+  background-color: #05B1E9;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.purchase .main_desc .count p {
+  color: #fff;
+  font-size: 10px;
 }
 .purchase .main_desc img {
   width: 100px;
@@ -741,8 +788,12 @@ textarea::placeholder {
   margin: 5px 0 10px 0;
 }
 .purchase .main_desc .size_of_product,
-.purchase .main_desc .delivery {
+.purchase .main_desc .delivery,
+.purchase .main_desc .sku {
   font-size: 12px;
+}
+.purchase .main_desc .sku {
+  display: none;
 }
 .purchase .stocks {
   display: none;
@@ -2823,28 +2874,6 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.dashboard_orders_block .filter_status {
-  cursor: pointer;
-  width: auto;
-  text-align: center;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px;
-  border: 1px solid #F2F3F5;
-  display: flex;
-}
-.dashboard_orders_block .filter_status span {
-  margin-right: 5px;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-}
-.dashboard_orders_block .filter_status p {
-  margin: 0;
-  font-size: 12px;
-  font-weight: 400;
-}
 .dashboard_orders_block .active {
   background-color: #05B1E9;
 }
@@ -2912,4 +2941,112 @@ footer {
   left: 95%;
   text-transform: uppercase;
   font-weight: 700;
+}
+.dashboard_order {
+  display: grid;
+  grid-template-columns: 15% 55% 25%;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+.dashboard_order_block {
+  width: 100%;
+  flex-direction: column;
+}
+.dashboard_order_block .name_of_web {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.dashboard_order_block .name_of_web .filter_status p {
+  text-transform: capitalize;
+}
+.dashboard_order_block .orders_items {
+  padding: 20px;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  border: 2px solid #F2F3F5;
+}
+.dashboard_order_block .purchase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard_order_block .purchase .all_information {
+  justify-content: space-between;
+}
+.dashboard_order_block .purchase .sku {
+  display: block;
+}
+.dashboard_order_block .purchase .delivery {
+  display: none;
+}
+.dashboard_order_block .purchase .delete,
+.dashboard_order_block .purchase .quantity_block,
+.dashboard_order_block .purchase .price_of_product {
+  display: none;
+}
+.dashboard_order_block .purchase .summ_block {
+  position: static;
+}
+.dashboard_order_block .purchase .summ_block .price_of_product {
+  display: block;
+}
+.dashboard_order_block .purchase .quantity_and_summ {
+  position: static;
+  display: flex;
+}
+.dashboard_order_block .payed {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #F2F3F5;
+  padding: 20px;
+}
+.dashboard_order_block .total {
+  width: 100%;
+  margin: 0;
+}
+.dashboard_order_block .total .additional {
+  color: #999999;
+}
+.dashboard_order_block .total .count {
+  text-align: right;
+}
+.dashboard_order_block .total .row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.dashboard_order_block .default_button {
+  margin-top: 20px;
+  width: 150px;
+  min-width: 150px;
+}
+.client_information {
+  background-color: #F2F3F5;
+  width: 100%;
+  padding: 20px;
+  flex-direction: column;
+  display: flex;
+}
+.client_information .client_main {
+  display: flex;
+  flex-direction: column;
+}
+.client_information a {
+  color: #05B1E9;
+  margin-bottom: 2px;
+}
+.client_information span {
+  margin-bottom: 2px;
+}
+.client_information .subtitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.client_information .address {
+  margin-top: 10px;
 }

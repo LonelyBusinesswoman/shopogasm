@@ -202,6 +202,14 @@ textarea::placeholder{
     text-transform: uppercase;
   }
 }
+//
+.quantity_and_summ{
+  display: flex;
+  p, span{
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
 //search form
 .search {
   width: 40%;
@@ -592,6 +600,29 @@ textarea::placeholder{
     }
   }
 }
+// filter
+.filter_status{
+  cursor: pointer;
+  width: auto;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid @light_grey;
+  display: flex;
+  span{
+    margin-right: 5px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+  }
+  p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
 // title style
 .title {
   text-align: center;
@@ -792,6 +823,23 @@ textarea::placeholder{
   .main_desc{
     align-items: center;
     display: flex;
+    position: relative;
+    .count{
+      position: absolute;
+      border-radius: 50%;
+      width: 14px;
+      height: 14px;
+      top: -5px;
+      left: 31%;
+      background-color: @blue;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      p{
+        color:#fff;
+        font-size: 10px;
+      }
+    }
     img{
       width: 100px;
       object-fit: cover;
@@ -804,8 +852,11 @@ textarea::placeholder{
     .name_of_product{
       margin: 5px 0 10px 0;
     }
-    .size_of_product, .delivery{
+    .size_of_product, .delivery, .sku{
       font-size: 12px;
+    }
+    .sku{
+      display: none;
     }
   }
   .stocks{
@@ -3024,28 +3075,6 @@ footer {
     display: flex;
     justify-content: space-between;
   }
-  .filter_status{
-    cursor: pointer;
-    width: auto;
-    text-align: center;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid @light_grey;
-    display: flex;
-    span{
-      margin-right: 5px;
-      height: 10px;
-      width: 10px;
-      border-radius: 50%;
-    }
-    p{
-      margin: 0;
-      font-size: 12px;
-      font-weight: 400;
-    }
-  }
   .active{
     background-color: @blue;
     p{
@@ -3113,5 +3142,116 @@ footer {
       text-transform: uppercase;
       font-weight: 700;
     }
+  }
+}
+// ДАШБОРД ЗАКАЗ
+.dashboard_order{
+  display: grid;
+  grid-template-columns: 15% 55% 25%;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+.dashboard_order_block{
+  width: 100%;
+  flex-direction: column;
+  .name_of_web{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    .filter_status{
+      p{
+        text-transform: capitalize;
+      }
+    }
+  }
+  // block with goods
+  .orders_items{
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    border: 2px solid @light_grey;
+  }
+  .purchase{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .all_information{
+      justify-content: space-between;
+    }
+    .sku{
+      display: block;
+    }
+    .delivery{
+      display: none;
+    }
+    .delete, .quantity_block, .price_of_product{
+      display: none;
+    }
+    .summ_block{
+      position: static;
+      .price_of_product{
+        display: block;
+      }
+    }
+    .quantity_and_summ{
+      position: static;
+      display: flex;
+    }
+  }
+  .payed{
+    width: 100%;
+    margin-top: 20px;
+    background-color: @light_grey;
+    padding: 20px;
+  }
+  .total{
+    width: 100%;
+    margin: 0;
+    .additional{
+      color: #999999;
+    }
+    .count{
+      text-align: right;
+    }
+    .row{
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+  }
+  .default_button{
+    margin-top: 20px;
+    width: 150px;
+    min-width: 150px;
+  }
+}
+// client info
+.client_information{
+  background-color: @light_grey;
+  width: 100%;
+  padding: 20px;
+  flex-direction: column;
+  display: flex;
+  .client_main{
+    display: flex;
+    flex-direction: column;
+  }
+  a{
+    color: @blue;
+    margin-bottom: 2px;
+  }
+  span{
+    margin-bottom: 2px;
+  }
+  .subtitle{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .address{
+    margin-top: 10px;
   }
 }
