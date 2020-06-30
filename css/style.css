@@ -772,6 +772,19 @@ textarea::placeholder {
   margin-top: 20px;
   margin-left: 20px;
 }
+.character {
+  background-color: #F2F3F5;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+}
+.character a {
+  font-size: 12px;
+  font-weight: 500;
+}
 .overlay {
   width: 100%;
   min-height: 100vh;
@@ -2320,19 +2333,6 @@ footer {
 .brands_page .dropdown {
   display: none;
 }
-.brands_page .character {
-  background-color: #F2F3F5;
-  width: 30px;
-  height: 30px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-}
-.brands_page .character a {
-  font-size: 12px;
-  font-weight: 500;
-}
 .brands_page .active {
   background-color: #000;
 }
@@ -2447,6 +2447,31 @@ footer {
   width: 15px;
   margin-left: 5px;
   margin-right: 10px;
+}
+.nav_pages {
+  align-self: flex-end;
+  align-items: center;
+  display: flex;
+  margin-bottom: 40px;
+}
+.nav_pages span {
+  margin-right: 20px;
+}
+.nav_pages .pages {
+  display: flex;
+  border: 1px solid #878787;
+}
+.nav_pages .character {
+  border-right: 1px solid #878787;
+}
+.nav_pages .character:last-child {
+  border-right: none;
+}
+.nav_pages .active {
+  background-color: #fff;
+}
+.nav_pages .active a {
+  color: #000;
 }
 .dashboard_page {
   flex-direction: column;

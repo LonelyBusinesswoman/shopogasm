@@ -86,6 +86,30 @@
           </div>
       </div>
     </div>
+    <!-- pages -->
+    <div class="nav_pages">
+      <span>120 заказов</span>
+      <div class="pages">
+        <div class="character left">
+          <a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="character active">
+          <a href="#">1</a>
+        </div>
+        <div class="character">
+          <a href="#">2</a>
+        </div>
+        <div class="character">
+          <a href="#">3</a>
+        </div>
+        <div class="character ">
+          <a href="#">4</a>
+        </div>
+        <div class="character right">
+          <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
   </div>
 </main>
 <?php include 'components/footer.php'; ?>

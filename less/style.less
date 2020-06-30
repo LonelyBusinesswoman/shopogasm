@@ -840,6 +840,20 @@ textarea::placeholder{
     margin-left: 20px;
   }
 }
+// for brands and dashboard
+.character{
+  background-color: @light_grey;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  a{
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
 // Popup
 // main settings of popup
 .overlay {
@@ -2498,19 +2512,6 @@ footer {
   .dropdown{
     display: none;
   }
-  .character{
-    background-color: @light_grey;
-    width: 30px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    a{
-      font-size: 12px;
-      font-weight: 500;
-    }
-  }
   .active{
     background-color: #000;
     a{
@@ -2630,6 +2631,32 @@ footer {
     width: 15px;
     margin-left: 5px;
     margin-right: 10px;
+  }
+}
+// navigation nav_pages
+.nav_pages{
+  align-self: flex-end;
+  align-items: center;
+  display: flex;
+  margin-bottom: 40px;
+  span{
+    margin-right: 20px;
+  }
+  .pages{
+    display: flex;
+    border: 1px solid @dark_grey;
+  }
+  .character{
+    border-right: 1px solid @dark_grey;
+  }
+  .character:last-child{
+    border-right: none;
+  }
+  .active{
+    background-color: #fff;
+    a{
+      color:#000;
+    }
   }
 }
 .dashboard_page{
