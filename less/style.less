@@ -8,6 +8,24 @@
 @light_grey: #F2F3F5;
 @blue: #05B1E9;
 
+.blue{
+  background-color: #BDFFF3;
+}
+.green{
+  background-color: #B6FFBA;
+}
+.pink{
+  background-color: #FFDAD9;
+}
+.orange{
+  background-color: #FFE7DA;
+}
+.red{
+  background-color: #FF365C;
+}
+.grey{
+  background-color: @dark_grey;
+}
 body,
 main {
   width: 100%;
@@ -789,6 +807,12 @@ textarea::placeholder{
     .size_of_product, .delivery{
       font-size: 12px;
     }
+  }
+  .stocks{
+    display: none;
+  }
+  .category{
+    display: none;
   }
   // price
   .price_block{
@@ -2333,6 +2357,12 @@ footer {
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    .grey_line{
+      display: none;
+    }
+    .line_viewed{
+      display: block;
+    }
     .order_description{
       text-align: center;
       width: 100%;
@@ -2343,6 +2373,15 @@ footer {
       }
     }
     .prof_order{
+      .pretty{
+        display: none;
+      }
+      .number_and_name{
+        display: none;
+      }
+      .filter_status{
+        display: none;
+      }
       padding: 15px 0;
       background-color: #F2F2F2;
       text-align: center;
@@ -2414,7 +2453,6 @@ footer {
     display: none;
   }
 }
-
 .news_grid{
   width: 100%;
   display: grid;
@@ -2638,16 +2676,16 @@ footer {
   align-self: flex-end;
   align-items: center;
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   span{
     margin-right: 20px;
   }
   .pages{
     display: flex;
-    border: 1px solid @dark_grey;
+    border: 1px solid #E0E0E0;
   }
   .character{
-    border-right: 1px solid @dark_grey;
+    border-right: 1px solid #E0E0E0;
   }
   .character:last-child{
     border-right: none;
@@ -2694,18 +2732,6 @@ footer {
       font-weight: bold;
       margin-left: 20px;
     }
-  }
-  .blue{
-    background-color: #BDFFF3;
-  }
-  .green{
-    background-color: #B6FFBA;
-  }
-  .pink{
-    background-color: #FFDAD9;
-  }
-  .orange{
-    background-color: #FFE7DA;
   }
   .inf_block{
     width: 100%;
@@ -2962,16 +2988,130 @@ footer {
         display: none;
       }
       .category{
+        display: block;
         position: absolute;
         left: 45%;
       }
       .stocks{
+        display: block;
         position: absolute;
         left: 65%;
       }
       .price_block{
         left: 94%;
       }
+    }
+  }
+}
+// ДАШБОРД ЗАКАЗЫ
+.dashboard_orders{
+  display: grid;
+  grid-template-columns:  10% 85%;
+  justify-content: space-between;
+}
+.dashboard_orders_block{
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  .filters_and_action{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .filters{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .filter_status{
+    cursor: pointer;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid @light_grey;
+    display: flex;
+    span{
+      margin-right: 5px;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+    }
+    p{
+      margin: 0;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+  .active{
+    background-color: @blue;
+    p{
+      color: #fff;
+    }
+  }
+  .actions_to_orders{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+  }
+  .dropdown{
+    width: 20%;
+    margin-right: 20px;
+  }
+  .dashboard_orders_table{
+    width: 100%;
+    flex-direction: column;
+  }
+  .order_description{
+    p{
+      position: absolute;
+    }
+    .order{
+      left: 10%;
+    }
+    .date{
+      left: 35%;
+    }
+    .status{
+      left: 60%;
+    }
+    .amount{
+      left: 95%;
+    }
+  }
+  .prof_order{
+    align-items: center;
+    display: flex;
+    position: relative;
+    .order_count, .order_number, .order_status{
+      display: none;
+    }
+    .number_and_name{
+      width: 25%;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: "PT Sans";
+      position: absolute;
+      left: 10%;
+    }
+    .order_date{
+      position: absolute;
+      left: 35%;
+    }
+    .filter_status{
+      position: absolute;
+      left: 60%;
+      border: none;
+      cursor: default;
+    }
+    .order_summ{
+      position: absolute;
+      left: 95%;
+      text-transform: uppercase;
+      font-weight: 700;
     }
   }
 }

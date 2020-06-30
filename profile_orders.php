@@ -33,7 +33,7 @@
             <p class="status">Статус</p>
             <p class="amount">Сумма</p>
           </div>
-          <div class="grey_line"></div>
+          <div class="grey_line line_viewed"></div>
           <?php for($i = 0; $i < 4; $i++): ?>
   			         <?php include 'components/profile_order.php' ?>
   		    <?php endfor; ?>

@@ -1283,3 +1283,64 @@
     text-align: center;
   }
 }
+@media (max-width: 1000px) {
+  .dashboard_orders {
+    grid-template-columns: 1fr;
+  }
+  .dashboard_orders .dashboard_orders_block .filters {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .dashboard_orders .dashboard_orders_block .filters_and_action {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .dashboard_orders .dashboard_orders_block .filters_and_action .filters {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .dashboard_orders .dashboard_orders_block .filters_and_action .filter_status {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .dashboard_orders .dashboard_orders_block .filters_and_action .default_button {
+    min-width: 150px;
+    width: 150px;
+  }
+  .dashboard_orders .dashboard_orders_block .actions_to_orders {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .dashboard_orders .dashboard_orders_block .actions_to_orders .dropdown {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  .dashboard_orders .dashboard_orders_block .actions_to_orders .default_button {
+    min-width: 150px;
+    width: 150px;
+  }
+}
+@media (max-width: 550px) {
+  .dashboard_orders .dashboard_orders_block .order_description p {
+    font-size: 8px;
+  }
+  .dashboard_orders .dashboard_orders_block .order_description .amount {
+    left: 92%;
+  }
+  .dashboard_orders .dashboard_orders_block .prof_order .filter_status {
+    padding: 5px;
+  }
+  .dashboard_orders .dashboard_orders_block .prof_order .filter_status p {
+    font-size: 8px;
+  }
+  .dashboard_orders .dashboard_orders_block .prof_order span {
+    font-size: 10px;
+  }
+  .dashboard_orders .dashboard_orders_block .prof_order .order_summ {
+    left: 90%;
+  }
+}

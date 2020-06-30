@@ -1421,3 +1421,75 @@
     }
   }
 }
+// ДАШБОРД ЗАКАЗЫ
+.dashboard_orders{
+  @media (max-width: 1000px){
+    grid-template-columns: 1fr;
+    .dashboard_orders_block{
+      .filters{
+        width: 70%;
+      }
+    }
+  }
+  @media (max-width: 768px){
+    .dashboard_orders_block{
+      .filters_and_action{
+        flex-direction: column;
+        align-items: flex-start;
+        .filters{
+          flex-wrap: wrap;
+          width: 100%;
+          justify-content: flex-start;
+        }
+        .filter_status{
+          margin-right: 10px;
+          margin-bottom: 10px;
+        }
+        .default_button{
+          min-width: 150px;
+          width: 150px;
+        }
+      }
+      .actions_to_orders{
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .dropdown{
+          width: 70%;
+          margin-bottom: 20px;
+        }
+        .default_button{
+          min-width: 150px;
+          width: 150px;
+        }
+      }
+    }
+  }
+  @media (max-width: 550px){
+    .dashboard_orders_block{
+      .order_description{
+        p{
+          font-size: 8px;
+        }
+        .amount{
+          left: 92%;
+        }
+      }
+      .prof_order{
+        .filter_status{
+          padding: 5px;
+          p{
+            font-size: 8px;
+          }
+        }
+        span{
+          font-size: 10px;
+        }
+        .order_summ{
+          left: 90%;
+        }
+      }
+    }
+  }
+}
