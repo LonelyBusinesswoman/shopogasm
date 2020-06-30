@@ -1,5 +1,12 @@
 <div class="purchase">
   <div class="all_information">
+    <!-- check for dashboard-->
+    <div class="pretty p-default p-fill">
+        <input type="checkbox"/>
+        <div class="state">
+          <label></label>
+        </div>
+    </div>
     <!-- img and desc -->
     <div class="main_desc">
       <img src="img/content/product-photo.png" alt="product">
@@ -11,7 +18,15 @@
         <p class="delivery">Доставка: <span> в наличии</span> </p>
       </div>
     </div>
-      <!-- Price block -->
+    <!-- category for dashboard -->
+      <div class="category">
+        <p>Одежда</p>
+      </div>
+      <!-- stocks -->
+      <div class="stocks">
+        <p>10 в наличии</p>
+      </div>
+        <!-- Price block -->
       <div class="price_block">
         <p class="price_of_product"> 450$</p>
       </div>
@@ -41,7 +56,7 @@
         <span>x</span>
         <p> 450</p> <span>$</span>
       </div>
-      <!-- views -->
+      <!-- views for dashboard-->
       <div class="views">
         <p>150 просмотров</p>
       </div>

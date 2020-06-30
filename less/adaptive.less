@@ -1358,3 +1358,66 @@
     margin-bottom: 80px;
   }
 }
+// ДАШБОРД ТОВАРЫ
+.dashboard_goods{
+  @media (max-width: 1000px){
+    grid-template-columns: 1fr;
+  }
+  @media (max-width: 850px){
+    .dashboard_goods_block{
+      // up block
+      .order_description{
+        display: none;
+      }
+      // filters
+      .filters{
+        flex-wrap: wrap;
+        .search{
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .dropdown{
+          width: 48%;
+          margin-bottom: 20px;
+        }
+      }
+      // goods positions
+      .purchase{
+        .all_information{
+          flex-wrap: wrap;
+        }
+        .main_desc{
+          width: 80%;
+        }
+        .category, .stocks, .price_block{
+          position: static;
+          width: 100%;
+          margin-left: 6%;
+          margin-top: 10px;
+          p{
+            font-weight: bold;
+          }
+        }
+        .price_block{
+          display: block !important;
+        }
+      }
+    }
+  }
+  @media (max-width: 450px){
+    .default_button{
+      min-width: 140px;
+      width: 140px;
+    }
+    .purchase{
+      .category, .stocks, .price_block{
+        margin:0 auto;
+        margin-top: 10px;
+        p{
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

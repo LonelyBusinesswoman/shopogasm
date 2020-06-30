@@ -696,6 +696,10 @@ textarea::placeholder {
   width: 100%;
   flex-direction: column;
 }
+.purchase .pretty {
+  display: none;
+  margin-right: 25px;
+}
 .purchase .all_information {
   display: flex;
   width: 100%;
@@ -2666,4 +2670,81 @@ footer {
   min-width: 150px;
   width: 150px;
   margin-bottom: 80px;
+}
+.dashboard_goods {
+  display: grid;
+  grid-template-columns: 10% 85%;
+  justify-content: space-between;
+}
+.dashboard_goods .dashboard_goods_block {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #F2F3F5;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 80px;
+}
+.dashboard_goods .dashboard_goods_block .name_of_web {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-top: 0;
+}
+.dashboard_goods .dashboard_goods_block .filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard_goods .dashboard_goods_block .filters .search {
+  width: 30%;
+}
+.dashboard_goods .dashboard_goods_block .filters .search input {
+  height: 40px;
+}
+.dashboard_goods .dashboard_goods_block .filters .dropdown {
+  width: 20%;
+}
+.dashboard_goods .dashboard_goods_block .order_description {
+  justify-content: space-between;
+  display: flex;
+}
+.dashboard_goods .dashboard_goods_block .order_description .goods {
+  left: 5%;
+}
+.dashboard_goods .dashboard_goods_block .order_description .category {
+  left: 45%;
+}
+.dashboard_goods .dashboard_goods_block .order_description .stocks {
+  left: 65%;
+}
+.dashboard_goods .dashboard_goods_block .order_description .price {
+  left: 95%;
+}
+.dashboard_goods .dashboard_goods_block .purchase .pretty {
+  display: block;
+}
+.dashboard_goods .dashboard_goods_block .purchase .main_desc img {
+  margin-right: 15px;
+}
+.dashboard_goods .dashboard_goods_block .purchase .information_block p {
+  display: none;
+}
+.dashboard_goods .dashboard_goods_block .purchase .information_block .name_of_product {
+  display: block;
+}
+.dashboard_goods .dashboard_goods_block .purchase .delete,
+.dashboard_goods .dashboard_goods_block .purchase .quantity_block,
+.dashboard_goods .dashboard_goods_block .purchase .summ_block {
+  display: none;
+}
+.dashboard_goods .dashboard_goods_block .purchase .category {
+  position: absolute;
+  left: 45%;
+}
+.dashboard_goods .dashboard_goods_block .purchase .stocks {
+  position: absolute;
+  left: 65%;
+}
+.dashboard_goods .dashboard_goods_block .purchase .price_block {
+  left: 94%;
 }

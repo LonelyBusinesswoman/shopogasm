@@ -189,9 +189,9 @@
       </div>
     </div>
   <!-- end of page -->
-  <button class="add_button default_button black_button">
-    <p>Добавить</p>
-  </button>
+    <button class="add_button default_button black_button">
+      <p>Добавить</p>
+    </button>
   </div>
 </main>
 <?php include 'components/footer.php'; ?>
