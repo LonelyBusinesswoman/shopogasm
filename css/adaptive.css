@@ -1194,3 +1194,31 @@
     font-size: 10px;
   }
 }
+@media (max-width: 1000px) {
+  .dashboard_add_goods .upload_block .default_button {
+    min-width: 130px;
+  }
+}
+@media (max-width: 768px) {
+  .dashboard_add_goods {
+    grid-template-columns: 1fr;
+  }
+  .dashboard_add_goods .col_2 .name_of_web {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .dashboard_add_goods .half {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .dashboard_add_goods .for_absol_pos {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .add_button {
+    margin: 20px auto;
+    margin-bottom: 80px;
+  }
+}

@@ -37,6 +37,10 @@ textarea {
   padding: 5px 10px;
   font-family: "Arial", sans-serif;
 }
+textarea {
+  height: 100px;
+  resize: none;
+}
 .default_input::placeholder {
   font-size: 12px;
 }
@@ -655,6 +659,38 @@ textarea::placeholder {
 .brand .active_star {
   color: #05B1E9;
 }
+.quantity_block {
+  display: flex;
+  position: absolute;
+  left: 70%;
+}
+.quantity_block input {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  text-align: center;
+}
+.quantity_block .operations {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 25px;
+}
+.quantity_block .operation {
+  height: 25px;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  border-left: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+}
+.quantity_block .plus {
+  border-bottom: none;
+}
 .purchase {
   display: flex;
   width: 100%;
@@ -698,38 +734,6 @@ textarea::placeholder {
 }
 .purchase .views {
   display: none;
-}
-.purchase .quantity_block {
-  display: flex;
-  position: absolute;
-  left: 70%;
-}
-.purchase .quantity_block input {
-  width: 50px;
-  height: 50px;
-  padding: 0;
-  text-align: center;
-}
-.purchase .quantity_block .operations {
-  display: flex;
-  flex-direction: column;
-  height: 50px;
-  width: 25px;
-}
-.purchase .quantity_block .operation {
-  height: 25px;
-  width: 100%;
-  border: 1px solid #e6e6e6;
-  border-left: none;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  font-size: 16px;
-}
-.purchase .quantity_block .plus {
-  border-bottom: none;
 }
 .purchase .summ_block {
   position: absolute;
@@ -2405,11 +2409,6 @@ footer {
 .feedback_page .default_input {
   width: 48%;
 }
-.feedback_page textarea {
-  width: 100%;
-  height: 100px;
-  resize: none;
-}
 .feedback_page .default_button {
   width: 25%;
   min-width: 15%;
@@ -2449,14 +2448,15 @@ footer {
   flex-direction: column;
   display: flex;
 }
+.dashboard_page .name_of_web {
+  margin: 20px 0;
+  width: 100%;
+}
 .dashboard_main {
+  width: 100%;
   display: grid;
   grid-template-columns: 15% 55% 25%;
   justify-content: space-between;
-}
-.dashboard_main .name_of_web {
-  margin: 20px 0;
-  width: 100%;
 }
 .dashboard_main .main_information {
   flex-direction: column;
@@ -2551,4 +2551,119 @@ footer {
   font-size: 16px;
   line-height: 30px;
   font-weight: bold;
+}
+.dashboard_add_goods {
+  display: grid;
+  grid-template-columns: 15% 50% 30%;
+  justify-content: space-between;
+}
+.dashboard_add_goods .description_col {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+}
+.dashboard_add_goods .descr_block {
+  width: 100%;
+  padding: 30px;
+  background-color: #F2F3F5;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  margin-bottom: 20px;
+}
+.dashboard_add_goods .descr_block span {
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.dashboard_add_goods textarea {
+  margin-top: 15px;
+}
+.dashboard_add_goods .half {
+  width: 48%;
+}
+.dashboard_add_goods .descr_count {
+  display: flex;
+  width: 48%;
+  align-items: center;
+  justify-content: flex-start;
+}
+.dashboard_add_goods .descr_count p {
+  font-size: 12px;
+  color: #878787;
+  font-weight: 500;
+  margin-right: 10px;
+}
+.dashboard_add_goods .quantity_block {
+  position: static;
+}
+.dashboard_add_goods .operation {
+  background-color: #fff;
+}
+.dashboard_add_goods .pretty {
+  width: 100%;
+  margin-top: 20px;
+  margin-right: 0;
+}
+.dashboard_add_goods .check {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: flex-start;
+}
+.dashboard_add_goods .check .pretty {
+  width: auto;
+  margin-top: 0;
+  margin-right: 5px;
+}
+.dashboard_add_goods .check span {
+  font-size: 14px;
+  font-weight: 400;
+}
+.dashboard_add_goods .for_absol_pos {
+  align-items: center;
+  display: flex;
+  width: 48%;
+  position: relative;
+}
+.dashboard_add_goods .for_absol_pos input {
+  width: 100%;
+}
+.dashboard_add_goods .for_absol_pos p {
+  position: absolute;
+  right: 10px;
+}
+.dashboard_add_goods .attr {
+  width: 100%;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.dashboard_add_goods .dropdown span {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+}
+.dashboard_add_goods .default_button {
+  margin-top: 20px;
+}
+.dashboard_add_goods .col_2 .name_of_web p {
+  color: #fff;
+}
+.dashboard_add_goods .col_2 .filter .pretty {
+  margin-top: 0;
+}
+.dashboard_add_goods .upload_block {
+  width: 100%;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #fff;
+}
+.add_button {
+  margin-left: 18%;
+  min-width: 150px;
+  width: 150px;
+  margin-bottom: 80px;
 }
