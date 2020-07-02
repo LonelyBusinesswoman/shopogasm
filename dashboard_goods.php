@@ -10,9 +10,18 @@
           <p>Дашборд</p>
         </div>
           <ul class="dashboard_links">
-            <li> <a href="dashboard.php"><img src="img/icons/home.png" alt="home"> <span>Главная</span>  </a> </li>
-            <li> <a href="dashboard_orders.php"><img src="img/icons/shopping-basket.png" alt="basket"> <span>Заказы</span>  </a> </li>
-            <li> <a href="dashboard_goods.php"><img  class="tag" src="img/icons/tag_active.png" alt="tag" > <span class="active">Товары</span>  </a> </li>
+            <li> <a href="dashboard.php"><i class="fa fa-home" aria-hidden="true"></i>
+                <span >Главная</span>
+                </a>
+            </li>
+            <li> <a href="dashboard_orders.php"><i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                <span>Заказы</span>
+               </a>
+            </li>
+            <li> <a href="dashboard_goods.php"><i class="fa fa-tag active" aria-hidden="true"></i>
+                <span class="active">Товары</span>
+              </a>
+            </li>
           </ul>
         </div>
         <!-- goods -->
@@ -23,14 +32,12 @@
               <a href="dashboard_add_goods.php">Добавить товар</a>
             </button>
           </div>
-          <div class="filters">
+          <form action="" method="" class="filters">
             <!-- Search -->
             <div class="search">
-              <form class="search_form" action="" method="">
                 <input type="text" name="search" placeholder="Поиск">
                 <!-- for desktop search (icon)-->
                 <button class="desktop_btn search_btn" type="button" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-              </form>
             </div>
             <!-- filter -->
             <div class="dropdown custom-select-wrapper">
@@ -59,7 +66,7 @@
             <button class="default_button inherit_button">
               <p>поиск</p>
             </button>
-          </div>
+          </form>
           <!-- up block -->
           <div class="order_description">
 

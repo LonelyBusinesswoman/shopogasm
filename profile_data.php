@@ -74,7 +74,7 @@
           <div class="additional_inf_block">
             <span>Ваш email</span>
             <div>
-              <span>info@shopogasm.ru</span>
+              <input type='text' class=" default_input" placeholder="e-mail" value="info@shopogasm.ru">
             </div>
           </div>
           <!-- password -->

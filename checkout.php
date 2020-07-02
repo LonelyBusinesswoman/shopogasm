@@ -64,7 +64,7 @@
               <div class="state">
                 <label>Использовать в качестве платежного адреса</label>
             </div>
-        </div>
+          </div>
         </form>
       </div>
       <!-- right shopping basket -->

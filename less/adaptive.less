@@ -275,11 +275,13 @@
   @media (max-width: 500px){
     width: 85%;
   }
-  .inf{
+  nav{
     @media (max-width: 1200px){
-        width: 100%;
-        margin-top: 30px;
+      width: 100%;
+      margin-top: 30px;
     }
+  }
+  .inf{
     @media (max-width: 950px){
       grid-template-columns: 1fr 1fr ;
       grid-row-gap: 30px;
@@ -1050,10 +1052,14 @@
     .profile_content{
       width: 70%;
     }
-  }
-  // orders
-  .profile_orders{
-    width: 100%;
+    // orders
+    .profile_orders{
+      width: 100%;
+    }
+    // questions
+    .profile_questions{
+      width: 100%;
+    }
   }
   @media (max-width: 600px){
     .profile_content{
@@ -1084,6 +1090,19 @@
     .sub{
       width: 75%;
       margin-bottom: 30px;
+    }
+    // questions
+    .profile_questions{
+      .question_block{
+        flex-direction: column;
+        .question_text{
+          width: 100%;
+        }
+        .default_button{
+          align-self: flex-start;
+          margin-top: 20px;
+        }
+      }
     }
   }
 }
@@ -1327,7 +1346,7 @@
 }
 // ДОБАВИТЬ ТОВАР
 .dashboard_add_goods{
-  @media (max-width: 1000px){
+  @media (max-width: 1250px){
     .upload_block{
       .default_button{
         min-width: 130px;
@@ -1336,6 +1355,12 @@
   }
   @media (max-width: 768px){
     grid-template-columns: 1fr;
+    .add_form{
+      flex-direction: column;
+    }
+    .description_col{
+      width: 100%;
+    }
     .col_2{
       .name_of_web{
         display: none;

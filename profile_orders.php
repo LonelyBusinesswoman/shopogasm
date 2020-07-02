@@ -34,7 +34,7 @@
             <p class="amount">Сумма</p>
           </div>
           <div class="grey_line line_viewed"></div>
-          <?php for($i = 0; $i < 4; $i++): ?>
+          <?php for($i = 0; $i < 8; $i++): ?>
   			         <?php include 'components/profile_order.php' ?>
   		    <?php endfor; ?>
         </div>
@@ -45,7 +45,7 @@
 <div class='modal' id='modal1'>
     <div class=" content">
       <div class="orders_information">
-        <?php for($i = 0; $i < 4; $i++): ?>
+        <?php for($i = 0; $i < 8; $i++): ?>
                <?php include 'components/profile_order_popup.php' ?>
         <?php endfor; ?>
       </div>

@@ -10,9 +10,18 @@
           <p>Дашборд</p>
         </div>
           <ul class="dashboard_links">
-            <li> <a href="dashboard.php"><img src="img/icons/home.png" alt="home"> <span>Главная</span>  </a> </li>
-            <li> <a href="dashboard_orders.php"><img src="img/icons/shopping-basket_active.png" alt="basket"> <span class="active">Заказы</span>  </a> </li>
-            <li> <a href="dashboard_goods.php"><img  class="tag" src="img/icons/tag.png" alt="tag" > <span>Товары</span>  </a> </li>
+            <li> <a href="dashboard.php"><i class="fa fa-home" aria-hidden="true"></i>
+                <span>Главная</span>
+                </a>
+            </li>
+            <li> <a href="dashboard_orders.php"><i class="fa fa-shopping-basket active" aria-hidden="true"></i>
+                <span class="active">Заказы</span>
+               </a>
+            </li>
+            <li> <a href="dashboard_goods.php"><i class="fa fa-tag" aria-hidden="true"></i>
+                <span>Товары</span>
+              </a>
+            </li>
           </ul>
         </div>
         <!-- main -->

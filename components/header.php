@@ -49,8 +49,8 @@
 					</a>
 					<!-- Choice -->
 					<div class="choice">
-							<p class="for_her">Для неё</p>
-							<p class="for_him">Для него</p>
+							<a href="#" class="for_her">Для неё</a>
+							<a href="#" class="for_him">Для него</a>
 					</div>
 					<!-- for mobile search (icon)-->
 					<button class="search_mobile search_btn" type="button" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -80,46 +80,50 @@
 
 			<div class="menu_category">
 				<div class="container">
+					<!-- navigation -->
+					<nav>
+						<ul class="columns">
 
-					<div class="columns">
+							<li class="column">
+								<a class="col_category" href="#">Одежда</a>
+								<ul>
+									<li><a class="category_link" href="#">Новинки</a></li>
+									<li><a class="category_link" href="#">Блузы и рубашки</a></li>
+									<li><a class="category_link" href="#">Брюки</a></li>
+									<li><a class="category_link" href="#">Верхняя одежда</a></li>
+									<li><a class="category_link" href="#">Джинсы</a></li>
+								</ul>
+							</li>
+							<li class="column">
+								<a class="col_category" href="#"></a>
+								<ul>
+									<li><a class="category_link" href="#">Новинки</a></li>
+									<li><a class="category_link" href="#">Блузы и рубашки</a></li>
+									<li><a class="category_link" href="#">Брюки</a></li>
+									<li><a class="category_link" href="#">Верхняя одежда</a></li>
+									<li><a class="category_link" href="#">Джинсы</a></li>
+								</ul>
+							</li>
+							<li class="column">
+								<a class="col_category" href="#"></a>
+								<ul>
+									<li><a class="category_link" href="#">Новинки</a></li>
+									<li><a class="category_link" href="#">Блузы и рубашки</a></li>
+									<li><a class="category_link" href="#">Брюки</a></li>
+									<li><a class="category_link" href="#">Верхняя одежда</a></li>
+									<li><a class="category_link" href="#">Джинсы</a></li>
+								</ul>
+							</li>
 
-						<div class="column">
-							<a class="col_category" href="#">Одежда</a>
-							<ul>
-								<li><a class="category_link" href="#">Новинки</a></li>
-								<li><a class="category_link" href="#">Блузы и рубашки</a></li>
-								<li><a class="category_link" href="#">Брюки</a></li>
-								<li><a class="category_link" href="#">Верхняя одежда</a></li>
-								<li><a class="category_link" href="#">Джинсы</a></li>
-							</ul>
-						</div>
-						<div class="column">
-							<a class="col_category" href="#"></a>
-							<ul>
-								<li><a class="category_link" href="#">Новинки</a></li>
-								<li><a class="category_link" href="#">Блузы и рубашки</a></li>
-								<li><a class="category_link" href="#">Брюки</a></li>
-								<li><a class="category_link" href="#">Верхняя одежда</a></li>
-								<li><a class="category_link" href="#">Джинсы</a></li>
-							</ul>
-						</div>
-						<div class="column">
-							<a class="col_category" href="#"></a>
-							<ul>
-								<li><a class="category_link" href="#">Новинки</a></li>
-								<li><a class="category_link" href="#">Блузы и рубашки</a></li>
-								<li><a class="category_link" href="#">Брюки</a></li>
-								<li><a class="category_link" href="#">Верхняя одежда</a></li>
-								<li><a class="category_link" href="#">Джинсы</a></li>
-							</ul>
-						</div>
+							<li class="column">
+								<img src="img/content/new_dress.png" alt="dress">
+								<p class="new_dress">Новинки одежды</p>
+								<p class="short_desc">Коротокое описание продукта</p>
+							</li>
+						</ul>
+					</nav>
 
-						<div class="column">
-							<img src="img/content/new_dress.png" alt="dress">
-							<p class="new_dress">Новинки одежды</p>
-							<p class="short_desc">Коротокое описание продукта</p>
-						</div>
-					</div>
+
 
 				</div>
 			</div>
@@ -129,9 +133,9 @@
 				<div class="up">
 					<!-- information -->
 					<div class="information">
-						<p>150 дизайнеров</p>
-						<p>15 000 товаров</p>
-						<p>Бесплатная доставка</p>
+						<a href="#">150 дизайнеров</a>
+						<a href="#">15 000 товаров</a>
+						<a href="#">Бесплатная доставка</a>
 					</div>
 				</div>
 				<!-- personal info -->

@@ -75,46 +75,50 @@
         <div class="number_of_order">
           <p>Номер заказа #<span>7843836</span></p>
         </div>
-        <!-- address delivery-->
-        <div class="name_of_web form_subtitle">
-          <p>Адрес доставки</p>
-        </div>
-        <!-- checkout_form -->
-        <form class="checkout_form address_delivery_form" action="" method="">
-          <div class="form_block">
-            <input class="default_input half" type="text" name="name" placeholder="Имя">
-            <input class="default_input half" type="text" name="Surname" placeholder="Фамилия">
-            <input class="default_input" type="text" name="email" placeholder="E-mail">
+        <!-- FORMS -->
+        <form class="forms" action="" method="">
+          <!-- address delivery-->
+          <div class="name_of_web form_subtitle">
+            <p>Адрес доставки</p>
           </div>
+          <!-- checkout_form -->
+          <div class="checkout_form address_delivery_form" action="" method="">
+            <div class="form_block">
+              <input class="default_input half" type="text" name="name" placeholder="Имя">
+              <input class="default_input half" type="text" name="Surname" placeholder="Фамилия">
+              <input class="default_input" type="text" name="email" placeholder="E-mail">
+            </div>
 
-          <div class="form_block">
-            <input class="default_input" type="text" name="address" placeholder="Адрес">
-            <input class="default_input half" type="text" name="Сity" placeholder="Город">
-            <input class="default_input half" type="text" name="dir" placeholder="Область">
-            <input class="default_input half" type="text" name="index" placeholder="Почтовый индекс">
-            <input class="default_input half" type="text" name="tel" placeholder="Телефон">
+            <div class="form_block">
+              <input class="default_input" type="text" name="address" placeholder="Адрес">
+              <input class="default_input half" type="text" name="Сity" placeholder="Город">
+              <input class="default_input half" type="text" name="dir" placeholder="Область">
+              <input class="default_input half" type="text" name="index" placeholder="Почтовый индекс">
+              <input class="default_input half" type="text" name="tel" placeholder="Телефон">
+            </div>
+          </div>
+          <!-- payment address-->
+          <div class="name_of_web form_subtitle">
+            <p>Платёжный адрес</p>
+          </div>
+          <!-- checkout_form -->
+          <div class="checkout_form payment_address_form" action="" method="">
+            <div class="form_block">
+              <input class="default_input half" type="text" name="name" placeholder="Имя">
+              <input class="default_input half" type="text" name="Surname" placeholder="Фамилия">
+              <input class="default_input" type="text" name="email" placeholder="E-mail">
+            </div>
+
+            <div class="form_block">
+              <input class="default_input" type="text" name="address" placeholder="Адрес">
+              <input class="default_input half" type="text" name="Сity" placeholder="Город">
+              <input class="default_input half" type="text" name="dir" placeholder="Область">
+              <input class="default_input half" type="text" name="index" placeholder="Почтовый индекс">
+              <input class="default_input half" type="text" name="tel" placeholder="Телефон">
+            </div>
           </div>
         </form>
-        <!-- payment address-->
-        <div class="name_of_web form_subtitle">
-          <p>Платёжный адрес</p>
-        </div>
-        <!-- checkout_form -->
-        <form class="checkout_form payment_address_form" action="" method="">
-          <div class="form_block">
-            <input class="default_input half" type="text" name="name" placeholder="Имя">
-            <input class="default_input half" type="text" name="Surname" placeholder="Фамилия">
-            <input class="default_input" type="text" name="email" placeholder="E-mail">
-          </div>
 
-          <div class="form_block">
-            <input class="default_input" type="text" name="address" placeholder="Адрес">
-            <input class="default_input half" type="text" name="Сity" placeholder="Город">
-            <input class="default_input half" type="text" name="dir" placeholder="Область">
-            <input class="default_input half" type="text" name="index" placeholder="Почтовый индекс">
-            <input class="default_input half" type="text" name="tel" placeholder="Телефон">
-          </div>
-        </form>
       </div>
       <!-- right shopping basket -->
       <div class="right_reg">

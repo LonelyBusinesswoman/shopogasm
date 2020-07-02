@@ -8,12 +8,30 @@ jQuery(document).ready(function($) {
   menuCategory.css('marginTop', height);
 
   $('.header .left .links a').hover(function () {
-    menuCategory.css("display", "flex");
+    menuCategory.fadeIn().css("display", "flex");
+
     return false;
   });
   menuCategory.mouseleave(function () {
-    $(this).css("display", "none");
+    $(this).fadeOut();
   });
+  // search clear input
+
+  $('.search input').focus( function () {
+    $(this).parent().find('.search_btn .fa')
+      .removeClass('fa-search')
+      .addClass('fa-times');
+      // click
+      $('.search .search_btn').click(function () {
+        var input =  $(this).parent().find('input').val(' ');
+      })
+  })
+  $('.search input').focusout(function () {
+    $(this).parent().find('.search_btn .fa')
+      .removeClass('fa-times')
+      .addClass('fa-search');
+
+  })
 
   // Search mobile
   if(window.innerWidth <= 560){
@@ -243,35 +261,39 @@ jQuery(document).ready(function($) {
      $('.recomendations_and_viewed .products').removeClass('item_active');
      content.addClass('item_active');
   });
-
+  // dashboard orders tabs
+  $('.filters_and_action .filters .filter_status').click(function (){
+    $('.filters .filter_status').removeClass('active');
+    $(this).addClass('active');
+  })
   // shopping basket
   $(".plus").on("click", function() {
     var button = $(this);
     var input = button.closest('.all_information').find('input');
-    var price = button.closest('.all_information').find('.price_block p').text();
-    var summ = button.closest('.all_information').find('.summ_block p');
+    // var price = button.closest('.all_information').find('.price_block p').text();
+    // var summ = button.closest('.all_information').find('.summ_block p');
     var oldValue = input.val();
     // operations
     var newVal = parseInt(oldValue) + 1;
     input.val(newVal);
-    var newSumm = parseInt(newVal*parseInt(price));
-    summ.text(newSumm);
-  })
+    // var newSumm = parseInt(newVal*parseInt(price));
+    // summ.text(newSumm);
+  });
 
   $(".minus").on("click", function() {
     var button = $(this);
     var input = button.closest('.all_information').find('input');
-    var price = button.closest('.all_information').find('.price_block p').text();
-    var summ = button.closest('.all_information').find('.summ_block p');
+    // var price = button.closest('.all_information').find('.price_block p').text();
+    // var summ = button.closest('.all_information').find('.summ_block p');
     var oldValue = input.val();
     if(oldValue > 0){
       var newVal = parseInt(oldValue) - 1;
       input.val(newVal);
-      var newSumm = parseInt(newVal*parseInt(price));
-      summ.text(newSumm);
+      // var newSumm = parseInt(newVal*parseInt(price));
+      // summ.text(newSumm);
     } else{
       newVal = 0;
-      summ.text(newSumm);
+      // summ.text(newSumm);
     }
   });
 
