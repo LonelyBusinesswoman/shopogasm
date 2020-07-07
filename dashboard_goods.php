@@ -29,7 +29,7 @@
           <div class="name_of_web">
             <p>Товары</p>
             <button class="default_button black_button">
-              <a href="dashboard_add_goods.php">Добавить товар</a>
+              Добавить товар
             </button>
           </div>
           <form action="" method="" class="filters">
@@ -64,7 +64,7 @@
               </div>
             </div>
             <button class="default_button inherit_button">
-              <p>поиск</p>
+              поиск
             </button>
           </form>
           <!-- up block -->

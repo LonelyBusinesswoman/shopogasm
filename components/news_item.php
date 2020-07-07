@@ -7,7 +7,7 @@
     <p class="news_brand">Бренд</p>
     <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the </span>
     <button class="default_button black_button">
-        <a href="article.php" >читать</a>
+        читать
     </button>
   </div>
 </div>

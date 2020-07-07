@@ -24,73 +24,81 @@
         <div class="title">
           <p>Мoи данные</p>
         </div>
-        <form class="profile_form default_form" action="" method="">
-          <div class="input_block">
-            <!-- Name -->
-            <label>Имя</label>
-            <input class="default_input" type="text" name="name" placeholder="Имя">
+        <form class="" action="" method="post">
+          <!-- name/surname/tel -->
+          <div class="profile_form default_form" action="" method="">
+            <div class="input_block">
+              <!-- Name -->
+              <label>Имя</label>
+              <input class="default_input" type="text" name="name" placeholder="Имя">
+            </div>
+            <div class="input_block">
+              <!-- Surname -->
+              <label >Фамилия</label>
+              <input class="default_input" type="text" name="name" placeholder="Фамилия">
+            </div>
+            <div class="input_block">
+              <!-- Tel -->
+              <label >Телефон</label>
+              <input class="default_input" type="text" name="name" placeholder="Телефон">
+            </div>
           </div>
-          <div class="input_block">
-            <!-- Surname -->
-            <label >Фамилия</label>
-            <input class="default_input" type="text" name="name" placeholder="Фамилия">
+          <!-- socials -->
+          <!-- through socials -->
+          <div class="socials">
+            <div class="title">
+              <p>Профили в социальных сетях</p>
+            </div>
+            <div class="go_through_soc">
+              <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+            </div>
           </div>
-          <div class="input_block">
-            <!-- Tel -->
-            <label >Телефон</label>
-            <input class="default_input" type="text" name="name" placeholder="Телефон">
+          <!-- additional data -->
+          <div class="additional_inf">
+            <!-- sex -->
+            <div class="additional_inf_block">
+              <span>Ваш пол</span>
+              <div class="sex">
+                <input type="radio" id="radio-one" name="switch-one" value="yes" checked/>
+            		<label for="radio-one">Мужской</label>
+            		<input type="radio" id="radio-two" name="switch-one" value="no" />
+            		<label for="radio-two">Женский</label>
+              </div>
+            </div>
+            <!-- birth -->
+            <div class="additional_inf_block">
+              <span>Дата рождения</span>
+              <div>
+                <input type='text' class="datepicker-here default_input" />
+              </div>
+            </div>
+            <!-- email -->
+            <div class="additional_inf_block">
+              <span>Ваш email</span>
+              <div>
+                <input type='text' class=" default_input" placeholder="e-mail" value="info@shopogasm.ru">
+              </div>
+            </div>
+            <!-- password -->
+            <div class="additional_inf_block">
+              <span>Пароль</span>
+              <div class="change_password">
+                <button class="default_button black_button change_password_button">
+                  Изменить
+                </button>
+                <div class="password_field">
+                  <input type='text' class=" default_input" placeholder="Password">
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- save changes -->
+          <button class="default_button inherit_button save_changes">
+              Сохранить
+          </button>
         </form>
-        <!-- socials -->
-        <!-- through socials -->
-        <div class="socials">
-          <div class="title">
-            <p>Профили в социальных сетях</p>
-          </div>
-          <div class="go_through_soc">
-            <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
-          </div>
-        </div>
-        <!-- additional data -->
-        <div class="additional_inf">
-          <!-- sex -->
-          <div class="additional_inf_block">
-            <span>Ваш пол</span>
-            <div class="sex">
-              <a class="male active" href="#">Мужской</a>
-              <a class="female"href="#">Женский</a>
-            </div>
-          </div>
-          <!-- birth -->
-          <div class="additional_inf_block">
-            <span>Дата рождения</span>
-            <div>
-              <input type='text' class="datepicker-here default_input" />
-            </div>
-          </div>
-          <!-- email -->
-          <div class="additional_inf_block">
-            <span>Ваш email</span>
-            <div>
-              <input type='text' class=" default_input" placeholder="e-mail" value="info@shopogasm.ru">
-            </div>
-          </div>
-          <!-- password -->
-          <div class="additional_inf_block">
-            <span>Пароль</span>
-            <div class="change_password">
-              <button class="default_button black_button">
-                  <p>Изменить</p>
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- save changes -->
-        <button class="default_button inherit_button save_changes">
-            <p>Сохранить</p>
-        </button>
       </div>
   </div>
 </main>

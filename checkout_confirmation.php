@@ -157,8 +157,8 @@
           <!-- actions -->
           <div class="actions">
             <button class="default_button black_button order">
-              <p>подтвердить</p>
-              </button>
+              подтвердить
+            </button>
           </div>
         </div>
         <!-- offer -->
@@ -169,7 +169,7 @@
       <!-- actions mob -->
       <div class="actions act_mob">
         <button class="default_button black_button order">
-          <p>подтвердить</p>
+          подтвердить
         </button>
       </div>
       <!-- offer -->

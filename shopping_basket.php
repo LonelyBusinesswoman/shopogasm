@@ -13,48 +13,50 @@
     <div class="name_of_web">
       <p>Корзина</p>
     </div>
-    <!--  -->
-    <div class="all_shoppings">
-      <!-- up block -->
-      <div class="order_description">
-        <p class="goods">Товар</p>
-        <p class="price">Цена</p>
-        <p class="quantity">Количество</p>
-        <p class="amount">Сумма</p>
-      </div>
-      <!-- grey_line -->
-      <div class="grey_line mob_line_none"></div>
+    <!-- form  -->
+    <form class="" action="" method="post">
       <!-- purchases -->
-      <div class="purchases">
-        <?php for($i = 0; $i < 3; $i++): ?>
-               <?php include 'components/purchase.php' ?>
-        <?php endfor; ?>
+      <div class="all_shoppings">
+        <!-- up block -->
+        <div class="order_description">
+          <p class="goods">Товар</p>
+          <p class="price">Цена</p>
+          <p class="quantity">Количество</p>
+          <p class="amount">Сумма</p>
+        </div>
+        <!-- grey_line -->
+        <div class="grey_line mob_line_none"></div>
+        <!-- purchases -->
+        <div class="purchases">
+          <?php for($i = 0; $i < 3; $i++): ?>
+                 <?php include 'components/purchase.php' ?>
+          <?php endfor; ?>
+        </div>
       </div>
-    </div>
-    <!-- total -->
-    <div class="total">
-      <div class="row come_to ">
-        <span>Итого</span>
-        <span class="all_price">450$</span>
-      </div>
-      <div class="row del ">
-        <span>Доставка</span>
-        <span class="delivery_price">0$</span>
-      </div>
-      <div class="row in_all ">
-        <p>Всего</p>
-        <p class="total_price">450$</p>
-      </div>
-      <div class="actions">
-        <button class="default_button inherit_button favorites">
-          <p>переместить в избранное</p>
-        </button>
-        <button class="default_button black_button order">
-          <p>оформить заказ</p>
+      <!-- total -->
+      <div class="total">
+        <div class="row come_to ">
+          <span>Итого</span>
+          <span class="all_price">450$</span>
+        </div>
+        <div class="row del ">
+          <span>Доставка</span>
+          <span class="delivery_price">0$</span>
+        </div>
+        <div class="row in_all ">
+          <p>Всего</p>
+          <p class="total_price">450$</p>
+        </div>
+        <div class="actions">
+          <button class="default_button inherit_button favorites" type="submit">
+            переместить в избранное
           </button>
+          <button class="default_button black_button order" type="submit">
+            оформить заказ
+          </button>
+        </div>
       </div>
-    </div>
-
+    </form>
   </div>
   <!-- recomendations -->
   <div class="container grid_general_style shopping_basket_rec">

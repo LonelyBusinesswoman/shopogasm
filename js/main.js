@@ -16,14 +16,13 @@ jQuery(document).ready(function($) {
     $(this).fadeOut();
   });
   // search clear input
-
   $('.search input').focus( function () {
     $(this).parent().find('.search_btn .fa')
       .removeClass('fa-search')
       .addClass('fa-times');
       // click
       $('.search .search_btn').click(function () {
-        var input =  $(this).parent().find('input').val(' ');
+        var input =  $(this).parent().find('input').val('');
       })
   })
   $('.search input').focusout(function () {
@@ -269,34 +268,33 @@ jQuery(document).ready(function($) {
   // shopping basket
   $(".plus").on("click", function() {
     var button = $(this);
-    var input = button.closest('.all_information').find('input');
-    // var price = button.closest('.all_information').find('.price_block p').text();
-    // var summ = button.closest('.all_information').find('.summ_block p');
+    var input = button.closest('.all_information').find('input[name=count]');
     var oldValue = input.val();
+    console.log(oldValue)
     // operations
     var newVal = parseInt(oldValue) + 1;
+    console.log(newVal)
     input.val(newVal);
-    // var newSumm = parseInt(newVal*parseInt(price));
-    // summ.text(newSumm);
-  });
+  })
 
   $(".minus").on("click", function() {
     var button = $(this);
-    var input = button.closest('.all_information').find('input');
-    // var price = button.closest('.all_information').find('.price_block p').text();
-    // var summ = button.closest('.all_information').find('.summ_block p');
+    var input = button.closest('.all_information').find('input[name=count]');
+
     var oldValue = input.val();
     if(oldValue > 0){
       var newVal = parseInt(oldValue) - 1;
       input.val(newVal);
-      // var newSumm = parseInt(newVal*parseInt(price));
-      // summ.text(newSumm);
     } else{
       newVal = 0;
-      // summ.text(newSumm);
     }
   });
-
+  // change password block - profile data
+  $('.change_password_button').click(function (e) {
+    e.preventDefault();
+    $(this).css('display', 'none');
+    $('.password_field').css('display', 'block');
+  });
   // goods sliders
   $('.goods_slider').slick({
    slidesToShow: 1,
@@ -327,5 +325,23 @@ jQuery(document).ready(function($) {
      }
    ]
   });
-  // profile page nav link STYLE
+
+  // autocomplete search
+
+  $( function() {
+    var availableTags = [
+      "T-shirt",
+      "Nike",
+      "Adidas",
+      "Zara",
+      "Converse",
+      "Gucci",
+      "New Rel",
+      "Addition",
+      "New Balance"
+    ];
+    $( ".search_input" ).autocomplete({
+      source: availableTags
+    });
+  } );
 });

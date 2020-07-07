@@ -31,10 +31,10 @@
           </div>
           <div class="actions">
             <button class="default_button inherit_button">
-              <p>смотреть</p>
+              смотреть
             </button>
             <button class="default_button black_button">
-              <p>каталог</p>
+              каталог
             </button>
           </div>
         </div>
@@ -69,10 +69,10 @@
           </div>
           <div class="actions">
             <button class="default_button inherit_button">
-              <p>смотреть</p>
+              смотреть
             </button>
             <button class="default_button black_button">
-              <p>каталог</p>
+              каталог
             </button>
         </div>
       </div>
@@ -106,10 +106,10 @@
         </div>
         <div class="actions">
           <button class="default_button inherit_button">
-            <p>смотреть</p>
+            смотреть
           </button>
           <button class="default_button black_button">
-            <p>каталог</p>
+            каталог
           </button>
         </div>
       </div>
@@ -159,7 +159,7 @@
 		    <?php endfor; ?>
       </div>
       <button class="default_button black_button">
-        <p>показать больше</p>
+        показать больше
       </button>
     </div>
     <!-- fourth screen -->
@@ -186,7 +186,7 @@
 		    <?php endfor; ?>
       </div>
       <button class="default_button black_button">
-        <p>показать больше</p>
+        показать больше
       </button>
     </div>
     <!-- six screen-->
@@ -234,7 +234,7 @@
         <?php endfor; ?>
       </div>
       <button class="default_button black_button">
-        <p>показать больше</p>
+        показать больше
       </button>
     </div>
 </main>

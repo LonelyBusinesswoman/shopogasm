@@ -24,34 +24,38 @@
         <div class="title">
           <p>Подписки</p>
         </div>
-        <div class="subscriptions">
-          <!-- first sub -->
-          <div class="sub">
-            <div class="pretty p-default p-fill">
-                <input type="checkbox"/>
-                <div class="state">
-                  <label>Новости стиля</label>
-              </div>
-            </div>
 
-            <span>Будьте в курсе новостей, трендов и специальных предложений.</span>
-          </div>
-          <!-- second sub -->
-          <div class="sub">
-            <!-- Save password -->
-            <div class="pretty p-default p-fill">
-                <input type="checkbox"/>
-                <div class="state">
-                  <label>Эксклюзивные предложения и акции</label>
+        <!-- form -->
+        <form class="" action="" method="post">
+          <div class="subscriptions">
+            <!-- first sub -->
+            <div class="sub">
+              <div class="pretty p-default p-fill">
+                  <input type="checkbox"/>
+                  <div class="state">
+                    <label>Новости стиля</label>
+                </div>
               </div>
-            </div>
 
-            <span>Следите за новостями о бесплатной доставке, закрытых распродажах и специальных предложениях.</span>
+              <span>Будьте в курсе новостей, трендов и специальных предложений.</span>
+            </div>
+            <!-- second sub -->
+            <div class="sub">
+              <!-- Save password -->
+              <div class="pretty p-default p-fill">
+                  <input type="checkbox"/>
+                  <div class="state">
+                    <label>Эксклюзивные предложения и акции</label>
+                </div>
+              </div>
+
+              <span>Следите за новостями о бесплатной доставке, закрытых распродажах и специальных предложениях.</span>
+            </div>
           </div>
-        </div>
-        <button class="default_button inherit_button save_changes">
-            <p>Сохранить</p>
-        </button>
+          <button class="default_button inherit_button save_changes">
+            Сохранить
+          </button>
+      </form>
     </div>
   </div>
 </main>

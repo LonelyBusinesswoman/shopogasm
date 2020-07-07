@@ -22,7 +22,7 @@
       </div>
           <!-- Reg button -->
         <button class="default_button black_button">
-            <p>Зарегистрироваться</p>
+            Зарегистрироваться
         </button>
       </form>
     </div>

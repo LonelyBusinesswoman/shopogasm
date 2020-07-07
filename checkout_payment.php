@@ -86,8 +86,8 @@
           </div>
           <div class="actions">
             <button class="default_button black_button order">
-              <p> оплатить заказ</p>
-              </button>
+               оплатить заказ
+            </button>
           </div>
         </div>
         <!-- offer -->

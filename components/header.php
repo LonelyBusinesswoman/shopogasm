@@ -11,12 +11,12 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
 	<!-- CSS style -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css?v=15">
-	<link rel="stylesheet" type="text/css" href="css/adaptive.css?v=15">
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=25">
+	<link rel="stylesheet" type="text/css" href="css/adaptive.css?v=25">
 	<!-- For Checkbox -->
 	<link rel="stylesheet" type="text/css" href="css/checkbox.css">
 	<!-- Jquery UI -->
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<!-- Jquery -->
@@ -57,12 +57,12 @@
 					<!-- Search -->
 					<div class="search search_all">
 						<form class="search_form" action="" method="">
-							<input type="text" name="search" placeholder="Поиск">
+							<input class="search_input" type="text" name="search" placeholder="Поиск">
 							<!-- for desktop search (icon)-->
 							<button class="desktop_btn search_btn" type="button" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
 							<!-- for mobile search (button)-->
 							<button class="default_button black_button">
-				        <p>найти</p>
+				        найти
 				      </button>
 						</form>
 					</div>
@@ -95,7 +95,7 @@
 								</ul>
 							</li>
 							<li class="column">
-								<a class="col_category" href="#"></a>
+								<a class="col_category" href="#">Одежда</a>
 								<ul>
 									<li><a class="category_link" href="#">Новинки</a></li>
 									<li><a class="category_link" href="#">Блузы и рубашки</a></li>
@@ -105,7 +105,7 @@
 								</ul>
 							</li>
 							<li class="column">
-								<a class="col_category" href="#"></a>
+								<a class="col_category" href="#">Одежда</a>
 								<ul>
 									<li><a class="category_link" href="#">Новинки</a></li>
 									<li><a class="category_link" href="#">Блузы и рубашки</a></li>
@@ -114,16 +114,53 @@
 									<li><a class="category_link" href="#">Джинсы</a></li>
 								</ul>
 							</li>
-
 							<li class="column">
-								<img src="img/content/new_dress.png" alt="dress">
-								<p class="new_dress">Новинки одежды</p>
-								<p class="short_desc">Коротокое описание продукта</p>
+								<a class="col_category" href="#">Одежда</a>
+								<ul>
+									<li><a class="category_link" href="#">Новинки</a></li>
+									<li><a class="category_link" href="#">Блузы и рубашки</a></li>
+									<li><a class="category_link" href="#">Брюки</a></li>
+									<li><a class="category_link" href="#">Верхняя одежда</a></li>
+									<li><a class="category_link" href="#">Джинсы</a></li>
+								</ul>
+							</li>
+							<li class="column">
+								<a class="col_category" href="#">Одежда</a>
+								<ul>
+									<li><a class="category_link" href="#">Новинки</a></li>
+									<li><a class="category_link" href="#">Блузы и рубашки</a></li>
+									<li><a class="category_link" href="#">Брюки</a></li>
+									<li><a class="category_link" href="#">Верхняя одежда</a></li>
+									<li><a class="category_link" href="#">Джинсы</a></li>
+								</ul>
+							</li>
+							<li class="column">
+								<a class="col_category" href="#">Обувь</a>
+								<ul>
+									<li><a class="category_link" href="#">Кеды</a></li>
+									<li><a class="category_link" href="#">Кроссовки</a></li>
+									<li><a class="category_link" href="#">Туфли</a></li>
+									<li><a class="category_link" href="#">Сандали</a></li>
+									<li><a class="category_link" href="#">Бутсы и шиповки</a></li>
+								</ul>
+							</li>
+							<li class="column">
+								<a class="col_category" href="#">Бренды</a>
+								<ul>
+									<li><a class="category_link" href="#">Zara</a></li>
+									<li><a class="category_link" href="#">Gucci</a></li>
+									<li><a class="category_link" href="#">Bershka</a></li>
+									<li><a class="category_link" href="#">Nike</a></li>
+									<li><a class="category_link" href="#">Adidas</a></li>
+								</ul>
 							</li>
 						</ul>
 					</nav>
-
-
+					<div class="column photo">
+						<img src="img/content/new_dress.png" alt="dress">
+						<p class="new_dress">Новинки одежды</p>
+						<p class="short_desc">Коротокое описание продукта</p>
+					</div>
 
 				</div>
 			</div>

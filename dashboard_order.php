@@ -68,7 +68,7 @@
           </div>
           <!-- done button -->
           <button class="default_button black_button">
-            <p>Выполнен</p>
+            Выполнен
           </button>
         </div>
         <!-- person information -->

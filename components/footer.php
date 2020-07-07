@@ -5,15 +5,15 @@
 		    <div class="title">
 		      <p>Нужна помощь?</p>
 		    </div>
-		    <p class="connection" >
+		    <p class="connection">
 		      Вы можете связаться с клиентской службой «Shopogasm» через телефон
 		+ 7 800 600 10 12 (горячая линия открыта с 10:00 утра до 21:00 вечера) или Email.
 		Возможно, ваш вопрос найдется  в разделе <a href="#">«Ответы и вопросы»</a></p>
 		  <form class="send" action="" method="post">
 		    <input class="default_input" type="email" name="send" placeholder="E-mail">
-		    <button class="default_button black_button">
-		      <p>отправить</p>
-		    </button>
+				<button class="default_button black_button">
+					отправить
+				</button>
 		  </form>
 		  </div>
 		</div>
@@ -58,20 +58,20 @@
 							<a class="vk_link" href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
 						</div>
 					</li>
-					<!-- instagram -->
-					<li class="instagram text">
-						<p class="subtitle">Instagram Shopogasm</p>
-						<div class="photo">
-							<img src="img/content/test-insta.png" alt="test">
-							<img src="img/content/test-insta.png" alt="test">
-							<img src="img/content/test-insta.png" alt="test">
-							<img src="img/content/test-insta.png" alt="test">
-							<img src="img/content/test-insta.png" alt="test">
-							<img src="img/content/test-insta.png" alt="test">
-						</div>
-					</li>
 				</ul>
 			</nav>
+			<!-- instagram -->
+			<div class="instagram text">
+				<p class="subtitle">Instagram Shopogasm</p>
+				<div class="photo">
+					<img src="img/content/test-insta.png" alt="test">
+					<img src="img/content/test-insta.png" alt="test">
+					<img src="img/content/test-insta.png" alt="test">
+					<img src="img/content/test-insta.png" alt="test">
+					<img src="img/content/test-insta.png" alt="test">
+					<img src="img/content/test-insta.png" alt="test">
+				</div>
+			</div>
 
 		</div>
 	</footer>
@@ -91,6 +91,6 @@
 <!-- popup -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
 <!-- main js -->
-<script src="js/main.js?v=15"></script>
+<script src="js/main.js?v=25"></script>
 </body>
 </html>

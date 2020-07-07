@@ -125,7 +125,7 @@
               </div>
             </div>
             <button class="default_button inherit_button">
-              <p>Добавить вариацию</p>
+              Добавить вариацию
             </button>
           </div>
         </div>
@@ -183,7 +183,7 @@
             <span>Изображение товара</span>
             <div class="upload_block">
               <button class="default_button inherit_button">
-                <p>Загрузить</p>
+                Загрузить
               </button>
             </div>
           </div>
@@ -192,14 +192,14 @@
             <span>Галерея товара</span>
             <div class="upload_block">
               <button class="default_button inherit_button">
-                <p>Загрузить</p>
+                Загрузить
               </button>
             </div>
           </div>
         </div>
         <!-- button -->
         <button class="add_button default_button black_button">
-          <p>Добавить</p>
+          Добавить
         </button>
       </form>
 

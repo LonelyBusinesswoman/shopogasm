@@ -44,7 +44,7 @@
               <textarea name="Message" placeholder="Сообщение"></textarea>
             </div>
             <button class="default_button black_button">
-              <p>Отправить</p>
+              Отправить
             </button>
           </form>
         </div>

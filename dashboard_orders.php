@@ -30,7 +30,7 @@
             <p>Заказы</p>
           </div>
           <!-- filters -->
-          <div class="filters_and_action">
+          <form action="" method="post" class="filters_and_action">
 
             <div class="filters">
 
@@ -56,9 +56,9 @@
 
             </div>
             <button class="default_button black_button">
-              <p>поиск</p>
+              поиск
             </button>
-          </div>
+          </form>
           <!-- actions_to_ orders -->
           <div class="actions_to_orders">
             <!-- filter -->
@@ -75,7 +75,7 @@
               </div>
             </div>
             <button class="default_button inherit_button">
-              <p>применить</p>
+              применить
             </button>
           </div>
           <!-- orders -->

@@ -65,34 +65,36 @@
           <a class="add_to_fav" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
         </div>
 
-        <!-- filter -->
-        <div class="dropdown custom-select-wrapper">
-          <div class="custom-select">
-            <div class="custom-select__trigger"><span>Выберите размер</span>
-                <div class="arrow"></div>
-            </div>
-            <div class="custom-options">
-                <span class="custom-option selected" data-value="recomend">Выберите размер</span>
-                <span class="custom-option" data-value="new">XS</span>
-                <span class="custom-option" data-value="new">S</span>
-                <span class="custom-option" data-value="new">M</span>
-                <span class="custom-option" data-value="new">L</span>
-                <span class="custom-option" data-value="new">XL</span>
+        <form action="" method="post">
+          <!-- filter -->
+          <div class="dropdown custom-select-wrapper">
+            <div class="custom-select">
+              <div class="custom-select__trigger"><span>Выберите размер</span>
+                  <div class="arrow"></div>
+              </div>
+              <div class="custom-options">
+                  <span class="custom-option selected" data-value="recomend">Выберите размер</span>
+                  <span class="custom-option" data-value="new">XS</span>
+                  <span class="custom-option" data-value="new">S</span>
+                  <span class="custom-option" data-value="new">M</span>
+                  <span class="custom-option" data-value="new">L</span>
+                  <span class="custom-option" data-value="new">XL</span>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- size table -->
-        <div class="size_table">
-            <a  href="#">Таблица размеров</a>
-        </div>
-        <!-- show_more button -->
-        <div class="to_basket">
-          <button class="default_button black_button">
-            <p>добавить в корзину</p>
-          </button>
-          <!-- like -->
-          <a class="add_to_fav" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-        </div>
+          <!-- size table -->
+          <div class="size_table">
+              <a  href="#">Таблица размеров</a>
+          </div>
+          <!-- show_more button -->
+          <div class="to_basket">
+            <button class="default_button black_button" type="submit">
+              добавить в корзину
+            </button>
+            <!-- like -->
+            <a class="add_to_fav" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+          </div>
+        </form>
       </div>
     </div>
   </div>

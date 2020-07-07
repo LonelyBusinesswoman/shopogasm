@@ -37,7 +37,7 @@
     <div class="filter_actions">
       <!-- open filters -->
       <button class="action_button inherit_button filter_button">
-        <p>Фильтры</p>
+        Фильтры
       </button>
       <!-- filter mob-->
       <div class="dropdown dropdown_mob custom-select-wrapper">
@@ -60,7 +60,7 @@
       <!-- Search -->
       <div class="search">
         <form class="search_form" action="" method="">
-          <input type="text" name="search" placeholder="Поиск">
+          <input class="search_input" type="text" name="search" placeholder="Поиск">
           <!-- for desktop search (icon)-->
           <button class="desktop_btn search_btn" type="button" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
         </form>
@@ -193,7 +193,7 @@
 <!-- show_more button -->
 <div class="show_more">
   <button class="default_button black_button">
-    <p>показать больше</p>
+    показать больше
   </button>
 </div>
 
@@ -201,10 +201,10 @@
   <div class="recomendations_and_viewed">
     <div class="actions">
       <button class="default_button nonactive_button active_button" data-tab="1">
-        <p>рекомендации</p>
+        рекомендации
       </button>
       <button class="default_button nonactive_button" data-tab="2">
-        <p>недавно просмотренное</p>
+        недавно просмотренное
       </button>
     </div>
     <!-- products rec-->
@@ -215,7 +215,7 @@
     </div>
     <!-- products viewed-->
     <div class="products viewed" data-tab="2">
-      <?php for($i = 0; $i < 4; $i++): ?>
+      <?php for($i = 0; $i < 6; $i++): ?>
              <?php include 'components/product.php' ?>
       <?php endfor; ?>
     </div>

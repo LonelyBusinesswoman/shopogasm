@@ -117,13 +117,14 @@ textarea::placeholder {
   display: inline-block;
   box-sizing: border-box;
   transition: 0.3s ease all;
-}
-.default_button p,
-.default_button a {
   font-size: 14px;
   color: #ffffff;
   font-weight: 500;
   text-transform: uppercase;
+  -webkit-backface-visibility: hidden;
+  /* Chrome, Safari, Opera */
+  backface-visibility: hidden;
+  will-change: transform;
 }
 .default_button:hover {
   transform: scale(1.05);
@@ -137,28 +138,20 @@ textarea::placeholder {
 .inherit_button {
   background-color: inherit;
   border: 2px solid #000;
-}
-.inherit_button p {
   color: #000;
 }
 .inherit_button:hover {
   background-color: #000;
-}
-.inherit_button:hover p {
   color: #fff;
 }
 .nonactive_button {
   background-color: inherit;
-}
-.nonactive_button p {
   font-weight: bold;
   color: #999999;
 }
 .active_button {
   background-color: #F2F3F5;
   padding: 12px 10px;
-}
-.active_button p {
   font-weight: bold;
   color: #000;
 }
@@ -351,6 +344,30 @@ textarea::placeholder {
 .polzunok-container .high {
   right: 0;
 }
+.ui-menu .ui-menu-item {
+  background-color: #fff;
+}
+.ui-menu .ui-menu-item:hover {
+  background-color: #F2F3F5 !important;
+  border-color: inherit !important;
+}
+.ui-widget.ui-widget-content {
+  border: 1px solid #F2F3F5;
+}
+.ui-menu .ui-menu-item-wrapper {
+  border: 0;
+  padding: 10px;
+  width: 100%;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  background-color: #fff;
+}
+.ui-menu .ui-menu-item-wrapper:hover {
+  border: 0 !important;
+  cursor: pointer;
+  background-color: #F2F3F5 !important;
+  border-color: inherit !important;
+}
 .order_description {
   margin-top: 30px;
   display: flex;
@@ -436,9 +453,6 @@ textarea::placeholder {
   content: "";
   clear: both;
   display: table;
-}
-.ui-widget.ui-widget-content {
-  border: none !important;
 }
 .polzunok-container .ui-slider .ui-slider-range {
   position: absolute;
@@ -539,13 +553,13 @@ textarea::placeholder {
   width: 40%;
   display: flex;
   justify-content: center;
+  align-items: stretch;
   margin-bottom: 70px;
 }
 .question form input {
   width: 70%;
 }
 .question form button {
-  height: 40px;
   padding: 0;
   width: 30%;
   min-width: inherit;
@@ -832,9 +846,7 @@ textarea::placeholder {
 .purchase .delete {
   position: absolute;
   left: 98%;
-}
-.purchase .delete .fa {
-  font-size: 25px;
+  cursor: pointer;
 }
 .question_block {
   padding: 20px 30px;
@@ -1143,14 +1155,30 @@ header {
   justify-content: center;
   align-items: center;
   padding: 20px 0 40px 0;
+  overflow: hidden;
+}
+.header .menu_category .container {
+  display: flex;
+  max-height: 350px;
+  overflow-y: scroll;
+}
+.header .menu_category .container::-webkit-scrollbar {
+  width: 0;
+}
+.header .menu_category .container {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
 }
 .header .menu_category nav {
-  width: 100%;
+  width: 70%;
+}
+.header .menu_category .photo {
+  width: 30%;
 }
 .header .menu_category .columns {
   width: 100%;
   display: grid;
-  grid-template-columns: 20% 20% 20% 35%;
+  grid-template-columns: repeat(3, 32%);
   justify-content: space-between;
 }
 .header .menu_category .column {
@@ -1298,13 +1326,16 @@ footer {
   align-items: flex-start;
   flex-wrap: wrap;
 }
+.footer .logo {
+  width: 20%;
+}
 .footer nav {
-  width: 85%;
+  width: 55%;
 }
 .footer .inf {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
 }
 .footer .text {
@@ -1350,8 +1381,11 @@ footer {
 .footer .links .insta_link {
   margin-right: 20px;
 }
+.footer .instagram {
+  width: 25%;
+}
 .footer .photo {
-  width: 50%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 15px;
@@ -1736,6 +1770,7 @@ footer {
   width: 100%;
 }
 .catalog_and_filters .filters .ui-slider-handle {
+  border: 1px solid #F2F3F5;
   display: block;
 }
 .catalog_and_filters .catalog {
@@ -1817,6 +1852,11 @@ footer {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+.shopping_basket_page form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .shopping_basket_page .all_shoppings {
   width: 100%;
@@ -2261,11 +2301,28 @@ footer {
   align-items: center;
   justify-content: space-around;
 }
+.profile_page .additional_inf_block .sex input {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
+}
+.profile_page .additional_inf_block .sex label:hover {
+  cursor: pointer;
+}
+.profile_page .additional_inf_block .sex input:checked + label {
+  border-bottom: 1px solid #000;
+}
 .profile_page .additional_inf_block .active {
   border-bottom: 1px solid #000;
 }
 .profile_page .additional_inf_block .change_password .default_button {
   min-width: 100%;
+}
+.profile_page .additional_inf_block .change_password .password_field {
+  display: none;
 }
 .profile_page .save_changes {
   max-width: 150px;
@@ -2340,7 +2397,7 @@ footer {
   text-align: left;
 }
 .profile_page .questions_table {
-  width: 100%;
+  width: 85%;
   flex-direction: column;
   display: flex;
 }
