@@ -2990,10 +2990,39 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.dashboard_orders_block .active {
-  background-color: #05B1E9;
+.dashboard_orders_block .filters input {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
 }
-.dashboard_orders_block .active p {
+.dashboard_orders_block .filters label {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #F2F3F5;
+  display: flex;
+  width: auto;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.dashboard_orders_block .filters label span {
+  margin-right: 5px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.dashboard_orders_block .filters label:hover {
+  cursor: pointer;
+}
+.dashboard_orders_block .filters input:checked + label {
+  background-color: #05B1E9;
   color: #fff;
 }
 .dashboard_orders_block .actions_to_orders {

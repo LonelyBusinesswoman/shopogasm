@@ -40,7 +40,7 @@
     </div>
 
     <!-- order_registration -->
-    <div class="order_registration">
+    <form action="" method="" class="order_registration">
       <!-- left information -->
       <div class="left_reg">
         <!-- name of the page -->
@@ -76,7 +76,7 @@
           <p>Номер заказа #<span>7843836</span></p>
         </div>
         <!-- FORMS -->
-        <form class="forms" action="" method="">
+        <div class="forms">
           <!-- address delivery-->
           <div class="name_of_web form_subtitle">
             <p>Адрес доставки</p>
@@ -117,7 +117,7 @@
               <input class="default_input half" type="text" name="tel" placeholder="Телефон">
             </div>
           </div>
-        </form>
+        </div>
 
       </div>
       <!-- right shopping basket -->
@@ -176,7 +176,7 @@
       <p class="offer offer_mob">При оплате вы соглашаетесь с
           <a href="#">нашей публичной офертой, политикой конфиденциальности и обработки данных</a>
       </p>
-    </div>
+    </form>
   </div>
   <!-- recomendations -->
   <div class="container grid_general_style">

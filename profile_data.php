@@ -61,10 +61,10 @@
             <div class="additional_inf_block">
               <span>Ваш пол</span>
               <div class="sex">
-                <input type="radio" id="radio-one" name="switch-one" value="yes" checked/>
-            		<label for="radio-one">Мужской</label>
-            		<input type="radio" id="radio-two" name="switch-one" value="no" />
-            		<label for="radio-two">Женский</label>
+                <input type="radio" id="male" name="switch-one" value="yes" checked/>
+            		<label for="male">Мужской</label>
+            		<input type="radio" id="female" name="switch-one" value="no" />
+            		<label for="female">Женский</label>
               </div>
             </div>
             <!-- birth -->

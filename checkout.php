@@ -11,7 +11,7 @@
       </div>
     </div>
     <!-- order_registration -->
-    <div class="order_registration">
+    <form action="" method="" class="order_registration">
       <!-- left information -->
       <div class="left_reg">
         <!-- name of the page -->
@@ -43,7 +43,7 @@
           </div>
         </div>
         <!-- checkout_form -->
-        <form class="checkout_form" action="" method="">
+        <div class="checkout_form">
           <div class="form_block">
             <input class="default_input half" type="text" name="name" placeholder="Имя">
             <input class="default_input half" type="text" name="Surname" placeholder="Фамилия">
@@ -65,7 +65,7 @@
                 <label>Использовать в качестве платежного адреса</label>
             </div>
           </div>
-        </form>
+        </div>
       </div>
       <!-- right shopping basket -->
       <div class="right_reg">
@@ -108,7 +108,7 @@
             <a href="#">нашей публичной офертой, политикой конфиденциальности и обработки данных</a>
         </p>
       </div>
-    </div>
+    </form>
   </div>
   <!-- recomendations -->
   <div class="container grid_general_style">

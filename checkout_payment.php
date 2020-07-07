@@ -11,7 +11,7 @@
       </div>
     </div>
     <!-- order_registration -->
-    <div class="order_registration">
+    <form action="" method="" class="order_registration">
       <!-- left information -->
       <div class="left_reg">
         <!-- name of the page -->
@@ -95,7 +95,7 @@
             <a href="#">нашей публичной офертой, политикой конфиденциальности и обработки данных</a>
         </p>
       </div>
-    </div>
+    </form>
   </div>
   <!-- recomendations -->
   <div class="container grid_general_style">

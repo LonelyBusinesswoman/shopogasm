@@ -134,6 +134,7 @@
   }
   .registration_page .create_acc {
     flex-direction: column;
+    align-items: flex-start;
   }
   .registration_page .create_acc p {
     margin-bottom: 10px;
@@ -1328,7 +1329,7 @@
     width: 100%;
     justify-content: flex-start;
   }
-  .dashboard_orders .dashboard_orders_block .filters_and_action .filter_status {
+  .dashboard_orders .dashboard_orders_block .filters_and_action label {
     margin-right: 10px;
     margin-bottom: 10px;
   }

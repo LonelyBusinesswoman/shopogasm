@@ -33,26 +33,21 @@
           <form action="" method="post" class="filters_and_action">
 
             <div class="filters">
-
-              <div class="filter_status active">
-                <p>Все</p>
-              </div>
-              <div class="filter_status ">
-                <span class="green"></span>
-                <p> Выполнен</p>
-              </div>
-              <div class="filter_status ">
-                <span class="orange"></span>
-                <p>В обработке</p>
-              </div>
-              <div class="filter_status ">
-                <span class="red"></span>
-                <p>Отменён</p>
-              </div>
-              <div class="filter_status ">
-                <span class="grey"></span>
-                <p>Не удался</p>
-              </div>
+              <!-- все -->
+              <input type="radio" id="all" name="switch-one" value="all" checked/>
+              <label for="all">Все</label>
+              <!-- выполнен -->
+              <input type="radio" id="done" name="switch-one" value="done"/>
+              <label for="done"> <span class="green"></span> Выполнен</label>
+              <!-- в обработке -->
+              <input type="radio" id="in_processing" name="switch-one" value="in_processing"/>
+              <label for="in_processing"><span class="orange"></span>В обработке</label>
+              <!-- отменён -->
+              <input type="radio" id="cancellation" name="switch-one" value="cancellation"/>
+              <label for="cancellation"><span class="red"></span>Отменён</label>
+              <!-- не удался -->
+              <input type="radio" id="failed" name="switch-one" value="failed"/>
+              <label for="failed"><span class="grey"></span>Не удался</label>
 
             </div>
             <button class="default_button black_button">
